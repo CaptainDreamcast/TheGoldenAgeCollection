@@ -13,15 +13,87 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="StormStorm">
+      <UniqueIdentifier>{5bf54bfc-b68a-4bf0-8074-a5d1823e7792}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Bombx">
+      <UniqueIdentifier>{35f4ae43-a89d-4557-bcd3-169924f0606e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\main.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\stormstorm\stormstorm.c">
+      <Filter>StormStorm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\maingamemenu.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\stormstorm\storm_titlescreen.c">
+      <Filter>StormStorm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\stormstorm\vectrex_simulation.c">
+      <Filter>StormStorm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\stormstorm\vectrexanimations.c">
+      <Filter>StormStorm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bombx\bombx.c">
+      <Filter>Bombx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bombx\bombx_gamescreen.c">
+      <Filter>Bombx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bombx\bombx_titlescreen.c">
+      <Filter>Bombx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bombx\bombx_bombxhandler.c">
+      <Filter>Bombx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bombx\bombx_levelhandler.c">
+      <Filter>Bombx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bombx\bombx_player.c">
+      <Filter>Bombx</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="resource.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\stormstorm\stormstorm.h">
+      <Filter>StormStorm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\maingamemenu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\stormstorm\storm_titlescreen.h">
+      <Filter>StormStorm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\stormstorm\vectrex_simulation.h">
+      <Filter>StormStorm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\stormstorm\vectrexanimations.h">
+      <Filter>StormStorm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\bombx\bombx.h">
+      <Filter>Bombx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\bombx\bombx_gamescreen.h">
+      <Filter>Bombx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\bombx\bombx_titlescreen.h">
+      <Filter>Bombx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\bombx\bombx_bombxhandler.h">
+      <Filter>Bombx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\bombx\bombx_levelhandler.h">
+      <Filter>Bombx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\bombx\bombx_player.h">
+      <Filter>Bombx</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

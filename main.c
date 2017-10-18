@@ -9,6 +9,8 @@
 #include <tari/stagehandler.h>
 #include <tari/logoscreen.h>
 
+#include "maingamemenu.h"
+
 #ifdef DREAMCAST
 KOS_INIT_FLAGS(INIT_DEFAULT);
 
@@ -54,7 +56,7 @@ int main(int argc, char** argv) {
 
 	setMainFileSystem();
 	
-	setScreenAfterWrapperLogoScreen(getLogoScreenFromWrapper());
+	setScreenAfterWrapperLogoScreen(&MainGameMenu);
 	startScreenHandling(getLogoScreenFromWrapper());
 
 	exitGame();

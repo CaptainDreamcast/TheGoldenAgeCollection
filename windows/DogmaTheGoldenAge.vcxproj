@@ -121,7 +121,18 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\bombx\bombx.c" />
+    <ClCompile Include="..\bombx\bombx_bombxhandler.c" />
+    <ClCompile Include="..\bombx\bombx_gamescreen.c" />
+    <ClCompile Include="..\bombx\bombx_levelhandler.c" />
+    <ClCompile Include="..\bombx\bombx_player.c" />
+    <ClCompile Include="..\bombx\bombx_titlescreen.c" />
     <ClCompile Include="..\main.c" />
+    <ClCompile Include="..\maingamemenu.c" />
+    <ClCompile Include="..\stormstorm\stormstorm.c" />
+    <ClCompile Include="..\stormstorm\storm_titlescreen.c" />
+    <ClCompile Include="..\stormstorm\vectrexanimations.c" />
+    <ClCompile Include="..\stormstorm\vectrex_simulation.c" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\addons\libtari\windows\vs17\libtari.vcxproj">
@@ -129,6 +140,17 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\bombx\bombx.h" />
+    <ClInclude Include="..\bombx\bombx_bombxhandler.h" />
+    <ClInclude Include="..\bombx\bombx_gamescreen.h" />
+    <ClInclude Include="..\bombx\bombx_levelhandler.h" />
+    <ClInclude Include="..\bombx\bombx_player.h" />
+    <ClInclude Include="..\bombx\bombx_titlescreen.h" />
+    <ClInclude Include="..\maingamemenu.h" />
+    <ClInclude Include="..\stormstorm\stormstorm.h" />
+    <ClInclude Include="..\stormstorm\storm_titlescreen.h" />
+    <ClInclude Include="..\stormstorm\vectrexanimations.h" />
+    <ClInclude Include="..\stormstorm\vectrex_simulation.h" />
     <ClInclude Include="resource.h" />
   </ItemGroup>
   <ItemGroup>

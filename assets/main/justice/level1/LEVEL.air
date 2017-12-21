@@ -1,0 +1,36 @@
+
+[Begin Action 1]
+2,0, 0,0, 120
+2,1, 0,0, 120
+2,2, 0,0, 120
+2,3, 0,0, 120
+
+[Begin Action 100]
+1,0, 0,0, 10
+
+[Begin Action 101]
+1,1, 0,0, 10
+
+[Begin Action 102]
+1,2, 0,0, 10
+
+[Begin Action 103]
+1,3, 0,0, 10
+
+[Begin Action 104]
+1,4, 0,0, 10
+
+[Begin Action 105]
+1,5, 0,0, 10
+
+[Begin Action 106]
+1,6, 0,0, 10
+
+[Begin Action 107]
+1,7, 0,0, 10
+
+[Begin Action 108]
+1,8, 0,0, 10
+
+[Begin Action 109]
+1,9, 0,0, 10

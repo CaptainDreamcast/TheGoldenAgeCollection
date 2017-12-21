@@ -1,0 +1,39 @@
+[Header]
+Sprites = assets/main/frontier/story/BAD.sff
+
+
+[STORYSTART]
+
+[Image 1]
+Group = 1
+Item = 0
+
+[Text 1]
+Speaker = ""
+Text = "Ultimately, the human empire failed to destroy Algol and the 1000-year war continued as usual."
+
+[Text 1]
+Speaker = ""
+Text = "Having survived his encounter with Toucan, Kat spends his time either idling around or running from the army."
+
+[Image 1]
+Group = 1
+Item = 1
+
+[Text 1]
+Speaker = ""
+Text = "But he cannot escape his destiny."
+
+[Image 1]
+Group = 1
+Item = 2
+
+[Text 1]
+Speaker = ""
+Text = "As another star in the sky disappears, Kat prepares to set out once more and put an end to all of this."
+
+[Text 1]
+Speaker = "Ending #2"
+Text = "Try not to use any continues next time!"
+
+[Ending]

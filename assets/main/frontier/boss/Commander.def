@@ -1,0 +1,39 @@
+[Header]
+
+name = "Commander Ze"
+life = 800
+startpos = 700, 180
+anim = 1000
+
+[Pattern]
+lifestart = 800
+
+[Action]
+time = 0
+type = goto
+value = 550,180
+speed = 7
+
+; ----------------SHOTS
+
+[Action]
+time = 30
+timerepeated = 1
+type = shot
+shottype = 1000
+
+[Pattern]
+lifestart = 600
+
+; ----------------DROP
+[Action]
+time = 0
+type = smallpowerdrop
+value = 64
+
+; ----------------SHOTS
+[Action]
+time = 30
+timerepeated = 2
+type = shot
+shottype = 1001

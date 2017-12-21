@@ -1,0 +1,35 @@
+[Header]
+Sprites = "assets/main/frontier/stage/1.sff"
+Animations = "assets/main/frontier/stage/1.air"
+Boss = "assets/main/frontier/boss/Commander.def"
+Banter = "assets/main/frontier/stage/banter1.def"
+BG = "assets/main/frontier/stage/bg1.def"
+
+[EnemyType]
+id = 3
+anim = 2
+deathanim = 3
+
+[Enemy]
+amount = 6
+Time = 100
+id = 3 
+Position = 700,50+curenemy*50
+WaitPosition = 500,50+curenemy*50
+FinalPosition = 700,50+curenemy*50
+WaitDuration = 800
+MovementType = wait
+Speed = 5
+shotfrequency = randfrom(7,15)
+shottype = 101
+health = 10
+smallpower = 16
+
+[Break]
+Time = 100
+
+[Boss]
+Time = 200
+
+[Break] ; TODO: remove
+Time = 100000

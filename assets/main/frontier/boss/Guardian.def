@@ -1,0 +1,92 @@
+[Header]
+
+name = "The Guardian"
+life = 1600
+startpos = 700, 180
+anim = 2000
+
+[Pattern]
+lifestart = 1600
+
+[Action]
+time = 0
+type = goto
+value = 500,180
+speed = 7
+
+; ----------------SHOTS
+
+[Action]
+time = 30
+timerepeated = 30
+type = shot
+shottype = 2000
+
+[Action]
+time = 60
+timerepeated = 30
+type = shot
+shottype = 2001
+
+; -------------- MOVEMENT
+
+[Action]
+time = 60
+timerepeated = 60
+type = goto
+value = 500, 100
+speed = 5 
+
+[Action]
+time = 90
+timerepeated = 60
+type = goto
+value = 500, 300
+speed = 5 
+
+
+[Pattern]
+lifestart = 1200
+
+; ----------------DROP
+[Action]
+time = 0
+type = smallpowerdrop
+value = 64
+
+; ----------------SHOTS
+ 
+[Action]
+time = 30
+timerepeated = 30
+type = shot
+shottype = 2000
+
+[Action]
+time = 30
+timerepeated = 30
+type = shot
+shottype = 2002
+
+[Action]
+time = 60
+timerepeated = 30
+type = shot
+shottype = 2003
+
+
+; -------------- MOVEMENT
+
+[Action]
+time = 60
+timerepeated = 60
+type = goto
+value = 380, 100
+speed = 7 
+
+[Action]
+time = 90
+timerepeated = 60
+type = goto
+value = 380, 300
+speed = 7 

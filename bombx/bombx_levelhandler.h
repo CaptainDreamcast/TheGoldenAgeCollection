@@ -1,7 +1,19 @@
 #pragma once
 
 #include <tari/actorhandler.h>
+#include <tari/geometry.h>
 
 extern ActorBlueprint BombxLevelHandler;
 
 void resetBombxLevels();
+
+Vector3DI getPlayerTileStartPosition();
+int isBombxLevelTileFree(Vector3DI tTilePosition);
+int isBombxLevelTileHole(Vector3DI tTilePosition);
+
+void fillBombxHole();
+int areAllBombxHolesFilled();
+void setBombxLevelWon();
+void resetBombxLevel();
+
+int isFinalBombxLevel();

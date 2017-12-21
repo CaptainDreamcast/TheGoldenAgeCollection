@@ -7,6 +7,7 @@
 #include "../maingamemenu.h"
 
 #include "bombx_gamescreen.h"
+#include "bombx_levelhandler.h"
 
 static struct {
 	TextureData mBGTexture;
@@ -34,6 +35,7 @@ static void loadBombxTitleScreen() {
 
 static void gotoGameScreen(void* tCaller) {
 	(void)tCaller;
+	resetBombxLevels();
 	setNewScreen(&BombxGameScreen);
 }
 

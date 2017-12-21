@@ -19,6 +19,63 @@
     <Filter Include="Bombx">
       <UniqueIdentifier>{35f4ae43-a89d-4557-bcd3-169924f0606e}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Misc">
+      <UniqueIdentifier>{c725aaf1-4393-44a9-a080-9fbb665085ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Misc\HankInLuck">
+      <UniqueIdentifier>{b2aee2aa-2bce-449f-959e-802ec5a941c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Misc\EyeOfTheMedusa">
+      <UniqueIdentifier>{af61ebb2-ae10-4730-9144-652e3aaf0d2c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Misc\BestGameEver">
+      <UniqueIdentifier>{8ab7abe9-a976-45e7-9757-b157bfc8fec6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Misc\StreetFighterVersusMortalKombat">
+      <UniqueIdentifier>{7bbb79a3-14ec-4fe8-9500-95eaa9f44020}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Misc\Octolord3">
+      <UniqueIdentifier>{f9012fcd-396c-471d-b9a2-2fc6c6cdc37e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Main">
+      <UniqueIdentifier>{86597935-c16d-4f67-8ce7-c33496d72194}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Main\EyeOfTheMedusa3">
+      <UniqueIdentifier>{e5ae59cc-b428-4879-8276-a5eee0c1cc1b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Main\HazyHank">
+      <UniqueIdentifier>{c008ef3a-fbff-4bfe-a889-40ab493be04d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Main\FistsOfJustice">
+      <UniqueIdentifier>{3ae5a157-fac9-4b08-b895-353a2e9a367c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Main\LaMorteDiUnCane">
+      <UniqueIdentifier>{3cf093d3-e531-43f7-9958-2efa77326e45}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Misc\HackathonSimulator2017">
+      <UniqueIdentifier>{c59e6e6d-5c17-410e-925e-9ac20a4d0f49}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Misc\Objectification">
+      <UniqueIdentifier>{dffdacbd-8918-4d87-8c2f-210e049b3ff5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Main\Mirklings">
+      <UniqueIdentifier>{b3d0a827-aeb3-4872-86e3-54b8ef9540c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Main\Mirklings\routes">
+      <UniqueIdentifier>{daa90abb-d857-42b2-8f61-6687485876c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Main\Mirklings\routes\standardroute">
+      <UniqueIdentifier>{2184f35a-2933-4dbe-8784-d0423878eb7e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Main\Mirklings\routes\pukeroute">
+      <UniqueIdentifier>{a2cd1f3a-82ef-4645-9a45-a17b0e15faf3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Main\QuestForNormalcy">
+      <UniqueIdentifier>{5f282d7b-ce9b-436c-8ca4-8663d604b040}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Main\DreamFight16">
+      <UniqueIdentifier>{7fb0cdc7-fa00-4ce0-a3d0-e49e269702d8}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\main.c">
@@ -57,6 +114,777 @@
     <ClCompile Include="..\bombx\bombx_player.c">
       <Filter>Bombx</Filter>
     </ClCompile>
+    <ClCompile Include="..\stormstorm\storm_gamescreen.c">
+      <Filter>StormStorm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\stormstorm\storm_ball.c">
+      <Filter>StormStorm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\stormstorm\storm_paddle.c">
+      <Filter>StormStorm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\stormstorm\storm_collision.c">
+      <Filter>StormStorm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\stormstorm\storm_enemyhandler.c">
+      <Filter>StormStorm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\stormstorm\storm_ui.c">
+      <Filter>StormStorm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\stormstorm\storm_particlehandler.c">
+      <Filter>StormStorm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\stormstorm\storm_gameoverscreen.c">
+      <Filter>StormStorm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bombx\bombx_congratsscreen.c">
+      <Filter>Bombx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\misc\luck\luck_bg.c">
+      <Filter>Misc\HankInLuck</Filter>
+    </ClCompile>
+    <ClCompile Include="..\misc\luck\luck_box.c">
+      <Filter>Misc\HankInLuck</Filter>
+    </ClCompile>
+    <ClCompile Include="..\misc\luck\luck_boxgenerator.c">
+      <Filter>Misc\HankInLuck</Filter>
+    </ClCompile>
+    <ClCompile Include="..\misc\luck\luck_collision.c">
+      <Filter>Misc\HankInLuck</Filter>
+    </ClCompile>
+    <ClCompile Include="..\misc\luck\luck_congratsscreen.c">
+      <Filter>Misc\HankInLuck</Filter>
+    </ClCompile>
+    <ClCompile Include="..\misc\luck\luck_door.c">
+      <Filter>Misc\HankInLuck</Filter>
+    </ClCompile>
+    <ClCompile Include="..\misc\luck\luck_enemyhandler.c">
+      <Filter>Misc\HankInLuck</Filter>
+    </ClCompile>
+    <ClCompile Include="..\misc\luck\luck_finalboss.c">
+      <Filter>Misc\HankInLuck</Filter>
+    </ClCompile>
+    <ClCompile Include="..\misc\luck\luck_gamelogic.c">
+      <Filter>Misc\HankInLuck</Filter>
+    </ClCompile>
+    <ClCompile Include="..\misc\luck\luck_gameover.c">
+      <Filter>Misc\HankInLuck</Filter>
+    </ClCompile>
+    <ClCompile Include="..\misc\luck\luck_hank.c">
+      <Filter>Misc\HankInLuck</Filter>
+    </ClCompile>
+    <ClCompile Include="..\misc\luck\luck_horseguy.c">
+      <Filter>Misc\HankInLuck</Filter>
+    </ClCompile>
+    <ClCompile Include="..\misc\luck\luck_main.c">
+      <Filter>Misc\HankInLuck</Filter>
+    </ClCompile>
+    <ClCompile Include="..\misc\luck\luck_narrator.c">
+      <Filter>Misc\HankInLuck</Filter>
+    </ClCompile>
+    <ClCompile Include="..\misc\luck\luck_pirate.c">
+      <Filter>Misc\HankInLuck</Filter>
+    </ClCompile>
+    <ClCompile Include="..\misc\luck\luck_screen1.c">
+      <Filter>Misc\HankInLuck</Filter>
+    </ClCompile>
+    <ClCompile Include="..\misc\luck\luck_screen2.c">
+      <Filter>Misc\HankInLuck</Filter>
+    </ClCompile>
+    <ClCompile Include="..\misc\luck\luck_screen3.c">
+      <Filter>Misc\HankInLuck</Filter>
+    </ClCompile>
+    <ClCompile Include="..\misc\luck\luck_screen4.c">
+      <Filter>Misc\HankInLuck</Filter>
+    </ClCompile>
+    <ClCompile Include="..\misc\luck\luck_screen5.c">
+      <Filter>Misc\HankInLuck</Filter>
+    </ClCompile>
+    <ClCompile Include="..\misc\luck\luck_screen6.c">
+      <Filter>Misc\HankInLuck</Filter>
+    </ClCompile>
+    <ClCompile Include="..\misc\luck\luck_screen7.c">
+      <Filter>Misc\HankInLuck</Filter>
+    </ClCompile>
+    <ClCompile Include="..\misc\luck\luck_screen8.c">
+      <Filter>Misc\HankInLuck</Filter>
+    </ClCompile>
+    <ClCompile Include="..\misc\luck\luck_scrolling.c">
+      <Filter>Misc\HankInLuck</Filter>
+    </ClCompile>
+    <ClCompile Include="..\misc\luck\luck_smashscreen.c">
+      <Filter>Misc\HankInLuck</Filter>
+    </ClCompile>
+    <ClCompile Include="..\misc\luck\luck_titlescreen.c">
+      <Filter>Misc\HankInLuck</Filter>
+    </ClCompile>
+    <ClCompile Include="..\mainmenu.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\miscgamemenu.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\misc\medusa\eyeofthemedusa.c">
+      <Filter>Misc\EyeOfTheMedusa</Filter>
+    </ClCompile>
+    <ClCompile Include="..\misc\medusa\medusa_badasshandler.c">
+      <Filter>Misc\EyeOfTheMedusa</Filter>
+    </ClCompile>
+    <ClCompile Include="..\misc\medusa\medusa_shothandler.c">
+      <Filter>Misc\EyeOfTheMedusa</Filter>
+    </ClCompile>
+    <ClCompile Include="..\misc\medusa\medusa_splashscreen.c">
+      <Filter>Misc\EyeOfTheMedusa</Filter>
+    </ClCompile>
+    <ClCompile Include="..\misc\medusa\medusa_titlescreen.c">
+      <Filter>Misc\EyeOfTheMedusa</Filter>
+    </ClCompile>
+    <ClCompile Include="..\misc\medusa\medusa_toucan.c">
+      <Filter>Misc\EyeOfTheMedusa</Filter>
+    </ClCompile>
+    <ClCompile Include="..\misc\medusa\medusa_gamescreen.c">
+      <Filter>Misc\EyeOfTheMedusa</Filter>
+    </ClCompile>
+    <ClCompile Include="..\misc\best\best_bg.c">
+      <Filter>Misc\BestGameEver</Filter>
+    </ClCompile>
+    <ClCompile Include="..\misc\best\best_endscreen.c">
+      <Filter>Misc\BestGameEver</Filter>
+    </ClCompile>
+    <ClCompile Include="..\misc\best\best_gamescreen.c">
+      <Filter>Misc\BestGameEver</Filter>
+    </ClCompile>
+    <ClCompile Include="..\misc\best\best_player.c">
+      <Filter>Misc\BestGameEver</Filter>
+    </ClCompile>
+    <ClCompile Include="..\misc\best\bestgameever.c">
+      <Filter>Misc\BestGameEver</Filter>
+    </ClCompile>
+    <ClCompile Include="..\misc\sfmk\sfmk_animation.c">
+      <Filter>Misc\StreetFighterVersusMortalKombat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\misc\sfmk\sfmk_fighterselectscreen.c">
+      <Filter>Misc\StreetFighterVersusMortalKombat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\misc\sfmk\sfmk_introscreen.c">
+      <Filter>Misc\StreetFighterVersusMortalKombat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\misc\sfmk\sfmk_main.c">
+      <Filter>Misc\StreetFighterVersusMortalKombat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\misc\sfmk\sfmk_modemenu.c">
+      <Filter>Misc\StreetFighterVersusMortalKombat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\misc\sfmk\sfmk_titlescreen.c">
+      <Filter>Misc\StreetFighterVersusMortalKombat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\misc\sfmk\sfmk_storyrollscreen.c">
+      <Filter>Misc\StreetFighterVersusMortalKombat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\misc\octo\octo_bg.c">
+      <Filter>Misc\Octolord3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\misc\octo\octo_collision.c">
+      <Filter>Misc\Octolord3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\misc\octo\octo_enemyhandler.c">
+      <Filter>Misc\Octolord3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\misc\octo\octo_gamescreen.c">
+      <Filter>Misc\Octolord3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\misc\octo\octo_main.c">
+      <Filter>Misc\Octolord3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\misc\octo\octo_player.c">
+      <Filter>Misc\Octolord3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\misc\octo\octo_titlescreen.c">
+      <Filter>Misc\Octolord3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\misc\octo\octo_assethandler.c">
+      <Filter>Misc\Octolord3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\misc\medusa\medusa_collision.c">
+      <Filter>Misc\EyeOfTheMedusa</Filter>
+    </ClCompile>
+    <ClCompile Include="..\titlescreen.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\beyond\beyond_assignment.c">
+      <Filter>Main\EyeOfTheMedusa3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\beyond\beyond_bg.c">
+      <Filter>Main\EyeOfTheMedusa3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\beyond\beyond_boss.c">
+      <Filter>Main\EyeOfTheMedusa3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\beyond\beyond_collision.c">
+      <Filter>Main\EyeOfTheMedusa3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\beyond\beyond_continuehandler.c">
+      <Filter>Main\EyeOfTheMedusa3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\beyond\beyond_effecthandler.c">
+      <Filter>Main\EyeOfTheMedusa3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\beyond\beyond_enemyhandler.c">
+      <Filter>Main\EyeOfTheMedusa3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\beyond\beyond_finalbossscene.c">
+      <Filter>Main\EyeOfTheMedusa3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\beyond\beyond_gameoptionhandler.c">
+      <Filter>Main\EyeOfTheMedusa3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\beyond\beyond_gameoverscreen.c">
+      <Filter>Main\EyeOfTheMedusa3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\beyond\beyond_gamescreen.c">
+      <Filter>Main\EyeOfTheMedusa3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\beyond\beyond_itemhandler.c">
+      <Filter>Main\EyeOfTheMedusa3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\beyond\beyond_level.c">
+      <Filter>Main\EyeOfTheMedusa3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\beyond\beyond_main.c">
+      <Filter>Main\EyeOfTheMedusa3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\beyond\beyond_player.c">
+      <Filter>Main\EyeOfTheMedusa3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\beyond\beyond_shothandler.c">
+      <Filter>Main\EyeOfTheMedusa3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\beyond\beyond_storyscreen.c">
+      <Filter>Main\EyeOfTheMedusa3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\beyond\beyond_titlescreen.c">
+      <Filter>Main\EyeOfTheMedusa3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\beyond\beyond_ui.c">
+      <Filter>Main\EyeOfTheMedusa3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\hank\hank_animation.c">
+      <Filter>Main\HazyHank</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\hank\hank_collision.c">
+      <Filter>Main\HazyHank</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\hank\hank_drawing.c">
+      <Filter>Main\HazyHank</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\hank\hank_gamescreen.c">
+      <Filter>Main\HazyHank</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\hank\hank_generateLevel.c">
+      <Filter>Main\HazyHank</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\hank\hank_loadgame.c">
+      <Filter>Main\HazyHank</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\hank\hank_main.c">
+      <Filter>Main\HazyHank</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\hank\hank_movement.c">
+      <Filter>Main\HazyHank</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\hank\hank_physics.c">
+      <Filter>Main\HazyHank</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\hank\hank_round.c">
+      <Filter>Main\HazyHank</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\hank\hank_roundscreen.c">
+      <Filter>Main\HazyHank</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\hank\hank_stagelogic.c">
+      <Filter>Main\HazyHank</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\hank\hank_state.c">
+      <Filter>Main\HazyHank</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\hank\hank_texture.c">
+      <Filter>Main\HazyHank</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\hank\hank_titlescreen.c">
+      <Filter>Main\HazyHank</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\justice\justice_collision.c">
+      <Filter>Main\FistsOfJustice</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\justice\justice_congratsscreen.c">
+      <Filter>Main\FistsOfJustice</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\justice\justice_continuescreen.c">
+      <Filter>Main\FistsOfJustice</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\justice\justice_enemies.c">
+      <Filter>Main\FistsOfJustice</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\justice\justice_gameoverscreen.c">
+      <Filter>Main\FistsOfJustice</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\justice\justice_gamescreen.c">
+      <Filter>Main\FistsOfJustice</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\justice\justice_gamestate.c">
+      <Filter>Main\FistsOfJustice</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\justice\justice_logoscreen.c">
+      <Filter>Main\FistsOfJustice</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\justice\justice_main.c">
+      <Filter>Main\FistsOfJustice</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\justice\justice_player.c">
+      <Filter>Main\FistsOfJustice</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\justice\justice_sound.c">
+      <Filter>Main\FistsOfJustice</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\justice\justice_stage.c">
+      <Filter>Main\FistsOfJustice</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\justice\justice_system.c">
+      <Filter>Main\FistsOfJustice</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\justice\justice_titlescreen.c">
+      <Filter>Main\FistsOfJustice</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\justice\justice_userinterface.c">
+      <Filter>Main\FistsOfJustice</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\cane\cane_bullet.c">
+      <Filter>Main\LaMorteDiUnCane</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\cane\cane_collision.c">
+      <Filter>Main\LaMorteDiUnCane</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\cane\cane_enemies.c">
+      <Filter>Main\LaMorteDiUnCane</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\cane\cane_gamelogic.c">
+      <Filter>Main\LaMorteDiUnCane</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\cane\cane_gamescreen.c">
+      <Filter>Main\LaMorteDiUnCane</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\cane\cane_kidnapper.c">
+      <Filter>Main\LaMorteDiUnCane</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\cane\cane_logoscreen.c">
+      <Filter>Main\LaMorteDiUnCane</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\cane\cane_main.c">
+      <Filter>Main\LaMorteDiUnCane</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\cane\cane_manualenemy.c">
+      <Filter>Main\LaMorteDiUnCane</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\cane\cane_player.c">
+      <Filter>Main\LaMorteDiUnCane</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\cane\cane_retryscreen.c">
+      <Filter>Main\LaMorteDiUnCane</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\cane\cane_shadow.c">
+      <Filter>Main\LaMorteDiUnCane</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\cane\cane_stage.c">
+      <Filter>Main\LaMorteDiUnCane</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\cane\cane_titlescreen.c">
+      <Filter>Main\LaMorteDiUnCane</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\cane\cane_ui.c">
+      <Filter>Main\LaMorteDiUnCane</Filter>
+    </ClCompile>
+    <ClCompile Include="..\misc\hack\hack_hackscreen.c">
+      <Filter>Misc\HackathonSimulator2017</Filter>
+    </ClCompile>
+    <ClCompile Include="..\misc\hack\hack_main.c">
+      <Filter>Misc\HackathonSimulator2017</Filter>
+    </ClCompile>
+    <ClCompile Include="..\misc\hack\hack_performancehandler.c">
+      <Filter>Misc\HackathonSimulator2017</Filter>
+    </ClCompile>
+    <ClCompile Include="..\misc\hack\hack_projectlogic.c">
+      <Filter>Misc\HackathonSimulator2017</Filter>
+    </ClCompile>
+    <ClCompile Include="..\misc\hack\hack_selectscreen.c">
+      <Filter>Misc\HackathonSimulator2017</Filter>
+    </ClCompile>
+    <ClCompile Include="..\misc\hack\hack_storyscreen.c">
+      <Filter>Misc\HackathonSimulator2017</Filter>
+    </ClCompile>
+    <ClCompile Include="..\misc\hack\hack_titlescreen.c">
+      <Filter>Misc\HackathonSimulator2017</Filter>
+    </ClCompile>
+    <ClCompile Include="..\misc\object\object_backgroundhandler.c">
+      <Filter>Misc\Objectification</Filter>
+    </ClCompile>
+    <ClCompile Include="..\misc\object\object_clockhandler.c">
+      <Filter>Misc\Objectification</Filter>
+    </ClCompile>
+    <ClCompile Include="..\misc\object\object_congratsgirlfriendscreen.c">
+      <Filter>Misc\Objectification</Filter>
+    </ClCompile>
+    <ClCompile Include="..\misc\object\object_congratsscreen.c">
+      <Filter>Misc\Objectification</Filter>
+    </ClCompile>
+    <ClCompile Include="..\misc\object\object_explanationscreen.c">
+      <Filter>Misc\Objectification</Filter>
+    </ClCompile>
+    <ClCompile Include="..\misc\object\object_gamelogic.c">
+      <Filter>Misc\Objectification</Filter>
+    </ClCompile>
+    <ClCompile Include="..\misc\object\object_gameoverscreen.c">
+      <Filter>Misc\Objectification</Filter>
+    </ClCompile>
+    <ClCompile Include="..\misc\object\object_girlbarhandler.c">
+      <Filter>Misc\Objectification</Filter>
+    </ClCompile>
+    <ClCompile Include="..\misc\object\object_girlfriendhandler.c">
+      <Filter>Misc\Objectification</Filter>
+    </ClCompile>
+    <ClCompile Include="..\misc\object\object_main.c">
+      <Filter>Misc\Objectification</Filter>
+    </ClCompile>
+    <ClCompile Include="..\misc\object\object_selectgirlscreen.c">
+      <Filter>Misc\Objectification</Filter>
+    </ClCompile>
+    <ClCompile Include="..\misc\object\object_storyscreen.c">
+      <Filter>Misc\Objectification</Filter>
+    </ClCompile>
+    <ClCompile Include="..\misc\object\object_talktogirlscreen.c">
+      <Filter>Misc\Objectification</Filter>
+    </ClCompile>
+    <ClCompile Include="..\misc\object\object_titlescreen.c">
+      <Filter>Misc\Objectification</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\mirk\mirk_baftascreen.c">
+      <Filter>Main\Mirklings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\mirk\mirk_collision.c">
+      <Filter>Main\Mirklings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\mirk\mirk_deathcount.c">
+      <Filter>Main\Mirklings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\mirk\mirk_endingscreen.c">
+      <Filter>Main\Mirklings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\mirk\mirk_explosion.c">
+      <Filter>Main\Mirklings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\mirk\mirk_gameoverscreen.c">
+      <Filter>Main\Mirklings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\mirk\mirk_gamescreen.c">
+      <Filter>Main\Mirklings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\mirk\mirk_main.c">
+      <Filter>Main\Mirklings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\mirk\mirk_mirkling.c">
+      <Filter>Main\Mirklings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\mirk\mirk_mirklinghandler.c">
+      <Filter>Main\Mirklings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\mirk\mirk_noise.c">
+      <Filter>Main\Mirklings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\mirk\mirk_particles.c">
+      <Filter>Main\Mirklings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\mirk\mirk_pausemenu.c">
+      <Filter>Main\Mirklings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\mirk\mirk_player.c">
+      <Filter>Main\Mirklings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\mirk\mirk_preciouspeople.c">
+      <Filter>Main\Mirklings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\mirk\mirk_pussymode.c">
+      <Filter>Main\Mirklings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\mirk\mirk_routehandler.c">
+      <Filter>Main\Mirklings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\mirk\mirk_soundeffect.c">
+      <Filter>Main\Mirklings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\mirk\mirk_stage.c">
+      <Filter>Main\Mirklings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\mirk\mirk_titlescreen.c">
+      <Filter>Main\Mirklings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\mirk\mirk_titlescreengoof.c">
+      <Filter>Main\Mirklings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\mirk\mirk_titlescreengoofscreen.c">
+      <Filter>Main\Mirklings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\mirk\mirk_upgrades.c">
+      <Filter>Main\Mirklings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\mirk\routes\mirk_pukeroute.c">
+      <Filter>Main\Mirklings\routes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\mirk\routes\mirk_standardroute.c">
+      <Filter>Main\Mirklings\routes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\mirk\routes\standardroute\mirk_standard.c">
+      <Filter>Main\Mirklings\routes\standardroute</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\mirk\routes\standardroute\mirk_standard1.c">
+      <Filter>Main\Mirklings\routes\standardroute</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\mirk\routes\standardroute\mirk_standard2.c">
+      <Filter>Main\Mirklings\routes\standardroute</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\mirk\routes\standardroute\mirk_standard3.c">
+      <Filter>Main\Mirklings\routes\standardroute</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\mirk\routes\standardroute\mirk_standard4.c">
+      <Filter>Main\Mirklings\routes\standardroute</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\mirk\routes\standardroute\mirk_standard5.c">
+      <Filter>Main\Mirklings\routes\standardroute</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\mirk\routes\standardroute\mirk_standard6.c">
+      <Filter>Main\Mirklings\routes\standardroute</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\mirk\routes\standardroute\mirk_standard7.c">
+      <Filter>Main\Mirklings\routes\standardroute</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\mirk\routes\standardroute\mirk_standard8.c">
+      <Filter>Main\Mirklings\routes\standardroute</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\mirk\routes\standardroute\mirk_standard9.c">
+      <Filter>Main\Mirklings\routes\standardroute</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\mirk\routes\standardroute\mirk_standard10.c">
+      <Filter>Main\Mirklings\routes\standardroute</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\mirk\routes\standardroute\mirk_trailerroute.c">
+      <Filter>Main\Mirklings\routes\standardroute</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\mirk\routes\pukeroute\mirk_discolevel.c">
+      <Filter>Main\Mirklings\routes\pukeroute</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\mirk\routes\pukeroute\mirk_discotatelevel.c">
+      <Filter>Main\Mirklings\routes\pukeroute</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\mirk\routes\pukeroute\mirk_invisiblemirklingslevel.c">
+      <Filter>Main\Mirklings\routes\pukeroute</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\mirk\routes\pukeroute\mirk_limitedsightlevel.c">
+      <Filter>Main\Mirklings\routes\pukeroute</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\mirk\routes\pukeroute\mirk_maybekilledyourparentslevel.c">
+      <Filter>Main\Mirklings\routes\pukeroute</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\mirk\routes\pukeroute\mirk_nosightlevel.c">
+      <Filter>Main\Mirklings\routes\pukeroute</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\mirk\routes\pukeroute\mirk_playforyoulevel.c">
+      <Filter>Main\Mirklings\routes\pukeroute</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\mirk\routes\pukeroute\mirk_rotatelevel.c">
+      <Filter>Main\Mirklings\routes\pukeroute</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\mirk\routes\pukeroute\mirk_shakelevel.c">
+      <Filter>Main\Mirklings\routes\pukeroute</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\mirk\routes\pukeroute\mirk_simulationbreakdown1.c">
+      <Filter>Main\Mirklings\routes\pukeroute</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\mirk\routes\pukeroute\mirk_simulationbreakdown2.c">
+      <Filter>Main\Mirklings\routes\pukeroute</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\mirk\routes\pukeroute\mirk_simulationbreakdown3.c">
+      <Filter>Main\Mirklings\routes\pukeroute</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\mirk\routes\pukeroute\mirk_simulationbreakdown4.c">
+      <Filter>Main\Mirklings\routes\pukeroute</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\mirk\routes\pukeroute\mirk_simulationbreakdown5.c">
+      <Filter>Main\Mirklings\routes\pukeroute</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\mirk\routes\pukeroute\mirk_simulationbreakdown6.c">
+      <Filter>Main\Mirklings\routes\pukeroute</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\mirk\routes\pukeroute\mirk_simulationbreakdown7.c">
+      <Filter>Main\Mirklings\routes\pukeroute</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\mirk\routes\pukeroute\mirk_simulationbreakdown8.c">
+      <Filter>Main\Mirklings\routes\pukeroute</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\mirk\routes\pukeroute\mirk_simulationbreakdown9.c">
+      <Filter>Main\Mirklings\routes\pukeroute</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\mirk\routes\pukeroute\mirk_simulationbreakdown10.c">
+      <Filter>Main\Mirklings\routes\pukeroute</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\mirk\routes\pukeroute\mirk_simulationbreakdown11.c">
+      <Filter>Main\Mirklings\routes\pukeroute</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\mirk\routes\pukeroute\mirk_textblockingviewlevel.c">
+      <Filter>Main\Mirklings\routes\pukeroute</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\mirk\routes\pukeroute\mirk_willkillyourparentslevel.c">
+      <Filter>Main\Mirklings\routes\pukeroute</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\norm\norm_bg.c">
+      <Filter>Main\QuestForNormalcy</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\norm\norm_button.c">
+      <Filter>Main\QuestForNormalcy</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\norm\norm_congratsscreen.c">
+      <Filter>Main\QuestForNormalcy</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\norm\norm_debris.c">
+      <Filter>Main\QuestForNormalcy</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\norm\norm_enemy.c">
+      <Filter>Main\QuestForNormalcy</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\norm\norm_enemygenerator.c">
+      <Filter>Main\QuestForNormalcy</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\norm\norm_gamescreen.c">
+      <Filter>Main\QuestForNormalcy</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\norm\norm_introscreen.c">
+      <Filter>Main\QuestForNormalcy</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\norm\norm_main.c">
+      <Filter>Main\QuestForNormalcy</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\norm\norm_player.c">
+      <Filter>Main\QuestForNormalcy</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\norm\norm_readytext.c">
+      <Filter>Main\QuestForNormalcy</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\norm\norm_title.c">
+      <Filter>Main\QuestForNormalcy</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\norm\norm_ui.c">
+      <Filter>Main\QuestForNormalcy</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\fight\fight_ai.c">
+      <Filter>Main\DreamFight16</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\fight\fight_collision.c">
+      <Filter>Main\DreamFight16</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\fight\fight_config.c">
+      <Filter>Main\DreamFight16</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\fight\fight_fightscreen.c">
+      <Filter>Main\DreamFight16</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\fight\fight_fightui.c">
+      <Filter>Main\DreamFight16</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\fight\fight_gamelogic.c">
+      <Filter>Main\DreamFight16</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\fight\fight_gameoverscreen.c">
+      <Filter>Main\DreamFight16</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\fight\fight_main.c">
+      <Filter>Main\DreamFight16</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\fight\fight_menuscreen.c">
+      <Filter>Main\DreamFight16</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\fight\fight_mugenanimationhandler.c">
+      <Filter>Main\DreamFight16</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\fight\fight_mugenassignment.c">
+      <Filter>Main\DreamFight16</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\fight\fight_mugenassignmentevaluator.c">
+      <Filter>Main\DreamFight16</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\fight\fight_mugencommandhandler.c">
+      <Filter>Main\DreamFight16</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\fight\fight_mugencommandreader.c">
+      <Filter>Main\DreamFight16</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\fight\fight_mugenexplod.c">
+      <Filter>Main\DreamFight16</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\fight\fight_mugensound.c">
+      <Filter>Main\DreamFight16</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\fight\fight_mugenstagehandler.c">
+      <Filter>Main\DreamFight16</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\fight\fight_mugenstatecontrollers.c">
+      <Filter>Main\DreamFight16</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\fight\fight_mugenstatehandler.c">
+      <Filter>Main\DreamFight16</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\fight\fight_mugenstatereader.c">
+      <Filter>Main\DreamFight16</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\fight\fight_pausecontrollers.c">
+      <Filter>Main\DreamFight16</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\fight\fight_playerdefinition.c">
+      <Filter>Main\DreamFight16</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\fight\fight_playerhitdata.c">
+      <Filter>Main\DreamFight16</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\fight\fight_projectile.c">
+      <Filter>Main\DreamFight16</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\fight\fight_stage.c">
+      <Filter>Main\DreamFight16</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\fight\fight_story.c">
+      <Filter>Main\DreamFight16</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\fight\fight_storyscreen.c">
+      <Filter>Main\DreamFight16</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\fight\fight_titlescreen.c">
+      <Filter>Main\DreamFight16</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\fight\fight_twoplayerselectscreen.c">
+      <Filter>Main\DreamFight16</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\fight\fight_warningscreen.c">
+      <Filter>Main\DreamFight16</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\cane\cane_resources.c">
+      <Filter>Main\LaMorteDiUnCane</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\cane\cane_victoryscreen.c">
+      <Filter>Main\LaMorteDiUnCane</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\norm\norm_timer.c">
+      <Filter>Main\QuestForNormalcy</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\norm\norm_gameoverscreen.c">
+      <Filter>Main\QuestForNormalcy</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="resource.h">
@@ -94,6 +922,801 @@
     </ClInclude>
     <ClInclude Include="..\bombx\bombx_player.h">
       <Filter>Bombx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\stormstorm\storm_gamescreen.h">
+      <Filter>StormStorm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\stormstorm\storm_ball.h">
+      <Filter>StormStorm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\stormstorm\storm_paddle.h">
+      <Filter>StormStorm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\stormstorm\storm_collision.h">
+      <Filter>StormStorm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\stormstorm\storm_enemyhandler.h">
+      <Filter>StormStorm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\stormstorm\storm_ui.h">
+      <Filter>StormStorm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\stormstorm\storm_particlehandler.h">
+      <Filter>StormStorm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\stormstorm\storm_gameoverscreen.h">
+      <Filter>StormStorm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\bombx\bombx_congratsscreen.h">
+      <Filter>Bombx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\misc\luck\luck_bg.h">
+      <Filter>Misc\HankInLuck</Filter>
+    </ClInclude>
+    <ClInclude Include="..\misc\luck\luck_box.h">
+      <Filter>Misc\HankInLuck</Filter>
+    </ClInclude>
+    <ClInclude Include="..\misc\luck\luck_boxgenerator.h">
+      <Filter>Misc\HankInLuck</Filter>
+    </ClInclude>
+    <ClInclude Include="..\misc\luck\luck_collision.h">
+      <Filter>Misc\HankInLuck</Filter>
+    </ClInclude>
+    <ClInclude Include="..\misc\luck\luck_congratsscreen.h">
+      <Filter>Misc\HankInLuck</Filter>
+    </ClInclude>
+    <ClInclude Include="..\misc\luck\luck_door.h">
+      <Filter>Misc\HankInLuck</Filter>
+    </ClInclude>
+    <ClInclude Include="..\misc\luck\luck_enemyhandler.h">
+      <Filter>Misc\HankInLuck</Filter>
+    </ClInclude>
+    <ClInclude Include="..\misc\luck\luck_finalboss.h">
+      <Filter>Misc\HankInLuck</Filter>
+    </ClInclude>
+    <ClInclude Include="..\misc\luck\luck_gamelogic.h">
+      <Filter>Misc\HankInLuck</Filter>
+    </ClInclude>
+    <ClInclude Include="..\misc\luck\luck_gameover.h">
+      <Filter>Misc\HankInLuck</Filter>
+    </ClInclude>
+    <ClInclude Include="..\misc\luck\luck_hank.h">
+      <Filter>Misc\HankInLuck</Filter>
+    </ClInclude>
+    <ClInclude Include="..\misc\luck\luck_horseguy.h">
+      <Filter>Misc\HankInLuck</Filter>
+    </ClInclude>
+    <ClInclude Include="..\misc\luck\luck_narrator.h">
+      <Filter>Misc\HankInLuck</Filter>
+    </ClInclude>
+    <ClInclude Include="..\misc\luck\luck_pirate.h">
+      <Filter>Misc\HankInLuck</Filter>
+    </ClInclude>
+    <ClInclude Include="..\misc\luck\luck_screen1.h">
+      <Filter>Misc\HankInLuck</Filter>
+    </ClInclude>
+    <ClInclude Include="..\misc\luck\luck_screen2.h">
+      <Filter>Misc\HankInLuck</Filter>
+    </ClInclude>
+    <ClInclude Include="..\misc\luck\luck_screen3.h">
+      <Filter>Misc\HankInLuck</Filter>
+    </ClInclude>
+    <ClInclude Include="..\misc\luck\luck_screen4.h">
+      <Filter>Misc\HankInLuck</Filter>
+    </ClInclude>
+    <ClInclude Include="..\misc\luck\luck_screen5.h">
+      <Filter>Misc\HankInLuck</Filter>
+    </ClInclude>
+    <ClInclude Include="..\misc\luck\luck_screen6.h">
+      <Filter>Misc\HankInLuck</Filter>
+    </ClInclude>
+    <ClInclude Include="..\misc\luck\luck_screen7.h">
+      <Filter>Misc\HankInLuck</Filter>
+    </ClInclude>
+    <ClInclude Include="..\misc\luck\luck_screen8.h">
+      <Filter>Misc\HankInLuck</Filter>
+    </ClInclude>
+    <ClInclude Include="..\misc\luck\luck_scrolling.h">
+      <Filter>Misc\HankInLuck</Filter>
+    </ClInclude>
+    <ClInclude Include="..\misc\luck\luck_smashscreen.h">
+      <Filter>Misc\HankInLuck</Filter>
+    </ClInclude>
+    <ClInclude Include="..\misc\luck\luck_titlescreen.h">
+      <Filter>Misc\HankInLuck</Filter>
+    </ClInclude>
+    <ClInclude Include="..\misc\luck\luck_main.h">
+      <Filter>Misc\HankInLuck</Filter>
+    </ClInclude>
+    <ClInclude Include="..\mainmenu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\miscgamemenu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\misc\medusa\eyeofthemedusa.h">
+      <Filter>Misc\EyeOfTheMedusa</Filter>
+    </ClInclude>
+    <ClInclude Include="..\misc\medusa\medusa_badasshandler.h">
+      <Filter>Misc\EyeOfTheMedusa</Filter>
+    </ClInclude>
+    <ClInclude Include="..\misc\medusa\medusa_shothandler.h">
+      <Filter>Misc\EyeOfTheMedusa</Filter>
+    </ClInclude>
+    <ClInclude Include="..\misc\medusa\medusa_splashscreen.h">
+      <Filter>Misc\EyeOfTheMedusa</Filter>
+    </ClInclude>
+    <ClInclude Include="..\misc\medusa\medusa_titlescreen.h">
+      <Filter>Misc\EyeOfTheMedusa</Filter>
+    </ClInclude>
+    <ClInclude Include="..\misc\medusa\medusa_toucan.h">
+      <Filter>Misc\EyeOfTheMedusa</Filter>
+    </ClInclude>
+    <ClInclude Include="..\misc\medusa\medusa_gamescreen.h">
+      <Filter>Misc\EyeOfTheMedusa</Filter>
+    </ClInclude>
+    <ClInclude Include="..\misc\best\best_bg.h">
+      <Filter>Misc\BestGameEver</Filter>
+    </ClInclude>
+    <ClInclude Include="..\misc\best\best_endscreen.h">
+      <Filter>Misc\BestGameEver</Filter>
+    </ClInclude>
+    <ClInclude Include="..\misc\best\best_gamescreen.h">
+      <Filter>Misc\BestGameEver</Filter>
+    </ClInclude>
+    <ClInclude Include="..\misc\best\best_player.h">
+      <Filter>Misc\BestGameEver</Filter>
+    </ClInclude>
+    <ClInclude Include="..\misc\best\bestgameever.h">
+      <Filter>Misc\BestGameEver</Filter>
+    </ClInclude>
+    <ClInclude Include="..\misc\sfmk\sfmk_animation.h">
+      <Filter>Misc\StreetFighterVersusMortalKombat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\misc\sfmk\sfmk_fighterselectscreen.h">
+      <Filter>Misc\StreetFighterVersusMortalKombat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\misc\sfmk\sfmk_introscreen.h">
+      <Filter>Misc\StreetFighterVersusMortalKombat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\misc\sfmk\sfmk_modemenu.h">
+      <Filter>Misc\StreetFighterVersusMortalKombat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\misc\sfmk\sfmk_titlescreen.h">
+      <Filter>Misc\StreetFighterVersusMortalKombat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\misc\sfmk\sfmk_main.h">
+      <Filter>Misc\StreetFighterVersusMortalKombat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\misc\sfmk\sfmk_storyrollscreen.h">
+      <Filter>Misc\StreetFighterVersusMortalKombat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\misc\octo\octo_bg.h">
+      <Filter>Misc\Octolord3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\misc\octo\octo_collision.h">
+      <Filter>Misc\Octolord3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\misc\octo\octo_enemyhandler.h">
+      <Filter>Misc\Octolord3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\misc\octo\octo_gamescreen.h">
+      <Filter>Misc\Octolord3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\misc\octo\octo_main.h">
+      <Filter>Misc\Octolord3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\misc\octo\octo_player.h">
+      <Filter>Misc\Octolord3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\misc\octo\octo_titlescreen.h">
+      <Filter>Misc\Octolord3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\misc\octo\octo_assethandler.h">
+      <Filter>Misc\Octolord3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\misc\medusa\medusa_collision.h">
+      <Filter>Misc\EyeOfTheMedusa</Filter>
+    </ClInclude>
+    <ClInclude Include="..\titlescreen.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\beyond\beyond_assignment.h">
+      <Filter>Main\EyeOfTheMedusa3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\beyond\beyond_bg.h">
+      <Filter>Main\EyeOfTheMedusa3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\beyond\beyond_boss.h">
+      <Filter>Main\EyeOfTheMedusa3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\beyond\beyond_collision.h">
+      <Filter>Main\EyeOfTheMedusa3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\beyond\beyond_continuehandler.h">
+      <Filter>Main\EyeOfTheMedusa3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\beyond\beyond_effecthandler.h">
+      <Filter>Main\EyeOfTheMedusa3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\beyond\beyond_enemyhandler.h">
+      <Filter>Main\EyeOfTheMedusa3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\beyond\beyond_finalbossscene.h">
+      <Filter>Main\EyeOfTheMedusa3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\beyond\beyond_gameoptionhandler.h">
+      <Filter>Main\EyeOfTheMedusa3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\beyond\beyond_gameoverscreen.h">
+      <Filter>Main\EyeOfTheMedusa3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\beyond\beyond_gamescreen.h">
+      <Filter>Main\EyeOfTheMedusa3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\beyond\beyond_itemhandler.h">
+      <Filter>Main\EyeOfTheMedusa3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\beyond\beyond_level.h">
+      <Filter>Main\EyeOfTheMedusa3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\beyond\beyond_player.h">
+      <Filter>Main\EyeOfTheMedusa3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\beyond\beyond_shothandler.h">
+      <Filter>Main\EyeOfTheMedusa3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\beyond\beyond_storyscreen.h">
+      <Filter>Main\EyeOfTheMedusa3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\beyond\beyond_titlescreen.h">
+      <Filter>Main\EyeOfTheMedusa3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\beyond\beyond_ui.h">
+      <Filter>Main\EyeOfTheMedusa3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\beyond\beyond_main.h">
+      <Filter>Main\EyeOfTheMedusa3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\hank\hank_animation.h">
+      <Filter>Main\HazyHank</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\hank\hank_basedefinitions.h">
+      <Filter>Main\HazyHank</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\hank\hank_basetypes.h">
+      <Filter>Main\HazyHank</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\hank\hank_characterdata.h">
+      <Filter>Main\HazyHank</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\hank\hank_collision.h">
+      <Filter>Main\HazyHank</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\hank\hank_drawing.h">
+      <Filter>Main\HazyHank</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\hank\hank_enemydata.h">
+      <Filter>Main\HazyHank</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\hank\hank_gamescreen.h">
+      <Filter>Main\HazyHank</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\hank\hank_generateLevel.h">
+      <Filter>Main\HazyHank</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\hank\hank_loadgame.h">
+      <Filter>Main\HazyHank</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\hank\hank_main.h">
+      <Filter>Main\HazyHank</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\hank\hank_movement.h">
+      <Filter>Main\HazyHank</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\hank\hank_physics.h">
+      <Filter>Main\HazyHank</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\hank\hank_round.h">
+      <Filter>Main\HazyHank</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\hank\hank_roundscreen.h">
+      <Filter>Main\HazyHank</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\hank\hank_stagelogic.h">
+      <Filter>Main\HazyHank</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\hank\hank_state.h">
+      <Filter>Main\HazyHank</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\hank\hank_texture.h">
+      <Filter>Main\HazyHank</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\hank\hank_titledata.h">
+      <Filter>Main\HazyHank</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\hank\hank_titlescreen.h">
+      <Filter>Main\HazyHank</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\hank\hank_worlddata.h">
+      <Filter>Main\HazyHank</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\justice\justice_collision.h">
+      <Filter>Main\FistsOfJustice</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\justice\justice_congratsscreen.h">
+      <Filter>Main\FistsOfJustice</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\justice\justice_continuescreen.h">
+      <Filter>Main\FistsOfJustice</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\justice\justice_enemies.h">
+      <Filter>Main\FistsOfJustice</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\justice\justice_gameoverscreen.h">
+      <Filter>Main\FistsOfJustice</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\justice\justice_gamescreen.h">
+      <Filter>Main\FistsOfJustice</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\justice\justice_gamestate.h">
+      <Filter>Main\FistsOfJustice</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\justice\justice_logoscreen.h">
+      <Filter>Main\FistsOfJustice</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\justice\justice_main.h">
+      <Filter>Main\FistsOfJustice</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\justice\justice_player.h">
+      <Filter>Main\FistsOfJustice</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\justice\justice_sound.h">
+      <Filter>Main\FistsOfJustice</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\justice\justice_stage.h">
+      <Filter>Main\FistsOfJustice</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\justice\justice_system.h">
+      <Filter>Main\FistsOfJustice</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\justice\justice_titlescreen.h">
+      <Filter>Main\FistsOfJustice</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\justice\justice_userinterface.h">
+      <Filter>Main\FistsOfJustice</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\cane\cane_bullet.h">
+      <Filter>Main\LaMorteDiUnCane</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\cane\cane_collision.h">
+      <Filter>Main\LaMorteDiUnCane</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\cane\cane_enemies.h">
+      <Filter>Main\LaMorteDiUnCane</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\cane\cane_gamelogic.h">
+      <Filter>Main\LaMorteDiUnCane</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\cane\cane_gamescreen.h">
+      <Filter>Main\LaMorteDiUnCane</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\cane\cane_kidnapper.h">
+      <Filter>Main\LaMorteDiUnCane</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\cane\cane_logoscreen.h">
+      <Filter>Main\LaMorteDiUnCane</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\cane\cane_main.h">
+      <Filter>Main\LaMorteDiUnCane</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\cane\cane_manualenemy.h">
+      <Filter>Main\LaMorteDiUnCane</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\cane\cane_player.h">
+      <Filter>Main\LaMorteDiUnCane</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\cane\cane_retryscreen.h">
+      <Filter>Main\LaMorteDiUnCane</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\cane\cane_shadow.h">
+      <Filter>Main\LaMorteDiUnCane</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\cane\cane_stage.h">
+      <Filter>Main\LaMorteDiUnCane</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\cane\cane_titlescreen.h">
+      <Filter>Main\LaMorteDiUnCane</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\cane\cane_ui.h">
+      <Filter>Main\LaMorteDiUnCane</Filter>
+    </ClInclude>
+    <ClInclude Include="..\misc\hack\hack_hackscreen.h">
+      <Filter>Misc\HackathonSimulator2017</Filter>
+    </ClInclude>
+    <ClInclude Include="..\misc\hack\hack_main.h">
+      <Filter>Misc\HackathonSimulator2017</Filter>
+    </ClInclude>
+    <ClInclude Include="..\misc\hack\hack_performancehandler.h">
+      <Filter>Misc\HackathonSimulator2017</Filter>
+    </ClInclude>
+    <ClInclude Include="..\misc\hack\hack_projectlogic.h">
+      <Filter>Misc\HackathonSimulator2017</Filter>
+    </ClInclude>
+    <ClInclude Include="..\misc\hack\hack_selectscreen.h">
+      <Filter>Misc\HackathonSimulator2017</Filter>
+    </ClInclude>
+    <ClInclude Include="..\misc\hack\hack_storyscreen.h">
+      <Filter>Misc\HackathonSimulator2017</Filter>
+    </ClInclude>
+    <ClInclude Include="..\misc\hack\hack_titlescreen.h">
+      <Filter>Misc\HackathonSimulator2017</Filter>
+    </ClInclude>
+    <ClInclude Include="..\misc\object\object_backgroundhandler.h">
+      <Filter>Misc\Objectification</Filter>
+    </ClInclude>
+    <ClInclude Include="..\misc\object\object_clockhandler.h">
+      <Filter>Misc\Objectification</Filter>
+    </ClInclude>
+    <ClInclude Include="..\misc\object\object_congratsgirlfriendscreen.h">
+      <Filter>Misc\Objectification</Filter>
+    </ClInclude>
+    <ClInclude Include="..\misc\object\object_congratsscreen.h">
+      <Filter>Misc\Objectification</Filter>
+    </ClInclude>
+    <ClInclude Include="..\misc\object\object_explanationscreen.h">
+      <Filter>Misc\Objectification</Filter>
+    </ClInclude>
+    <ClInclude Include="..\misc\object\object_gamelogic.h">
+      <Filter>Misc\Objectification</Filter>
+    </ClInclude>
+    <ClInclude Include="..\misc\object\object_gameoverscreen.h">
+      <Filter>Misc\Objectification</Filter>
+    </ClInclude>
+    <ClInclude Include="..\misc\object\object_girlbarhandler.h">
+      <Filter>Misc\Objectification</Filter>
+    </ClInclude>
+    <ClInclude Include="..\misc\object\object_girlfriendhandler.h">
+      <Filter>Misc\Objectification</Filter>
+    </ClInclude>
+    <ClInclude Include="..\misc\object\object_selectgirlscreen.h">
+      <Filter>Misc\Objectification</Filter>
+    </ClInclude>
+    <ClInclude Include="..\misc\object\object_storyscreen.h">
+      <Filter>Misc\Objectification</Filter>
+    </ClInclude>
+    <ClInclude Include="..\misc\object\object_talktogirlscreen.h">
+      <Filter>Misc\Objectification</Filter>
+    </ClInclude>
+    <ClInclude Include="..\misc\object\object_titlescreen.h">
+      <Filter>Misc\Objectification</Filter>
+    </ClInclude>
+    <ClInclude Include="..\misc\object\object_main.h">
+      <Filter>Misc\Objectification</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\mirk\mirk_baftascreen.h">
+      <Filter>Main\Mirklings</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\mirk\mirk_collision.h">
+      <Filter>Main\Mirklings</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\mirk\mirk_deathcount.h">
+      <Filter>Main\Mirklings</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\mirk\mirk_endingscreen.h">
+      <Filter>Main\Mirklings</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\mirk\mirk_explosion.h">
+      <Filter>Main\Mirklings</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\mirk\mirk_gameoverscreen.h">
+      <Filter>Main\Mirklings</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\mirk\mirk_gamescreen.h">
+      <Filter>Main\Mirklings</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\mirk\mirk_levelhandler.h">
+      <Filter>Main\Mirklings</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\mirk\mirk_main.h">
+      <Filter>Main\Mirklings</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\mirk\mirk_mirkling.h">
+      <Filter>Main\Mirklings</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\mirk\mirk_mirklinghandler.h">
+      <Filter>Main\Mirklings</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\mirk\mirk_noise.h">
+      <Filter>Main\Mirklings</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\mirk\mirk_particles.h">
+      <Filter>Main\Mirklings</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\mirk\mirk_pausemenu.h">
+      <Filter>Main\Mirklings</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\mirk\mirk_player.h">
+      <Filter>Main\Mirklings</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\mirk\mirk_preciouspeople.h">
+      <Filter>Main\Mirklings</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\mirk\mirk_pussymode.h">
+      <Filter>Main\Mirklings</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\mirk\mirk_route.h">
+      <Filter>Main\Mirklings</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\mirk\mirk_routehandler.h">
+      <Filter>Main\Mirklings</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\mirk\mirk_soundeffect.h">
+      <Filter>Main\Mirklings</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\mirk\mirk_stage.h">
+      <Filter>Main\Mirklings</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\mirk\mirk_titlescreen.h">
+      <Filter>Main\Mirklings</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\mirk\mirk_titlescreengoof.h">
+      <Filter>Main\Mirklings</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\mirk\mirk_titlescreengoofscreen.h">
+      <Filter>Main\Mirklings</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\mirk\mirk_upgrades.h">
+      <Filter>Main\Mirklings</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\mirk\routes\mirk_pukeroute.h">
+      <Filter>Main\Mirklings\routes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\mirk\routes\mirk_standardroute.h">
+      <Filter>Main\Mirklings\routes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\mirk\routes\standardroute\mirk_standard.h">
+      <Filter>Main\Mirklings\routes\standardroute</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\mirk\routes\standardroute\mirk_standard1.h">
+      <Filter>Main\Mirklings\routes\standardroute</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\mirk\routes\standardroute\mirk_standard2.h">
+      <Filter>Main\Mirklings\routes\standardroute</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\mirk\routes\standardroute\mirk_standard3.h">
+      <Filter>Main\Mirklings\routes\standardroute</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\mirk\routes\standardroute\mirk_standard4.h">
+      <Filter>Main\Mirklings\routes\standardroute</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\mirk\routes\standardroute\mirk_standard5.h">
+      <Filter>Main\Mirklings\routes\standardroute</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\mirk\routes\standardroute\mirk_standard6.h">
+      <Filter>Main\Mirklings\routes\standardroute</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\mirk\routes\standardroute\mirk_standard7.h">
+      <Filter>Main\Mirklings\routes\standardroute</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\mirk\routes\standardroute\mirk_standard8.h">
+      <Filter>Main\Mirklings\routes\standardroute</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\mirk\routes\standardroute\mirk_standard9.h">
+      <Filter>Main\Mirklings\routes\standardroute</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\mirk\routes\standardroute\mirk_standard10.h">
+      <Filter>Main\Mirklings\routes\standardroute</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\mirk\routes\standardroute\mirk_trailerroute.h">
+      <Filter>Main\Mirklings\routes\standardroute</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\mirk\routes\pukeroute\mirk_discolevel.h">
+      <Filter>Main\Mirklings\routes\pukeroute</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\mirk\routes\pukeroute\mirk_discotatelevel.h">
+      <Filter>Main\Mirklings\routes\pukeroute</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\mirk\routes\pukeroute\mirk_invisiblemirklingslevel.h">
+      <Filter>Main\Mirklings\routes\pukeroute</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\mirk\routes\pukeroute\mirk_limitedsightlevel.h">
+      <Filter>Main\Mirklings\routes\pukeroute</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\mirk\routes\pukeroute\mirk_maybekilledyourparentslevel.h">
+      <Filter>Main\Mirklings\routes\pukeroute</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\mirk\routes\pukeroute\mirk_nosightlevel.h">
+      <Filter>Main\Mirklings\routes\pukeroute</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\mirk\routes\pukeroute\mirk_playforyoulevel.h">
+      <Filter>Main\Mirklings\routes\pukeroute</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\mirk\routes\pukeroute\mirk_rotatelevel.h">
+      <Filter>Main\Mirklings\routes\pukeroute</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\mirk\routes\pukeroute\mirk_shakelevel.h">
+      <Filter>Main\Mirklings\routes\pukeroute</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\mirk\routes\pukeroute\mirk_simulationbreakdown1.h">
+      <Filter>Main\Mirklings\routes\pukeroute</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\mirk\routes\pukeroute\mirk_simulationbreakdown2.h">
+      <Filter>Main\Mirklings\routes\pukeroute</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\mirk\routes\pukeroute\mirk_simulationbreakdown3.h">
+      <Filter>Main\Mirklings\routes\pukeroute</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\mirk\routes\pukeroute\mirk_simulationbreakdown4.h">
+      <Filter>Main\Mirklings\routes\pukeroute</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\mirk\routes\pukeroute\mirk_simulationbreakdown5.h">
+      <Filter>Main\Mirklings\routes\pukeroute</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\mirk\routes\pukeroute\mirk_simulationbreakdown6.h">
+      <Filter>Main\Mirklings\routes\pukeroute</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\mirk\routes\pukeroute\mirk_simulationbreakdown7.h">
+      <Filter>Main\Mirklings\routes\pukeroute</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\mirk\routes\pukeroute\mirk_simulationbreakdown8.h">
+      <Filter>Main\Mirklings\routes\pukeroute</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\mirk\routes\pukeroute\mirk_simulationbreakdown9.h">
+      <Filter>Main\Mirklings\routes\pukeroute</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\mirk\routes\pukeroute\mirk_simulationbreakdown10.h">
+      <Filter>Main\Mirklings\routes\pukeroute</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\mirk\routes\pukeroute\mirk_simulationbreakdown11.h">
+      <Filter>Main\Mirklings\routes\pukeroute</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\mirk\routes\pukeroute\mirk_textblockingviewlevel.h">
+      <Filter>Main\Mirklings\routes\pukeroute</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\mirk\routes\pukeroute\mirk_willkillyourparentslevel.h">
+      <Filter>Main\Mirklings\routes\pukeroute</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\norm\norm_bg.h">
+      <Filter>Main\QuestForNormalcy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\norm\norm_button.h">
+      <Filter>Main\QuestForNormalcy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\norm\norm_congratsscreen.h">
+      <Filter>Main\QuestForNormalcy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\norm\norm_debris.h">
+      <Filter>Main\QuestForNormalcy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\norm\norm_enemy.h">
+      <Filter>Main\QuestForNormalcy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\norm\norm_enemygenerator.h">
+      <Filter>Main\QuestForNormalcy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\norm\norm_gamescreen.h">
+      <Filter>Main\QuestForNormalcy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\norm\norm_introscreen.h">
+      <Filter>Main\QuestForNormalcy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\norm\norm_main.h">
+      <Filter>Main\QuestForNormalcy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\norm\norm_player.h">
+      <Filter>Main\QuestForNormalcy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\norm\norm_readytext.h">
+      <Filter>Main\QuestForNormalcy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\norm\norm_title.h">
+      <Filter>Main\QuestForNormalcy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\norm\norm_ui.h">
+      <Filter>Main\QuestForNormalcy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\fight\fight_ai.h">
+      <Filter>Main\DreamFight16</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\fight\fight_collision.h">
+      <Filter>Main\DreamFight16</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\fight\fight_config.h">
+      <Filter>Main\DreamFight16</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\fight\fight_fightscreen.h">
+      <Filter>Main\DreamFight16</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\fight\fight_fightui.h">
+      <Filter>Main\DreamFight16</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\fight\fight_gamelogic.h">
+      <Filter>Main\DreamFight16</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\fight\fight_gameoverscreen.h">
+      <Filter>Main\DreamFight16</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\fight\fight_main.h">
+      <Filter>Main\DreamFight16</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\fight\fight_menuscreen.h">
+      <Filter>Main\DreamFight16</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\fight\fight_mugenanimationhandler.h">
+      <Filter>Main\DreamFight16</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\fight\fight_mugenassignment.h">
+      <Filter>Main\DreamFight16</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\fight\fight_mugenassignmentevaluator.h">
+      <Filter>Main\DreamFight16</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\fight\fight_mugencommandhandler.h">
+      <Filter>Main\DreamFight16</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\fight\fight_mugencommandreader.h">
+      <Filter>Main\DreamFight16</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\fight\fight_mugenexplod.h">
+      <Filter>Main\DreamFight16</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\fight\fight_mugensound.h">
+      <Filter>Main\DreamFight16</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\fight\fight_mugenstagehandler.h">
+      <Filter>Main\DreamFight16</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\fight\fight_mugenstatecontrollers.h">
+      <Filter>Main\DreamFight16</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\fight\fight_mugenstatehandler.h">
+      <Filter>Main\DreamFight16</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\fight\fight_mugenstatereader.h">
+      <Filter>Main\DreamFight16</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\fight\fight_pausecontrollers.h">
+      <Filter>Main\DreamFight16</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\fight\fight_playerdefinition.h">
+      <Filter>Main\DreamFight16</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\fight\fight_playerhitdata.h">
+      <Filter>Main\DreamFight16</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\fight\fight_projectile.h">
+      <Filter>Main\DreamFight16</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\fight\fight_stage.h">
+      <Filter>Main\DreamFight16</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\fight\fight_story.h">
+      <Filter>Main\DreamFight16</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\fight\fight_storyscreen.h">
+      <Filter>Main\DreamFight16</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\fight\fight_titlescreen.h">
+      <Filter>Main\DreamFight16</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\fight\fight_twoplayerselectscreen.h">
+      <Filter>Main\DreamFight16</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\fight\fight_warningscreen.h">
+      <Filter>Main\DreamFight16</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\cane\cane_resources.h">
+      <Filter>Main\LaMorteDiUnCane</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\cane\cane_victoryscreen.h">
+      <Filter>Main\LaMorteDiUnCane</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\norm\norm_timer.h">
+      <Filter>Main\QuestForNormalcy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\norm\norm_gameoverscreen.h">
+      <Filter>Main\QuestForNormalcy</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

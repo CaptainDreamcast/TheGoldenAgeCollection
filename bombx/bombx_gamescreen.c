@@ -6,8 +6,14 @@
 #include "bombx_titlescreen.h"
 #include "bombx_levelhandler.h"
 
+#include "bombx_player.h"
+#include "bombx_bombxhandler.h"
+
 static void loadBombxGameScreen() {
+	instantiateActor(BombxHandler);
 	instantiateActor(BombxLevelHandler);
+	instantiateActor(BombxPlayer);
+	
 
 	addFadeIn(30, NULL, NULL);
 }
@@ -15,6 +21,10 @@ static void loadBombxGameScreen() {
 
 
 static void updateBombxGameScreen() {
+	if (hasPressedRFlank()) {
+		resetBombxLevel();
+	}
+
 	if (hasPressedAbortFlank()) {
 		setNewScreen(&BombxTitleScreen);
 	}

@@ -1,0 +1,132 @@
+[Header]
+Sprites = assets/main/frontier/story/GOOD.sff
+
+
+[STORYSTART]
+
+[Image 1]
+Group = 1
+Item = 0
+
+[Text 1]
+Speaker = ""
+Text = "Algol, the demon star, exploded in a blaze of glory."
+
+[Text 1]
+Speaker = ""
+Text = "Thankfully, the Algol star system has two suns, so it wasn't really all that bad."
+
+[Image 1]
+Group = 1
+Item = 1
+
+[Text 1]
+Speaker = ""
+Text = "It's true. Look it up on Wikipedia."
+
+[Image 1]
+Group = 1
+Item = 2
+
+[Text 1]
+Speaker = ""
+Text = "With the Toucan destroyed, humanity could no longer uphold its onslaught upon the universe, and the 1000-year war came to its conclusion."
+
+[Text 1]
+Speaker = ""
+Text = "Kat, who perished along with the Toucan, was declared killed in action. His corpse was never found."
+
+[Text 1]
+Speaker = ""
+Text = "Thus, the universe's bloodiest chapter ended."
+
+[Image 1]
+Group = 1
+Item = 3
+
+[Text 1]
+Speaker = ""
+Text = "... Or did it?"
+
+
+[Text 1]
+Speaker = "LOCATION:"
+Text = "MOON PALMA-3, OUTSKIRTS OF THE ALGOL STAR SYSTEM"
+
+[Image 1]
+Group = 1
+Item = 4
+
+[Text 1]
+Speaker = "???:"
+Text = "MY EAR! JUST LOOK AT MY FRICKING EAR! THAT'S A REALLY BAD PLACE FOR A WINDHOLE!"
+
+[Image 1]
+Group = 1
+Item = 5
+
+[Text 1]
+Speaker = "??????:"
+Text = "You should think of this as a rebranding opportunity. Build a punk image. Be wild."
+
+[Image 1]
+Group = 1
+Item = 4
+
+[Text 1]
+Speaker = "???:"
+Text = "A PUNK IMAGE?!"
+
+[Image 1]
+Group = 1
+Item = 5
+
+[Text 1]
+Speaker = "??????:"
+Text = "Yeah, or get some sweet goggles. Those anime catgirls will be all over you!"
+
+[Image 1]
+Group = 1
+Item = 4
+
+[Text 1]
+Speaker = "???:"
+Text = "I DON'T WANT GIRLS, I WANT MY EAR IN ONE PIECE!"
+
+[Image 1]
+Group = 1
+Item = 5
+
+[Text 1]
+Speaker = "??????:"
+Text = "You're not getting a Kellog's deal with this kind of attitude."
+
+[Image 1]
+Group = 1
+Item = 6
+
+[Text 1]
+Speaker = ""
+Text = "The universe keeps expanding quietly."
+
+[Text 1]
+Speaker = ""
+Text = "Little did those two know..."
+
+[Image 1]
+Group = 1
+Item = 7
+
+[Text 1]
+Speaker = ""
+Text = "The greatest of evils would soon make its appearance."
+
+[Text 1]
+Speaker = ""
+Text = "But that's a story for another time."
+
+[Text 1]
+Speaker = "Ending #1"
+Text = "Thanks for playing! Hope to meet you again soon!"
+
+[Ending]

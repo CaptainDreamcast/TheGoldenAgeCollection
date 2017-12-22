@@ -1,4 +1,4 @@
-#pragma
+#pragma once
 
 void setupOctoCollisions();
 int getOctoPlayerCollisionList();

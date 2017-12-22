@@ -48,6 +48,7 @@ static void updateTitleScreen() {
   updateInput();
   if (hasPressedAbortFlank()) {
 	  setNewScreen(&MainGameMenu);
+	 return;
   }
 
   checkDone();

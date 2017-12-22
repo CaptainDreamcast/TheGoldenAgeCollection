@@ -6,13 +6,13 @@
 #include <tari/mugenanimationreader.h>
 #include <tari/collisionhandler.h>
 #include <tari/physicshandler.h>
-#include <tari/mugenanimationhandler.h>
 #include <tari/log.h>
 #include <tari/system.h>
 #include <tari/mugenscriptparser.h>
 #include <tari/mugenassignmentevaluator.h>
 #include <tari/math.h>
 #include <tari/wrapper.h>
+#include <tari/drawing.h>
 
 #include "beyond_collision.h"
 #include "beyond_enemyhandler.h"
@@ -27,6 +27,12 @@ typedef enum {
 	SHOT_TYPE_TARGET_RANDOM,
 	SHOT_TYPE_TARGET_RANDOM_FINAL,
 } ShotHomingType;
+
+typedef struct {
+	Vector3D mOffset;
+	TextureData mTexture;
+
+} ShotTexture;
 
 typedef struct {
 	MugenAssignment* mAmount;
@@ -50,6 +56,7 @@ typedef struct {
 
 	MugenAssignment* mGimmick;
 
+	ShotTexture* mTexture;
 	int mIdleAnimation;
 	int mHitAnimation;
 
@@ -78,7 +85,6 @@ typedef struct {
 	SubShotType* mType;
 
 	int mPhysicsID;
-	int mAnimationID;
 	int mCollisionID;
 
 	Collider mCollider;
@@ -86,15 +92,20 @@ typedef struct {
 
 	double mRotation;
 
+	double mR;
+	double mG;
+	double mB;
+
 	int mHasGimmickData;
 	void* mGimmickData;
 
 	int mIsStillActive;
 } ActiveSubShot;
 
+
+
 static struct {
-	MugenSpriteFile mSprites;
-	MugenAnimations mAnimations;
+	IntMap mShotTextures;
 
 	IntMap mShotTypes;
 
@@ -150,6 +161,12 @@ static void parseHomingType(SubShotType* e, MugenDefScriptGroup* tGroup) {
 	freeMemory(text);
 }
 
+static ShotTexture* getShotTextureReference(int tID) {
+	ShotTexture* e = int_map_get(&gData.mShotTextures, tID);
+	return e;
+}
+
+
 static void handleNewSubShotType(MugenDefScriptGroup* tGroup) {
 	assert(gActiveShotType);
 
@@ -157,6 +174,7 @@ static void handleNewSubShotType(MugenDefScriptGroup* tGroup) {
 	fetchMugenAssignmentFromGroupAndReturnWhetherItExistsDefaultString("amount", tGroup, &e->mAmount, "");
 	e->mIdleAnimation = getMugenDefNumberVariableAsGroup(tGroup, "anim");
 	e->mHitAnimation = getMugenDefNumberVariableAsGroup(tGroup, "hitanim");
+	e->mTexture = getShotTextureReference(e->mIdleAnimation);
 	fetchMugenAssignmentFromGroupAndReturnWhetherItExistsDefaultString("offset", tGroup, &e->mOffset, "");
 	e->mHasAbsolutePosition = fetchMugenAssignmentFromGroupAndReturnWhetherItExists("absolute", tGroup, &e->mAbsolutePosition);
 	e->mHasVelocity = fetchMugenAssignmentFromGroupAndReturnWhetherItExists("velocity", tGroup, &e->mVelocity);
@@ -184,18 +202,41 @@ static void loadShotTypesFromScript(MugenDefScript* tScript) {
 	parseMugenScript(tScript);
 }
 
+static void loadSingleShotTexture(int tID, Vector3D tOffset) {
+	ShotTexture* e = allocMemory(sizeof(ShotTexture));
+	
+	char path[1024];
+	sprintf(path, "assets/main/%s/shots/sprites/%d.pkg", getBeyondDirectory(), tID);
+
+	e->mTexture = loadTexture(path);	
+	e->mOffset = tOffset;
+
+	int_map_push_owned(&gData.mShotTextures, tID, e);
+}
+
+static void loadShotTextures() {
+	loadSingleShotTexture(1, makePosition(7, 7, 0));
+	loadSingleShotTexture(2, makePosition(7, 7, 0));
+	loadSingleShotTexture(3, makePosition(8, 4, 0));
+	loadSingleShotTexture(4, makePosition(5, 2, 0));
+	loadSingleShotTexture(5, makePosition(4, 4, 0));
+	loadSingleShotTexture(1001, makePosition(11, 6, 0));
+	loadSingleShotTexture(2001, makePosition(15, 11, 0));
+	loadSingleShotTexture(4001, makePosition(16, 16, 0));
+	loadSingleShotTexture(5001, makePosition(8, 8, 0));
+}
+
 static void loadShotHandler(void* tData) {
 	(void)tData;
 
-	char path[1024];
-	sprintf(path, "assets/main/%s/shots/SHOTS.sff", getBeyondDirectory());
-	gData.mSprites = loadMugenSpriteFileWithoutPalette(path);
-	sprintf(path, "assets/main/%s/shots/SHOTS.air", getBeyondDirectory());
-	gData.mAnimations = loadMugenAnimationFile(path);
 
+	gData.mShotTextures = new_int_map();
 	gData.mShotTypes = new_int_map();
 	gData.mActiveShots = new_int_map();
 
+	loadShotTextures();
+
+	char path[1024];
 	sprintf(path, "assets/main/%s/shots/SHOTS.def", getBeyondDirectory());
 	MugenDefScript script = loadMugenDefScript(path);
 	loadShotTypesFromScript(&script);
@@ -209,7 +250,6 @@ static void unloadSubShot(ActiveSubShot* e) {
 		freeMemory(e->mGimmickData);
 	}
 
-	removeMugenAnimation(e->mAnimationID);
 	removeFromCollisionHandler(e->mRoot->mCollisionData.mCollisionList, e->mCollisionID);
 	destroyCollider(&e->mCollider);
 	removeFromPhysicsHandler(e->mPhysicsID);
@@ -241,7 +281,7 @@ static void updateHoming(ActiveSubShot* e) {
 	if (vecLength(dir) < 1e-6) return;
 
 	double angle = getAngleFromDirection(dir);
-	setMugenAnimationDrawAngle(e->mAnimationID, angle);
+	e->mRotation = angle;
 	*vel = dir;
 }
 
@@ -256,7 +296,7 @@ static void updateFinalHoming(ActiveSubShot* e) {
 	if (vecLength(dir) < 1e-6) return;
 
 	double angle = getAngleFromDirection(dir);
-	setMugenAnimationDrawAngle(e->mAnimationID, angle);
+	e->mRotation = angle;
 	*vel = dir;
 }
 
@@ -266,7 +306,6 @@ static void updateRotation(ActiveSubShot* e) {
 
 	double rotationAdd = getMugenAssignmentAsFloatValueOrDefaultWhenEmpty(subShot->mRotationAdd, NULL, 0);
 	e->mRotation += rotationAdd;
-	setMugenAnimationDrawAngle(e->mAnimationID, e->mRotation);
 }
 
 static void updateGimmick(ActiveSubShot* e) {
@@ -327,9 +366,36 @@ static void updateShotHandler(void* tData) {
 	updateActiveShots();
 }
 
+static void drawSubShot(void* tCaller, void* tData) {
+	(void)tCaller;
+	ActiveSubShot* e = tData;
+
+	Position p = *getHandledPhysicsPositionReference(e->mPhysicsID);
+	Position center = e->mType->mTexture->mOffset;
+	Position screenCenter = p;
+	p = vecSub(p, center);
+
+	setDrawingBaseColorAdvanced(e->mR, e->mG, e->mB);
+	setDrawingRotationZ(e->mRotation, screenCenter);
+	drawSprite(e->mType->mTexture->mTexture, p, makeRectangleFromTexture(e->mType->mTexture->mTexture));
+}
+
+static void drawShot(void* tCaller, void* tData) {
+	(void)tCaller;
+	ActiveShot* e = tData;
+
+	int_map_map(&e->mSubShots, drawSubShot, e);
+}
+
+static void drawShotHandler(void* tData) {
+	int_map_map(&gData.mActiveShots, drawShot, NULL);
+	setDrawingParametersToIdentity();
+}
+
 ActorBlueprint BeyondShotHandler = {
 	.mLoad = loadShotHandler,
 	.mUpdate = updateShotHandler,
+	.mDraw = drawShotHandler,
 };
 
 
@@ -442,7 +508,9 @@ static void setShotColor(SubShotType* subShot, ActiveSubShot* e, SubShotAssignme
 		abortSystem();
 	}
 
-	setMugenAnimationColor(e->mAnimationID, r, g, b);
+	e->mR = r;
+	e->mG = g;
+	e->mB = b;
 }
 
 static void addSingleSubShot(SubShotCaller* caller, SubShotType* subShot, int i) {
@@ -496,7 +564,12 @@ static void addSingleSubShot(SubShotCaller* caller, SubShotType* subShot, int i)
 		double speed = evaluateMugenAssignmentAndReturnAsFloat(subShot->mSpeed, &assignmentCaller);
 		velocity = vecScale(vecNormalize(velocity), speed);
 	}
-	 
+
+	double z;
+	if (caller->mRoot->mCollisionData.mCollisionList == getBeyondEnemyShotCollisionList()) z = 30;
+	else z = 25;
+
+	offset.z = z;
 	e->mPhysicsID = addToPhysicsHandler(vecAdd(caller->mPosition, offset));
 	addAccelerationToHandledPhysics(e->mPhysicsID, velocity);
 
@@ -508,14 +581,8 @@ static void addSingleSubShot(SubShotCaller* caller, SubShotType* subShot, int i)
 
 	e->mCollisionID = addColliderToCollisionHandler(caller->mRoot->mCollisionData.mCollisionList, getHandledPhysicsPositionReference(e->mPhysicsID), e->mCollider, hitCB, e, &caller->mRoot->mCollisionData);
 
-	double z;
-	if(caller->mRoot->mCollisionData.mCollisionList == getBeyondEnemyShotCollisionList()) z = 30;
-	else z = 25;
-	e->mAnimationID = addMugenAnimation(getMugenAnimation(&gData.mAnimations, subShot->mIdleAnimation), &gData.mSprites, makePosition(0, 0, z));
-	setMugenAnimationBasePosition(e->mAnimationID, getHandledPhysicsPositionReference(e->mPhysicsID));
 
 	e->mRotation = getMugenAssignmentAsFloatValueOrDefaultWhenEmpty(subShot->mStartRotation, &assignmentCaller, angle);
-	setMugenAnimationDrawAngle(e->mAnimationID, e->mRotation);
 
 	setShotColor(subShot, e, &assignmentCaller);
 
@@ -688,7 +755,7 @@ void evaluateBeyondAckermannFunction(char * tDst, void * tCaller)
 		data->mState = min(data->mState + 1 / 60.0, 1);
 		*vel = vecRotateZ(data->mDirection, 2*M_PI*data->mState);
 		double angle = getAngleFromDirection(*vel);
-		setMugenAnimationDrawAngle(e->mAnimationID, angle);
+		e->mRotation = angle;
 	}
 
 	strcpy(tDst, "");
@@ -700,7 +767,7 @@ void evaluateBeyondSwirlFunction(char * tDst, void * tCaller)
 	Velocity* vel = getHandledPhysicsVelocityReference(e->mPhysicsID);
 	*vel = vecRotateZ(*vel, 0.01);
 	double angle = getAngleFromDirection(*vel);
-	setMugenAnimationDrawAngle(e->mAnimationID, angle);
+	e->mRotation = angle;
 
 	strcpy(tDst, "");
 }

@@ -12,8 +12,8 @@ static int NO_TILT = 0;
 void checkHankExit(HankWorldData* tWorldData, HankCharacterData* tCharacterData) {
 	double offsetX = tCharacterData->faceDirection == HANK_FACE_LEFT ? 20 : 10;
 
-  double dx = abs(tWorldData->exitPosition.x - (tCharacterData->physics.mPosition.x + offsetX));
-  double dy = abs(tWorldData->exitPosition.y - (tCharacterData->physics.mPosition.y));
+  double dx = fabs(tWorldData->exitPosition.x - (tCharacterData->physics.mPosition.x + offsetX));
+  double dy = fabs(tWorldData->exitPosition.y - (tCharacterData->physics.mPosition.y));
 
 
   if (dx < 5 && dy < 5) {

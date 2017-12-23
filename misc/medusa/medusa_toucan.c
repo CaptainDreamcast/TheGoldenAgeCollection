@@ -5,6 +5,7 @@
 #include <tari/input.h>
 
 #include "medusa_shothandler.h"
+#include "medusa_resources.h"
 
 static struct {
 	int mPhysicsID;
@@ -13,7 +14,6 @@ static struct {
 
 	Vector3D mSize;
 
-	TextureData mTextures[4];
 	TextureData mWhiteBackground;
 
 	Duration mCooldownNow;
@@ -25,7 +25,6 @@ static struct {
 static void loadToucan(void* tData) {
 	(void)tData;
 
-	loadConsecutiveTextures(gData.mTextures, "assets/misc/medusa/TOUCAN.pkg", 3);
 	gData.mWhiteBackground = loadTexture("$/rd/effects/white.pkg");
 
 	gData.mPhysicsID = addToPhysicsHandler(makePosition(20, 200, 0));
@@ -37,9 +36,9 @@ static void loadToucan(void* tData) {
 	setAnimationBasePositionReference(gData.mWhiteBackgroundID, getHandledPhysicsPositionReference(gData.mPhysicsID));
 	setAnimationSize(gData.mWhiteBackgroundID, vecAdd(gData.mSize, makePosition(8, 8, 0)), makePosition(0, 0, 0));
 
-	gData.mAnimationID = playOneFrameAnimationLoop(makePosition(0, 0, 5), &gData.mTextures[0]);
-	setAnimationBasePositionReference(gData.mAnimationID, getHandledPhysicsPositionReference(gData.mPhysicsID));
-	setAnimationSize(gData.mAnimationID, gData.mSize, makePosition(0, 0, 0));
+	gData.mAnimationID = addMugenAnimation(getMugenAnimation(getMedusaAnimations(), 10), getMedusaSprites(), makePosition(0, 0, 5));
+	setMugenAnimationBasePosition(gData.mAnimationID, getHandledPhysicsPositionReference(gData.mPhysicsID));
+	setMugenAnimationDrawSize(gData.mAnimationID, gData.mSize);
 
 	gData.mIsInCooldown = 0;
 	gData.mCooldownDuration = 30;
@@ -78,22 +77,22 @@ static void updateMovement() {
 	}
 }
 
-static void transformToucan(TextureData* tNewTexture) {
-	changeAnimation(gData.mAnimationID, tNewTexture, createOneFrameAnimation(), makeRectangleFromTexture(*tNewTexture));
-	setAnimationSize(gData.mAnimationID, gData.mSize, makePosition(0, 0, 0));
+static void transformToucan(int tType) {
+	changeMugenAnimation(gData.mAnimationID, getMugenAnimation(getMedusaAnimations(), 10+tType));
+	setMugenAnimationDrawSize(gData.mAnimationID, gData.mSize);
 }
 
 static void updateTransform() {
 	if (hasPressedXFlank()) {
-		transformToucan(&gData.mTextures[0]);
+		transformToucan(0);
 	}
 
 	if (hasPressedYFlank()) {
-		transformToucan(&gData.mTextures[1]);
+		transformToucan(1);
 	}
 
 	if (hasPressedBFlank()) {
-		transformToucan(&gData.mTextures[2]);
+		transformToucan(2);
 	}
 }
 

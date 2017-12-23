@@ -6,6 +6,7 @@
 #include <tari/collisionhandler.h>
 #include <tari/math.h>
 
+#include "medusa_resources.h"
 #include "medusa_collision.h"
 
 typedef struct Badass_internal {
@@ -22,11 +23,6 @@ typedef struct Badass_internal {
 static struct {
 	IntMap mEnemies;
 
-	TextureData mBadassTexture;
-
-	Animation mDeathAnimation;
-	TextureData mDeathTextures[3];
-
 	double mSpeed;
 } gData;
 
@@ -39,10 +35,6 @@ static void updateThirdBadass(Badass* e);
 
 static void loadBadassHandler(void* tData) {
 	(void)tData;
-	gData.mBadassTexture = loadTexture("assets/misc/medusa/BADASS.pkg");
-	gData.mDeathAnimation = createAnimation(2, 30);
-	loadConsecutiveTextures(gData.mDeathTextures, "assets/misc/medusa/DYING.pkg", gData.mDeathAnimation.mFrameAmount);
-
 	gData.mSpeed = 0.5;
 
 	gData.mEnemies = new_int_map();
@@ -57,7 +49,9 @@ static void unloadEnemy(Badass* e);
 static void badassHitCB(void* tCaller, void* tCollisionData) {
 	(void)tCollisionData;
 	Badass* e = tCaller;
-	playAnimation(e->mPosition, gData.mDeathTextures, gData.mDeathAnimation, makeRectangleFromTexture(gData.mDeathTextures[0]), NULL, NULL);
+
+	int id = addMugenAnimation(getMugenAnimation(getMedusaAnimations(), 21), getMedusaSprites(), e->mPosition);
+	setMugenAnimationNoLoop(id);
 
 	unloadEnemy(e);
 	int_map_remove(&gData.mEnemies, e->mListID);
@@ -68,8 +62,8 @@ void addEnemy(void(*tFunc)(Badass*), Position tPosition) {
 	e->mUpdate = tFunc;
 	e->mPosition = tPosition;
 
-	e->mAnimationID = playOneFrameAnimationLoop(makePosition(0,0,2), &gData.mBadassTexture);
-	setAnimationBasePositionReference(e->mAnimationID, &e->mPosition);
+	e->mAnimationID = addMugenAnimation(getMugenAnimation(getMedusaAnimations(), 20), getMedusaSprites(), makePosition(0, 0, 2));
+	setMugenAnimationBasePosition(e->mAnimationID, &e->mPosition);
 
 	CollisionRect rect = makeCollisionRect(makePosition(57, 47, 0), makePosition(292, 154, 0));
 	e->mCollisionID = addCollisionRectangleToCollisionHandler(getMedusaBadassCollisionList(), &e->mPosition, rect, badassHitCB, e, NULL);
@@ -80,7 +74,7 @@ void addEnemy(void(*tFunc)(Badass*), Position tPosition) {
 
 void unloadEnemy(Badass* e) {
 	removeFromCollisionHandler(getMedusaBadassCollisionList(), e->mCollisionID);
-	removeHandledAnimation(e->mAnimationID);
+	removeMugenAnimation(e->mAnimationID);
 }
 
 static void updateFirstBadass(Badass* e) {

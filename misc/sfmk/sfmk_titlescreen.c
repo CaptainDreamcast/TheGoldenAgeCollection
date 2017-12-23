@@ -64,12 +64,12 @@ static void loadTitleScreen() {
 	addTimerCB(gData.mHeader.mScreenReloadDuration, gotoIntro, NULL);
 
 
-	gData.mPressStart = loadTexture("/TITLE/PRESSSTART.pkg");
+	gData.mPressStart = loadTexture("$/TITLE/PRESSSTART.pkg");
 	gData.mPressStartID = playAnimationLoop(makePosition(gData.mHeader.mPressStartPositionX, gData.mHeader.mPressStartPositionY, 2), &gData.mPressStart, createOneFrameAnimation(), makeRectangleFromTexture(gData.mPressStart));
 	setAnimationSize(gData.mPressStartID, makePosition(gData.mHeader.mPressStartSizeX, gData.mHeader.mPressStartSizeY, 1), makePosition(0,0,0));
 	gData.mPressStartFlickering = setVersusAnimationFlickering(gData.mPressStartID, 100);
 
-	gData.mBG = loadTexture("/TITLE/BACKGROUND.pkg");
+	gData.mBG = loadTexture("$/TITLE/BACKGROUND.pkg");
 	gData.mBGID = playAnimationLoop(makePosition(0, 0, 1), &gData.mBG, createOneFrameAnimation(), makeRectangleFromTexture(gData.mBG));
 	setAnimationSize(gData.mBGID, makePosition(640, 480, 1), makePosition(0, 0, 0));
 

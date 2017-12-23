@@ -103,16 +103,16 @@ static void setSelectedOption(int tOption) {
 
 static void loadModeMenu() {
 	mountRomdisk("assets/misc/sfmk/MENU/MAINMENU.img", "MAINMENU");
-	fileToMemory(&gData.mHeader, sizeof(ModeMenuHeader), "/MAINMENU/MAINMENU.hdr");
+	fileToMemory(&gData.mHeader, sizeof(ModeMenuHeader), "$/MAINMENU/MAINMENU.hdr");
 
-	gData.mBG = loadTexture("/MAINMENU/BACKGROUND.pkg");
+	gData.mBG = loadTexture("$/MAINMENU/BACKGROUND.pkg");
 	int id = playAnimationLoop(makePosition(0,0,1), &gData.mBG, createOneFrameAnimation(), makeRectangleFromTexture(gData.mBG));
 	setAnimationSize(id, makePosition(640, 480, 1), makePosition(0, 0, 0));
 
-	gData.mModeBackground = loadTexture("/MAINMENU/MODEBACKGROUND.pkg");
+	gData.mModeBackground = loadTexture("$/MAINMENU/MODEBACKGROUND.pkg");
 	
-	if (canLoadTexture("/MAINMENU/MODEALTERNATE.pkg")) {
-		gData.mModeSelectedBackground = loadTexture("/MAINMENU/MODEALTERNATE.pkg");
+	if (canLoadTexture("$/MAINMENU/MODEALTERNATE.pkg")) {
+		gData.mModeSelectedBackground = loadTexture("$/MAINMENU/MODEALTERNATE.pkg");
 		gData.mHasAlternateBackground = 1;
 	}
 	else {
@@ -125,7 +125,7 @@ static void loadModeMenu() {
 		double y = gData.mHeader.mSingleMode[i].mPositionY;
 
 		char path[1024];
-		sprintf(path, "/MAINMENU/%s.pkg", cModeNames[i]);
+		sprintf(path, "$/MAINMENU/%s.pkg", cModeNames[i]);
 		gData.mOptions[i].mForeground = loadTexture(path);
 		gData.mOptions[i].mForegroundAnimationID = playAnimationLoop(makePosition(x, y, 5), &gData.mOptions[i].mForeground, createOneFrameAnimation(), makeRectangleFromTexture(gData.mOptions[i].mForeground));
 		gData.mOptions[i].mBackgroundAnimationID = playAnimationLoop(makePosition(x, y, 2), &gData.mModeBackground, createOneFrameAnimation(), makeRectangleFromTexture(gData.mModeBackground));

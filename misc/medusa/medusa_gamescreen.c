@@ -11,9 +11,12 @@
 #include "medusa_toucan.h"
 #include "medusa_titlescreen.h"
 #include "medusa_collision.h"
-
+#include "medusa_resources.h"
 
 static void loadGameScreen() {
+	instantiateActor(getMugenAnimationHandlerActorBlueprint());
+
+	loadMedusaResources();
 	setupMedusaCollisions();
 	instantiateActor(MedusaBadassHandler);
 	instantiateActor(MedusaShotHandler);

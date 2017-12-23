@@ -93,7 +93,7 @@ misc/best/best_player.o \
 misc/medusa/eyeofthemedusa.o \
 misc/medusa/medusa_badasshandler.o misc/medusa/medusa_collision.o misc/medusa/medusa_gamescreen.o \
 misc/medusa/medusa_shothandler.o misc/medusa/medusa_splashscreen.o misc/medusa/medusa_titlescreen.o \
-misc/medusa/medusa_toucan.o \
+misc/medusa/medusa_toucan.o misc/medusa/medusa_resources.o \
 misc/sfmk/sfmk_main.o \
 misc/sfmk/sfmk_animation.o misc/sfmk/sfmk_fighterselectscreen.o misc/sfmk/sfmk_introscreen.o \
 misc/sfmk/sfmk_modemenu.o misc/sfmk/sfmk_storyrollscreen.o misc/sfmk/sfmk_titlescreen.o \

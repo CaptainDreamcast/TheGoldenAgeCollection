@@ -885,6 +885,9 @@
     <ClCompile Include="..\main\norm\norm_gameoverscreen.c">
       <Filter>Main\QuestForNormalcy</Filter>
     </ClCompile>
+    <ClCompile Include="..\misc\medusa\medusa_resources.c">
+      <Filter>Misc\EyeOfTheMedusa</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="resource.h">
@@ -1717,6 +1720,9 @@
     </ClInclude>
     <ClInclude Include="..\main\norm\norm_gameoverscreen.h">
       <Filter>Main\QuestForNormalcy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\misc\medusa\medusa_resources.h">
+      <Filter>Misc\EyeOfTheMedusa</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

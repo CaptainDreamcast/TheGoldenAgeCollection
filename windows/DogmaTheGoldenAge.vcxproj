@@ -344,6 +344,7 @@
     <ClCompile Include="..\misc\medusa\medusa_badasshandler.c" />
     <ClCompile Include="..\misc\medusa\medusa_collision.c" />
     <ClCompile Include="..\misc\medusa\medusa_gamescreen.c" />
+    <ClCompile Include="..\misc\medusa\medusa_resources.c" />
     <ClCompile Include="..\misc\medusa\medusa_shothandler.c" />
     <ClCompile Include="..\misc\medusa\medusa_splashscreen.c" />
     <ClCompile Include="..\misc\medusa\medusa_titlescreen.c" />
@@ -627,6 +628,7 @@
     <ClInclude Include="..\misc\medusa\medusa_badasshandler.h" />
     <ClInclude Include="..\misc\medusa\medusa_collision.h" />
     <ClInclude Include="..\misc\medusa\medusa_gamescreen.h" />
+    <ClInclude Include="..\misc\medusa\medusa_resources.h" />
     <ClInclude Include="..\misc\medusa\medusa_shothandler.h" />
     <ClInclude Include="..\misc\medusa\medusa_splashscreen.h" />
     <ClInclude Include="..\misc\medusa\medusa_titlescreen.h" />

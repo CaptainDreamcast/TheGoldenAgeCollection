@@ -96,6 +96,8 @@ typedef struct {
 	double mG;
 	double mB;
 
+	double mZ;
+
 	int mHasGimmickData;
 	void* mGimmickData;
 
@@ -374,6 +376,7 @@ static void drawSubShot(void* tCaller, void* tData) {
 	Position center = e->mType->mTexture->mOffset;
 	Position screenCenter = p;
 	p = vecSub(p, center);
+	p.z = e->mZ;
 
 	setDrawingBaseColorAdvanced(e->mR, e->mG, e->mB);
 	setDrawingRotationZ(e->mRotation, screenCenter);
@@ -565,11 +568,9 @@ static void addSingleSubShot(SubShotCaller* caller, SubShotType* subShot, int i)
 		velocity = vecScale(vecNormalize(velocity), speed);
 	}
 
-	double z;
-	if (caller->mRoot->mCollisionData.mCollisionList == getBeyondEnemyShotCollisionList()) z = 30;
-	else z = 25;
+	if (caller->mRoot->mCollisionData.mCollisionList == getBeyondEnemyShotCollisionList()) e->mZ = 30;
+	else e->mZ = 25;
 
-	offset.z = z;
 	e->mPhysicsID = addToPhysicsHandler(vecAdd(caller->mPosition, offset));
 	addAccelerationToHandledPhysics(e->mPhysicsID, velocity);
 

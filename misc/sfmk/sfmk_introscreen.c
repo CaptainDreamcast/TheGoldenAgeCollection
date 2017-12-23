@@ -30,7 +30,6 @@ static void selectStoryboardAndPlayIt() {
 		if (intro < 0) intro += MAXIMUM_INTRO_AMOUNT;
 		sprintf(path, "assets/misc/sfmk/INTRO/BOARDS/%d.sbd", intro);
 	}
-	printf("open %s\n", path);
 	gData.mStoryboardID = playStoryboard(path);
 	setStoryboardFinishedCB(gData.mStoryboardID, storyboardFinished, NULL);
 }

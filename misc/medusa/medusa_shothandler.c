@@ -6,6 +6,7 @@
 #include <tari/collisionhandler.h>
 
 #include "medusa_collision.h"
+#include "medusa_resources.h"
 
 typedef struct {
 	int mPhysicsID;
@@ -16,18 +17,16 @@ typedef struct {
 
 static struct {
 	IntMap mShots;
-	TextureData mTexture;
 } gData;
 
 static void loadShotHandler(void* tData) {
 	(void)tData;
-	gData.mTexture = loadTexture("assets/misc/medusa/SHOT.pkg");
 	gData.mShots = new_int_map();
 }
 
 static void unloadShot(Shot* e) {
 	removeFromCollisionHandler(getMedusaShotCollisionList(), e->mCollisionID);
-	removeHandledAnimation(e->mAnimationID);
+	removeMugenAnimation(e->mAnimationID);
 	removeFromPhysicsHandler(e->mPhysicsID);
 }
 
@@ -69,8 +68,9 @@ void addMedusaShot(Position p)
 	Shot* e = allocMemory(sizeof(Shot));
 	e->mPhysicsID = addToPhysicsHandler(p);
 	addAccelerationToHandledPhysics(e->mPhysicsID, makePosition(1, 0, 0));
-	e->mAnimationID = playOneFrameAnimationLoop(makePosition(0,0,4), &gData.mTexture);
-	setAnimationBasePositionReference(e->mAnimationID, getHandledPhysicsPositionReference(e->mPhysicsID));
+
+	e->mAnimationID = addMugenAnimation(getMugenAnimation(getMedusaAnimations(), 30), getMedusaSprites(), makePosition(0, 0, 4));
+	setMugenAnimationBasePosition(e->mAnimationID, getHandledPhysicsPositionReference(e->mPhysicsID));
 	
 	CollisionRect rect = makeCollisionRect(makePosition(0, 0, 0), makePosition(18, 29, 1));
 	e->mCollisionID = addCollisionRectangleToCollisionHandler(getMedusaShotCollisionList(), getHandledPhysicsPositionReference(e->mPhysicsID), rect, shotHitCB, e, NULL);

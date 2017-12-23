@@ -167,7 +167,7 @@ static void loadFighterSelectCharacters() {
 		e->mUp = entry->mUp;
 		e->mDown = entry->mDown;
 
-		sprintf(path, "/SMALLPORTRAITS/%s.pkg", e->mName);
+		sprintf(path, "$/SMALLPORTRAITS/%s.pkg", e->mName);
 		if (canLoadTexture(path)) {
 			e->mSmallPortrait = loadTexture(path);
 		}
@@ -228,7 +228,7 @@ static void loadSelection(int i) {
 	gData.mSelection[i].mIsActive = 1;
 
 	char path[1024];
-	sprintf(path, "/BIGPORTRAITS/%s.pkg", selected->mName);
+	sprintf(path, "$/BIGPORTRAITS/%s.pkg", selected->mName);
 	
 	if (canLoadTexture(path)) {
 		gData.mSelection[i].mBigPortraitTexture = loadTexture(path);
@@ -370,15 +370,15 @@ static void loadTextures() {
 	sprintf(path, "assets/misc/sfmk/STORY/TEXTURES.img");
 	mountRomdisk(path, "TEXTURES");
 
-	gData.mBG = loadTexture("/TEXTURES/BACKGROUND.pkg");
+	gData.mBG = loadTexture("$/TEXTURES/BACKGROUND.pkg");
 	playAnimationLoop(makePosition(0, 0, 1), &gData.mBG, createOneFrameAnimation(), makeRectangleFromTexture(gData.mBG));
 
 	int i;
 	for (i = 0; i < 2; i++) {
-		sprintf(path, "/TEXTURES/FRAME%d.pkg", i);
+		sprintf(path, "$/TEXTURES/FRAME%d.pkg", i);
 		gData.mSelection[i].mFrameTexture = loadTexture(path);
 	}
-	gData.mBothSelectedFrame = loadTexture("/TEXTURES/FRAME2.pkg");
+	gData.mBothSelectedFrame = loadTexture("$/TEXTURES/FRAME2.pkg");
 
 	unmountRomdisk("TEXTURES");
 }

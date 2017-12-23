@@ -58,7 +58,8 @@ static void loadTitleScreen() {
 	
 	
 	mountRomdisk("assets/misc/sfmk/MENU/TITLE.img", "TITLE");
-	fileToMemory(&gData.mHeader, sizeof(TitleScreenHeader), "/TITLE/title.hdr");
+
+	fileToMemory(&gData.mHeader, sizeof(TitleScreenHeader), "$/TITLE/TITLE.hdr");
 
 	addVerticalLineFadeIn(20, NULL, NULL);
 	addTimerCB(gData.mHeader.mScreenReloadDuration, gotoIntro, NULL);

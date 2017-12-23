@@ -20,6 +20,13 @@
 #include "beyond_player.h"
 #include "beyond_main.h"
 
+
+#ifdef DREAMCAST
+#define MAX_BULLET_AMOUNT 200
+#else
+#define MAX_BULLET_AMOUNT 100000
+#endif
+
 typedef enum {
 	SHOT_TYPE_NORMAL,
 	SHOT_TYPE_HOMING,
@@ -114,6 +121,8 @@ static struct {
 	IntMap mActiveShots;
 
 	int mFinalBossShotsDeflected;
+
+	int mActiveShotAmount;
 } gData;
 
 static ShotType* gActiveShotType;
@@ -235,7 +244,8 @@ static void loadShotHandler(void* tData) {
 	gData.mShotTextures = new_int_map();
 	gData.mShotTypes = new_int_map();
 	gData.mActiveShots = new_int_map();
-
+	gData.mActiveShotAmount = 0;
+	
 	loadShotTextures();
 
 	char path[1024];
@@ -248,6 +258,8 @@ static void loadShotHandler(void* tData) {
 }
 
 static void unloadSubShot(ActiveSubShot* e) {
+	gData.mActiveShotAmount--;
+
 	if (e->mHasGimmickData) {
 		freeMemory(e->mGimmickData);
 	}
@@ -381,6 +393,7 @@ static void drawSubShot(void* tCaller, void* tData) {
 	setDrawingBaseColorAdvanced(e->mR, e->mG, e->mB);
 	setDrawingRotationZ(e->mRotation, screenCenter);
 	drawSprite(e->mType->mTexture->mTexture, p, makeRectangleFromTexture(e->mType->mTexture->mTexture));
+	setDrawingParametersToIdentity();
 }
 
 static void drawShot(void* tCaller, void* tData) {
@@ -392,7 +405,6 @@ static void drawShot(void* tCaller, void* tData) {
 
 static void drawShotHandler(void* tData) {
 	int_map_map(&gData.mActiveShots, drawShot, NULL);
-	setDrawingParametersToIdentity();
 }
 
 ActorBlueprint BeyondShotHandler = {
@@ -517,6 +529,9 @@ static void setShotColor(SubShotType* subShot, ActiveSubShot* e, SubShotAssignme
 }
 
 static void addSingleSubShot(SubShotCaller* caller, SubShotType* subShot, int i) {
+	if(caller->mRoot->mCollisionData.mCollisionList != getBeyondPlayerShotCollisionList() && gData.mActiveShotAmount >= MAX_BULLET_AMOUNT) return;
+
+
 	ActiveSubShot* e = allocMemory(sizeof(ActiveSubShot));
 	e->mType = subShot;
 	e->mRoot = caller->mRoot;
@@ -592,6 +607,8 @@ static void addSingleSubShot(SubShotCaller* caller, SubShotType* subShot, int i)
 
 	caller->mRoot->mSubShotsLeft++;
 	e->mListID = int_map_push_back_owned(&caller->mRoot->mSubShots, e);
+
+	gData.mActiveShotAmount++;
 }
 
 static void addSubShot(void* tCaller, void* tData) {

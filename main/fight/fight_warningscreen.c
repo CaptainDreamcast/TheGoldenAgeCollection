@@ -6,9 +6,8 @@
 #include <tari/screeneffect.h>
 #include <tari/input.h>
 
-#include "../../maingamemenu.h"
-
 #include "fight_titlescreen.h"
+#include "fight_main.h"
 
 static struct {
 	double mWarningTrans;
@@ -70,7 +69,7 @@ static void updateWarningScreen() {
 	setAnimationTransparency(gData.mExplanationID, gData.mExplanationTrans);
 
 	if (hasPressedAbortFlank()) {
-		setNewScreen(&MainGameMenu);
+		stopDreamFight16();
 	}
 
 	if (hasPressedStartFlank()) {

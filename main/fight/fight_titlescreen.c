@@ -4,9 +4,8 @@
 #include <tari/screeneffect.h>
 #include <tari/input.h>
 
-#include "../../maingamemenu.h"
-
 #include "fight_menuscreen.h"
+#include "fight_main.h"
 
 static struct {
 	TextureData mTexture;
@@ -31,7 +30,7 @@ static void loadTitleScreen() {
 
 static void updateTitleScreen() {
 	if (hasPressedAbortFlank()) {
-		setNewScreen(&MainGameMenu);
+		stopDreamFight16();
 	}
 
 	if (hasPressedStartFlank()) {

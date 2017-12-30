@@ -24,7 +24,7 @@ static void loadPlayer(void* tData) {
 	setHandledPhysicsMaxVelocity(gData.mPhysicsID, 10);
 
 	gData.mSpeed = 3;
-	setHandledPhysicsGravity(gData.mPhysicsID, makePosition(0,0.2,0));
+	setHandledPhysicsGravity(gData.mPhysicsID, makePosition(0,0,0));
 	addAccelerationToHandledPhysics(gData.mPhysicsID, makePosition(gData.mSpeed, 0, 0));
 
 	gData.mAnimationID = addMugenAnimation(getMugenAnimation(getOctoAnimations(), 1), getOctoSprites(), makePosition(0, 0, 2));
@@ -60,9 +60,14 @@ static void constraintPlayer() {
 }
 
 static void updateUpInput() {
+	double volume = getMicrophoneVolume();
 
-	addAccelerationToHandledPhysics(gData.mPhysicsID, makePosition(0, -0.3*getMicrophoneVolume(), 0));
+	Velocity* vel = getHandledPhysicsVelocityReference(gData.mPhysicsID);
+	double speed = 10;
 
+	double factor = volume - 0.6;
+
+	vel->y = -speed*factor;
 }
 
 static void updatePlayer(void* tData) {

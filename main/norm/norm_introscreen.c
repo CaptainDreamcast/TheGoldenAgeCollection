@@ -108,7 +108,6 @@ static void loadIntroScreen() {
 	gData.mClickSoundEffect = loadSoundEffect("assets/main/norm/music/CLICK.wav");
 
 	buildUpText();
-	playTrack(4);
 }
 
 static void setTextBuiltUp() {

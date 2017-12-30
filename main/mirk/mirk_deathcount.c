@@ -30,7 +30,7 @@ static void loadDeathCount(void* tData) {
 	}
 	gData.mIsContinuing = 0;
 
-	gData.mDeathCountText = addHandledText(makePosition(26, 28, 15), "Death Count: 0", 0, COLOR_YELLOW, makePosition(20, 20, 1), makePosition(-5, 0, 0), makePosition(INF, INF, INF), INF);
+	gData.mDeathCountText = addHandledText(makePosition(26, 28, 15), "Death Count: 0", 0, COLOR_WHITE, makePosition(20, 20, 1), makePosition(-5, 0, 0), makePosition(INF, INF, INF), INF);
 
 	gData.mBGTexture = loadTexture("assets/main/mirk/counter/BG.pkg");
 	gData.mBG = playAnimationLoop(makePosition(20, 20, 14), &gData.mBGTexture, createOneFrameAnimation(), makeRectangle(0, 0, 200, 32));

@@ -30,7 +30,6 @@ static void loadTitleScreen() {
 	gData.mBGID = playOneFrameAnimationLoop(makePosition(0, 0, 0), &gData.mBGTexture);
 	setAnimationBasePositionReference(gData.mBGID, getHandledPhysicsPositionReference(gData.mBGPhysics));
 
-	playTrack(4);
 }
 
 static void updateTitleScreen() {

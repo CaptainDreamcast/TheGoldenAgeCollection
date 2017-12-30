@@ -15,7 +15,6 @@ static struct {
 static void loadGameOverScreen() {
 	gData.mBGTexture = loadTexture("assets/main/norm/sprites/GAMEOVER.pkg");
 	gData.mBGID = playOneFrameAnimationLoop(makePosition(0,0,1), &gData.mBGTexture);	
-	playTrack(4);
 }
 
 static Screen* getNextGameOverScreenScreen() {

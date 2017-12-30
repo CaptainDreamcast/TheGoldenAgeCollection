@@ -25,6 +25,8 @@
 #include "mirk_pausemenu.h"
 
 static void loadGameScreen() {
+	forceMouseCursorToWindow();
+
 	initMirkGameSoundEffects();
 	loadMirkMirklingsCollisions();
 	instantiateActor(MirkStageBP);
@@ -60,9 +62,13 @@ static Screen* getNextGameScreenScreen() {
 	return NULL;
 }
 
+static void unloadGameScreen() {
+	releaseMouseCursorFromWindow();
+}
+
 Screen MirkGameScreen = {
 	.mLoad = loadGameScreen,
-	.mUnload = NULL,
+	.mUnload = unloadGameScreen,
 	.mDraw = NULL,
 	.mUpdate = updateGameScreen,
 	.mGetNextScreen = getNextGameScreenScreen

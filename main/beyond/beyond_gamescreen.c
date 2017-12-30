@@ -5,6 +5,7 @@
 #include <tari/input.h>
 #include <tari/mugenanimationhandler.h>
 #include <tari/collisionhandler.h>
+#include <tari/sound.h>
 
 #include "beyond_player.h"
 #include "beyond_bg.h"
@@ -21,6 +22,7 @@
 #include "beyond_gameoptionhandler.h"
 #include "beyond_titlescreen.h"
 #include "beyond_finalbossscene.h"
+#include "beyond_main.h"
 
 static void loadGameScreen() {
 	instantiateActor(getMugenAnimationHandlerActorBlueprint());
@@ -41,6 +43,10 @@ static void loadGameScreen() {
 	instantiateActor(BeyondFinalBossSceneHandler);
 
 	instantiateActor(BeyondLevelHandler);
+
+	if (!isUltimateFrontier() && getBeyondCurrentLevel() == 4) {
+		playTrack(14);
+	}
 
 	// activateCollisionHandlerDebugMode();
 }

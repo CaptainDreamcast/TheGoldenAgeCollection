@@ -144,7 +144,7 @@ static Screen* getTitleScreenNextScreen() {
 	}
 	else if(hasPressedStartFlank()) {
 		resetJusticeGameState();
-  		setCurrentJusticeLevelName("level4");
+  		setCurrentJusticeLevelName("level1");
 		return &JusticeGameScreen;
 	}
 

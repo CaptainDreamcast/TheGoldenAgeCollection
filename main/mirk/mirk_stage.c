@@ -51,7 +51,7 @@ static void loadStage(void* tData) {
 	setStageCameraRange(makeGeoRectangle(0,0,320,1080));
 	gData.mShakeMaximum = 0;
 	increaseMirkScreenShake();
-	playTrack(3);
+	playTrack(13);
 	gData.mIsReal = 0;
 }
 

@@ -40,7 +40,7 @@ void loadCaneKidnapper() {
 	gData.animationID = addMugenAnimation(getMugenAnimation(getCaneAnimations(), 3), getCaneSprites(), makePosition(0, 0, 0));
 	setMugenAnimationBasePosition(gData.animationID, gData.pos);
 	
-	gData.collisionID = addCollisionRectangleToCollisionHandler(getCaneEnemyCollisionListID(), getHandledPhysicsPositionReference(gData.physicsID), makeCollisionRect(makePosition(48, 32, 0), makePosition(48 + 40, 32 + 18, 1)), kidnapperHitCB, NULL, NULL);
+	gData.collisionID = addCollisionRectangleToCollisionHandler(getCaneEnemyCollisionListID(), getHandledPhysicsPositionReference(gData.physicsID), makeCollisionRect(makePosition(61, 5, 0), makePosition(109, 53, 1)), kidnapperHitCB, NULL, NULL);
 
 	gData.shadowID = addCaneShadow(gData.pos);
 	gData.mMaxHealth = 50;

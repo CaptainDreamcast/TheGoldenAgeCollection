@@ -76,6 +76,12 @@
     <Filter Include="Main\DreamFight16">
       <UniqueIdentifier>{7fb0cdc7-fa00-4ce0-a3d0-e49e269702d8}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Main\SenpaiScreams">
+      <UniqueIdentifier>{f743e002-58db-40ad-8869-0832bc86441a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Main\SloMoDo">
+      <UniqueIdentifier>{a3f96bae-2bf1-460d-a04c-f344af50df6b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\main.c">
@@ -887,6 +893,42 @@
     </ClCompile>
     <ClCompile Include="..\misc\medusa\medusa_resources.c">
       <Filter>Misc\EyeOfTheMedusa</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\senpai\senpai_gamescreen.c">
+      <Filter>Main\SenpaiScreams</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\senpai\senpai_main.c">
+      <Filter>Main\SenpaiScreams</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\senpai\senpai_titlescreen.c">
+      <Filter>Main\SenpaiScreams</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\senpai\senpai_bg.c">
+      <Filter>Main\SenpaiScreams</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\senpai\senpai_levelhandler.c">
+      <Filter>Main\SenpaiScreams</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\senpai\senpai_player.c">
+      <Filter>Main\SenpaiScreams</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\senpai\senpai_enemyhandler.c">
+      <Filter>Main\SenpaiScreams</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\senpai\senpai_finalboss.c">
+      <Filter>Main\SenpaiScreams</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\senpai\senpai_creditscreen.c">
+      <Filter>Main\SenpaiScreams</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\slo\slo_main.c">
+      <Filter>Main\SloMoDo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\slo\slo_selectscreen.c">
+      <Filter>Main\SloMoDo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\slo\slo_storyscreen.c">
+      <Filter>Main\SloMoDo</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -1723,6 +1765,42 @@
     </ClInclude>
     <ClInclude Include="..\misc\medusa\medusa_resources.h">
       <Filter>Misc\EyeOfTheMedusa</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\senpai\senpai_gamescreen.h">
+      <Filter>Main\SenpaiScreams</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\senpai\senpai_main.h">
+      <Filter>Main\SenpaiScreams</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\senpai\senpai_titlescreen.h">
+      <Filter>Main\SenpaiScreams</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\senpai\senpai_bg.h">
+      <Filter>Main\SenpaiScreams</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\senpai\senpai_levelhandler.h">
+      <Filter>Main\SenpaiScreams</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\senpai\senpai_player.h">
+      <Filter>Main\SenpaiScreams</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\senpai\senpai_enemyhandler.h">
+      <Filter>Main\SenpaiScreams</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\senpai\senpai_finalboss.h">
+      <Filter>Main\SenpaiScreams</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\senpai\senpai_creditscreen.h">
+      <Filter>Main\SenpaiScreams</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\slo\slo_main.h">
+      <Filter>Main\SloMoDo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\slo\slo_selectscreen.h">
+      <Filter>Main\SloMoDo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\main\slo\slo_storyscreen.h">
+      <Filter>Main\SloMoDo</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

@@ -17,6 +17,8 @@
 #include "main/mirk/mirk_main.h"
 #include "main/norm/norm_main.h"
 #include "main/fight/fight_main.h"
+#include "main/senpai/senpai_main.h"
+#include "main/slo/slo_main.h"
 
 static struct {
 	MugenSpriteFile mSprites;
@@ -138,7 +140,23 @@ static void selectDreamFight16CB() {
 	addFadeOut(30, gotoDreamFight16CB, NULL);
 }
 
+static void gotoSenpaiScreamsCB(void* tData) {
+	(void)tData;
+	startSenpaiScreams();
+}
 
+static void selectSenpaiScreamsCB() {
+	addFadeOut(30, gotoSenpaiScreamsCB, NULL);
+}
+
+static void gotoSloMoDoCB(void* tData) {
+	(void)tData;
+	startSloMoDo();
+}
+
+static void selectSloMoDoCB() {
+	addFadeOut(30, gotoSloMoDoCB, NULL);
+}
 
 
 static void loadMainGameMenu() {
@@ -162,13 +180,13 @@ static void loadMainGameMenu() {
 	gData.mFuncs[1] = selectFistsOfJusticeCB;
 	gData.mFuncs[2] = selectBombxCB;
 	gData.mFuncs[3] = selectLaMorteDiUnCaneCB;
-	gData.mFuncs[4] = selectBombxCB;
+	gData.mFuncs[4] = selectSenpaiScreamsCB;
 	gData.mFuncs[5] = selectMirklingsCB;
 	gData.mFuncs[6] = selectQuestForNormalcyCB;
 	gData.mFuncs[7] = selectDreamFight16CB;
 	gData.mFuncs[8] = selectEyeOfTheMedusa3CB;
 	gData.mFuncs[9] = selectStormStormCB;
-	gData.mFuncs[10] = selectBombxCB;
+	gData.mFuncs[10] = selectSloMoDoCB;
 	gData.mFuncs[11] = selectGoldenAgeCB;
 	gData.mFuncs[12] = selectHazyHankCB;
 

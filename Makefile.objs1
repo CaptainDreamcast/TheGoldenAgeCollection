@@ -77,6 +77,12 @@ main/fight/fight_playerhitdata.o main/fight/fight_stage.o main/fight/fight_warni
 main/fight/fight_titlescreen.o main/fight/fight_menuscreen.o main/fight/fight_projectile.o \
 main/fight/fight_storyscreen.o main/fight/fight_story.o main/fight/fight_twoplayerselectscreen.o \
 main/fight/fight_gameoverscreen.o main/fight/fight_ai.o \
+main/senpai/senpai_main.o \
+main/senpai/senpai_bg.o main/senpai/senpai_creditscreen.o main/senpai/senpai_enemyhandler.o \
+main/senpai/senpai_finalboss.o main/senpai/senpai_gamescreen.o main/senpai/senpai_levelhandler.o \
+main/senpai/senpai_player.o main/senpai/senpai_titlescreen.o \
+main/slo/slo_main.o \
+main/slo/slo_selectscreen.o main/slo/slo_storyscreen.o \
 misc/luck/luck_main.o \
 misc/luck/luck_bg.o misc/luck/luck_box.o misc/luck/luck_boxgenerator.o \
 misc/luck/luck_collision.o misc/luck/luck_congratsscreen.o misc/luck/luck_door.o \

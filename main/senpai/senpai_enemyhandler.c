@@ -112,8 +112,7 @@ static void updateActiveEnemy(void* tCaller, void* tData) {
 	if (gData.mIsShowingHorror) return;
 
 	Vector3DI playerPosition = getSenpaiPlayerTilePosition();
-	if (playerPosition.x == e->mTilePosition.x && playerPosition.y == e->mTilePosition.y ||
-		playerPosition.x == e->mTargetTilePosition.x && playerPosition.y == e->mTargetTilePosition.y) {
+	if (playerPosition.x == e->mTargetTilePosition.x && playerPosition.y == e->mTargetTilePosition.y) {
 		showEnemyHorror(e);
 	}
 

@@ -32,10 +32,6 @@ static void playGameMusic() {
 
 static void loadGameScreen() {
 	instantiateActor(getMugenAnimationHandlerActorBlueprint());
-
-	if(!isUltimateFrontier() && getBeyondCurrentLevel() == 3) {
-		setMemoryHandlerCompressionActive();
-	}
 	
 	loadBeyondCollisions();
 	instantiateActor(BeyondAssignmentHandler);
@@ -52,10 +48,6 @@ static void loadGameScreen() {
 	instantiateActor(BeyondFinalBossSceneHandler);
 
 	instantiateActor(BeyondLevelHandler);
-
-	if(!isUltimateFrontier() && getBeyondCurrentLevel() == 3) {
-		setMemoryHandlerCompressionInactive();
-	}
 
 	playGameMusic();
 

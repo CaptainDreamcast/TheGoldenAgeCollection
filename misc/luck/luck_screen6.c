@@ -3,6 +3,7 @@
 #include <stdio.h>
 #include <tari/input.h>
 #include <tari/timer.h>
+#include <tari/sound.h>
 
 #include "luck_hank.h"
 #include "luck_narrator.h"
@@ -34,6 +35,8 @@ static void loadScreen6() {
 	setLuckHankEvasionLevel();
 
 	addTimerCB(30 * 60, levelOver, NULL);
+
+	playTrack(29);
 }
 
 static Screen* getScreen6NextScreen() {

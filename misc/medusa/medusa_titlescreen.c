@@ -24,10 +24,19 @@ static void gotoSplashScreen(void* tCaller) {
 	setNewScreen(&MedusaSplashScreen);
 }
 
+static void gotoMiscMenuCB(void* tCaller) {
+	(void)tCaller;
+	setNewScreen(&MiscGameMenu);
+}
+
 static void updateTitleScreen() {
 
 	if (hasPressedStartFlank()) {
 		addFadeOut(30, gotoSplashScreen, NULL);
+	}
+
+	if (hasPressedBFlank()) {
+		addFadeOut(30, gotoMiscMenuCB, NULL);
 	}
 
 	if (hasPressedAbortFlank()) {

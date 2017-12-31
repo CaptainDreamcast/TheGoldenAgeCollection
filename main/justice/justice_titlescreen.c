@@ -7,6 +7,7 @@
 #include <tari/animation.h>
 #include <tari/input.h>
 #include <tari/timer.h>
+#include <tari/screeneffect.h>
 
 #include "justice_gamestate.h"
 #include "justice_gamescreen.h"
@@ -128,7 +129,18 @@ static void enemyAnimationFinished(void* caller) {
 	
 }
 
+static void gotoMainMenuCB(void* tCaller) {
+	(void)tCaller;
+	stopFistsOfJustice();
+}
+
+
 static void updateTitleScreen() {
+
+	if (hasPressedBFlank()) {
+		addFadeOut(30, gotoMainMenuCB, NULL);
+	}
+
 	if(hasPressedAbortFlank()) {
 		stopFistsOfJustice();
 	} else if(hasPressedStartFlank()) {

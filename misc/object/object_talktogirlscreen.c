@@ -11,6 +11,7 @@
 #include <tari/timer.h>
 #include <tari/screeneffect.h>
 #include <tari/animation.h>
+#include <tari/sound.h>
 
 #include "object_titlescreen.h"
 #include "object_backgroundhandler.h"
@@ -74,6 +75,8 @@ static void loadTalkToGirlScreen() {
 	gData.mWhiteTexture = loadTexture("$/rd/effects/white.pkg");
 
 	startConversation();
+
+	playTrack(25);
 }
 
 static int isTextGroup() {

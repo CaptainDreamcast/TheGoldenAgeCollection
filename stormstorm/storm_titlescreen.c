@@ -1,6 +1,7 @@
 #include "storm_titlescreen.h" 
 
 #include <tari/input.h>
+#include <tari/screeneffect.h>
 
 #include "../maingamemenu.h"
 #include "vectrex_simulation.h"
@@ -28,7 +29,16 @@ static void updateParticles() {
 	}
 }
 
+static void gotoMainMenuCB(void* tCaller) {
+	(void)tCaller;
+	setNewScreen(&MainGameMenu);
+}
+
 static void updateScreenInput() {
+	if (hasPressedBFlank()) {
+		addFadeOut(30, gotoMainMenuCB, NULL);
+	}
+
 	if (hasPressedAbortFlank()) {
 		setNewScreen(&MainGameMenu);
 	}

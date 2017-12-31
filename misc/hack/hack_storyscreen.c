@@ -13,6 +13,7 @@
 #include <tari/mugenspritefilereader.h>
 #include <tari/mugenanimationreader.h>
 #include <tari/mugenanimationhandler.h>
+#include <tari/sound.h>
 
 #include "hack_titlescreen.h"
 #include "hack_projectlogic.h"
@@ -250,6 +251,8 @@ static void loadStoryScreen() {
 
 	findStartOfStoryBoard();
 	addFadeIn(30, NULL, NULL);
+
+	playTrack(24);
 }
 
 

@@ -7,6 +7,7 @@
 #include <tari/math.h>
 #include <tari/screeneffect.h>
 #include <tari/animation.h>
+#include <tari/sound.h>
 
 #include "object_girlfriendhandler.h"
 #include "object_girlbarhandler.h"
@@ -61,6 +62,8 @@ static void loadSelection() {
 
 		addOption(vecAdd(pos, makePosition(0, (i+1)*30, 0)), girlfriendName, selectCB, (void*)i);
 	}
+
+	playTrack(25);
 }
 
 

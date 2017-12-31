@@ -7,6 +7,7 @@
 #include <tari/memoryhandler.h>
 #include <tari/collisionhandler.h>
 #include <tari/mugenanimationhandler.h>
+#include <tari/sound.h>
 
 #include <stdio.h>
 
@@ -43,8 +44,9 @@ static void loadGameScreen() {
 	loadJusticeSound();
 	setWorkingDirectory(levelpath);
 	loadJusticeStage();
-		
-
+	
+	setWorkingDirectory("/");
+	playTrack(26);
 }
 
 static void unloadGameScreen() {

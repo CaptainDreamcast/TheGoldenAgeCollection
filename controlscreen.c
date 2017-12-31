@@ -32,7 +32,7 @@ static void gotoGameScreenCB(void* tCaller) {
 }
 
 static void updateControlScreen() {
-	if (hasPressedAFlank()) {
+	if (hasPressedAFlank() || hasPressedStartFlank()) {
 		addFadeOut(30, gotoGameScreenCB, NULL);
 	}
 

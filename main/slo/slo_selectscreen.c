@@ -4,7 +4,7 @@
 #include <tari/input.h>
 #include <tari/tweening.h>
 #include <tari/screeneffect.h>
-
+#include <tari/sound.h>
 
 #include "../../maingamemenu.h"
 
@@ -30,6 +30,8 @@ static void loadSelectScreen() {
 
 	gData.mIsTransitioning = 0;
 	addFadeIn(30, NULL, NULL);
+
+	playTrack(22);
 }
 
 static void fadingOverCB(void* tCaller) {
@@ -85,10 +87,19 @@ static void updateConfirmation() {
 	}
 }
 
+static void gotoMainMenuCB(void* tCaller) {
+	(void)tCaller;
+	setNewScreen(&MainGameMenu);
+}
+
 static void updateSelectScreen() {
 
 	updateSelection();
 	updateConfirmation();
+
+	if (hasPressedBFlank()) {
+		addFadeOut(30, gotoMainMenuCB, NULL);
+	}
 
 	if (hasPressedAbortFlank() || hasPressedBFlank()) {
 		setNewScreen(&MainGameMenu);

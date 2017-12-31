@@ -5,6 +5,7 @@
 #include <tari/screeneffect.h>
 #include <tari/mugenanimationhandler.h>
 #include <tari/tweening.h>
+#include <tari/sound.h>
 
 #include "maingamemenu.h"
 #include "miscgamemenu.h"
@@ -46,6 +47,8 @@ static void selectMiscGameMenu() {
 
 static void selectBonusGames();
 static void selectMainGames();
+static void setBonusGamesSelected();
+static void setMainGamesSelected();
 
 static void loadMainMenu() {
 	gData.mMainScaleFactor = 1.25;
@@ -66,12 +69,12 @@ static void loadMainMenu() {
 	gData.mIsUpdatingSelection = 0;
 
 	if (gData.mSelected) {
-		selectBonusGames();
+		setBonusGamesSelected();
 	} else{
-		selectMainGames();
+		setMainGamesSelected();
 	}
 
-	
+	playTrack(21);
 
 	addFadeIn(30, NULL, NULL);
 }
@@ -79,6 +82,21 @@ static void loadMainMenu() {
 static void selectionUpdateOverCB(void* tCaller) {
 	(void)tCaller;
 	gData.mIsUpdatingSelection = 0;
+}
+
+static void setMainGamesSelected() {
+	setMugenAnimationPosition(gData.mBGID2, makePosition(320, 480, 1));
+	setMugenAnimationBaseDrawScale(gData.mBGID2, 1);
+	getMugenAnimationPositionReference(gData.mTextID2)->y = 360;
+	changeMugenAnimation(gData.mTextID2, getMugenAnimation(&gData.mAnimations, 10));
+
+	setMugenAnimationPosition(gData.mBGID1, makePosition(320, 0, 2));
+	setMugenAnimationBaseDrawScale(gData.mBGID1, gData.mMainScaleFactor);
+	getMugenAnimationPositionReference(gData.mTextID1)->y = 120 * gData.mMainScaleFactor;
+	changeMugenAnimation(gData.mTextID1, getMugenAnimation(&gData.mAnimations, 21));
+
+	gData.mIsUpdatingSelection = 0;
+	gData.mSelected = 0;
 }
 
 static void selectMainGames() {
@@ -96,6 +114,20 @@ static void selectMainGames() {
 	gData.mSelected = 0;
 }
 
+static void setBonusGamesSelected() {
+	setMugenAnimationPosition(gData.mBGID1, makePosition(320, 0, 1));
+	setMugenAnimationBaseDrawScale(gData.mBGID1, 1);
+	getMugenAnimationPositionReference(gData.mTextID1)->y = 120;
+	changeMugenAnimation(gData.mTextID1, getMugenAnimation(&gData.mAnimations, 20));
+
+	setMugenAnimationPosition(gData.mBGID2, makePosition(320, 480, 2));
+	setMugenAnimationBaseDrawScale(gData.mBGID2, gData.mMainScaleFactor);
+	getMugenAnimationPositionReference(gData.mTextID2)->y = 360 - 120 * 0.25;
+	changeMugenAnimation(gData.mTextID2, getMugenAnimation(&gData.mAnimations, 11));
+
+	gData.mIsUpdatingSelection = 0;
+	gData.mSelected = 1;
+}
 
 static void selectBonusGames() {
 	setMugenAnimationPosition(gData.mBGID1, makePosition(320, 0, 1));
@@ -133,6 +165,10 @@ static void selectGame() {
 	}
 }
 
+static void gotoTitleCB(void* tCaller) {
+	setNewScreen(&TitleScreen);
+}
+
 static void updateScreenInput() {
 	if (hasPressedUpFlank() || hasPressedDownFlank()) {
 		changeSelection();
@@ -140,6 +176,10 @@ static void updateScreenInput() {
 
 	if (hasPressedAFlank() || hasPressedStartFlank()) {
 		selectGame();
+	}
+
+	if (hasPressedBFlank()) {
+		addFadeOut(30, gotoTitleCB, NULL);
 	}
 }
 

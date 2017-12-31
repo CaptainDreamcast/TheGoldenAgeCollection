@@ -2,6 +2,7 @@
 
 #include <stdio.h>
 #include <tari/input.h>
+#include <tari/sound.h>
 
 #include "luck_hank.h"
 #include "luck_narrator.h"
@@ -30,6 +31,8 @@ static void loadScreen8() {
 	addLuckFinalBoss(makePosition(400, 130, 2));
 	addLuckFinalBoss(makePosition(350, 200, 2));
 	addLuckFinalBoss(makePosition(480, 150, 2));
+
+	playTrack(29);
 }
 
 static void updateScreen8() {

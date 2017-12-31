@@ -39,7 +39,16 @@ static void gotoGameScreen(void* tCaller) {
 	setNewScreen(&BombxGameScreen);
 }
 
+static void gotoMainMenuCB(void* tCaller) {
+	(void)tCaller;
+	setNewScreen(&MainGameMenu);
+}
+
 static void updateBombxTitleScreen() {
+
+	if (hasPressedBFlank()) {
+		addFadeOut(30, gotoMainMenuCB, NULL);
+	}
 
 	if (hasPressedAbortFlank()) {
 		setNewScreen(&MainGameMenu);

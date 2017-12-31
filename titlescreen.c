@@ -9,6 +9,7 @@
 #include <tari/math.h>
 #include <tari/physicshandler.h>
 #include <tari/tweening.h>
+#include <tari/sound.h>
 
 #include "mainmenu.h"
 
@@ -54,6 +55,8 @@ static void loadTitleScreen() {
 	setMugenAnimationBasePosition(gData.mBGID1, getHandledPhysicsPositionReference(gData.mBGPhysicsID1));
 	gData.mBGID2 = -1;
 	gData.mIsFadingOver = 0;
+
+	playTrack(21);
 
 	addFadeIn(30, NULL, NULL);
 }

@@ -5,6 +5,7 @@
 #include <tari/screeneffect.h>
 #include <tari/mugenanimationhandler.h>
 #include <tari/tweening.h>
+#include <tari/sound.h>
 
 #include "titlescreen.h"
 #include "mainmenu.h"
@@ -159,6 +160,11 @@ static void selectSloMoDoCB() {
 	addFadeOut(30, gotoSloMoDoCB, NULL);
 }
 
+static void gotoMainMenuCB(void* tCaller) {
+	(void)tCaller;
+
+	setNewScreen(&MainMenu);
+}
 
 static void loadMainGameMenu() {
 	instantiateActor(getMugenAnimationHandlerActorBlueprint());
@@ -192,6 +198,8 @@ static void loadMainGameMenu() {
 	gData.mFuncs[12] = selectHazyHankCB;
 
 	gData.mIsFlipping = 0;
+
+	playTrack(21);
 
 	addFadeIn(30, NULL, NULL);
 }
@@ -302,8 +310,12 @@ static void updateMainGameMenu() {
 	updateDirectionalInput();
 	updateSelectionInput();
 
+	if (hasPressedBFlank()) {
+		addFadeOut(30, gotoMainMenuCB, NULL);
+	}
+
 	if (hasPressedAbortFlank()) {
-		setNewScreen(&MainMenu);
+		setNewScreen(&TitleScreen);
 	}
 }
 

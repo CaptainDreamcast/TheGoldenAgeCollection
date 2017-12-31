@@ -328,7 +328,7 @@ ActorBlueprint BeyondLevelHandler = {
 
 void setBeyondLevelToStart()
 {
-	gData.mCurrentLevel = 3;
+	gData.mCurrentLevel = 1;
 }
 
 void goToNextBeyondLevel()

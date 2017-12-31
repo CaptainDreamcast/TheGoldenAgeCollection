@@ -13,6 +13,7 @@
 #include <tari/mugenspritefilereader.h>
 #include <tari/mugenanimationreader.h>
 #include <tari/mugenanimationhandler.h>
+#include <tari/sound.h>
 
 #include "../../maingamemenu.h"
 
@@ -221,6 +222,8 @@ static void loadStoryScreen() {
 	freeMemory(spritePath);
 
 	findStartOfStoryBoard();
+
+	playTrack(22);
 }
 
 
@@ -238,9 +241,18 @@ static void updateText() {
 	}
 }
 
+static void gotoMainMenuCB(void* tCaller) {
+	(void)tCaller;
+	setNewScreen(&MainGameMenu);
+}
+
 static void updateStoryScreen() {
 
 	updateText();
+
+	if (hasPressedBFlank()) {
+		addFadeOut(30, gotoMainMenuCB, NULL);
+	}
 
 	if (hasPressedAbortFlank()) {
 		setNewScreen(&MainGameMenu);

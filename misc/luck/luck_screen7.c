@@ -2,6 +2,7 @@
 
 #include <stdio.h>
 #include <tari/input.h>
+#include <tari/sound.h>
 
 #include "luck_hank.h"
 #include "luck_narrator.h"
@@ -29,6 +30,8 @@ static void loadScreen7() {
 
 	setLuckHorseGuyName("STONE");
 	instantiateActor(LuckHorseGuyBP);
+
+	playTrack(29);
 }
 
 static Screen* getScreen7NextScreen() {

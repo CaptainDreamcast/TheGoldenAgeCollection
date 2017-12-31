@@ -13,6 +13,7 @@
 #include <tari/mugenspritefilereader.h>
 #include <tari/mugenanimationreader.h>
 #include <tari/mugenanimationhandler.h>
+#include <tari/sound.h>
 
 #include "object_titlescreen.h"
 
@@ -176,6 +177,8 @@ static void loadStoryScreen() {
 	freeMemory(spritePath);
 
 	findStartOfStoryBoard();
+
+	playTrack(25);
 }
 
 

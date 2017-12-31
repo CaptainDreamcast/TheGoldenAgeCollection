@@ -3,6 +3,7 @@
 #include <stdio.h>
 #include <tari/input.h>
 #include <tari/animation.h>
+#include <tari/screeneffect.h>
 
 #include "luck_bg.h"
 #include "luck_hank.h"
@@ -31,8 +32,17 @@ static void loadTitleScreen() {
 	gData.mBG = playOneFrameAnimationLoop(makePosition(0, 0, 1), &gData.mBGTexture);
 }
 
+static void gotoMiscMenuCB(void* tCaller) {
+	(void)tCaller;
+	setNewScreen(&MiscGameMenu);
+}
+
 static Screen* getNextTitleScreenScreen() {
 	
+	if (hasPressedBFlank()) {
+		addFadeOut(30, gotoMiscMenuCB, NULL);
+	}
+
 	if (hasPressedAbortFlank()) {
 		return &MiscGameMenu;
 	}

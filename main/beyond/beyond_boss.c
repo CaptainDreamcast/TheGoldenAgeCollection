@@ -15,6 +15,7 @@
 #include <tari/wrapper.h>
 #include <tari/screeneffect.h>
 #include <tari/input.h>
+#include <tari/sound.h>
 
 #include "beyond_collision.h"
 #include "beyond_shothandler.h"
@@ -354,6 +355,11 @@ void activateBeyondBoss() {
 
 	gData.mIsDefeated = 0;
 	gData.mIsActive = 1;
+
+	if (isUltimateFrontier() && getBeyondCurrentLevel() == 3) {
+		playTrack(18);
+	}
+
 }
 
 void damageBeyondBoss()

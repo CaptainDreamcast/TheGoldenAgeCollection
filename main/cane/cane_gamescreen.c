@@ -8,6 +8,7 @@
 #include <tari/stagehandler.h>
 #include <tari/collisionhandler.h>
 #include <tari/mugenanimationhandler.h>
+#include <tari/sound.h>
 
 #include "cane_player.h"
 #include "cane_bullet.h"
@@ -40,6 +41,7 @@ static void loadGameScreen() {
 	loadCaneManualEnemy();
 	loadGameUI();
 	
+	playTrack(27);
 }
 
 static void unloadGameScreen() {

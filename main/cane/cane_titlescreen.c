@@ -6,6 +6,8 @@
 #include <tari/animation.h>
 #include <tari/file.h>
 #include <tari/mugenanimationhandler.h>
+#include <tari/screeneffect.h>
+#include <tari/sound.h>
 
 #include "../../maingamemenu.h"
 
@@ -36,6 +38,8 @@ static void loadTitleScreen() {
 	
 	addMugenAnimation(createOneFrameMugenAnimationForSprite(17, 1), getCaneSprites(), makePosition(60, 80, 3));
 	addMugenAnimation(createOneFrameMugenAnimationForSprite(17, 0), getCaneSprites(), makePosition(60, 150, 3));
+
+	playTrack(27);
 }
 
 
@@ -51,10 +55,25 @@ static void drawTitleScreen() {
 
 }
 
+static void stopCane() {
+	removeActor(gData.mAnimationHandler);
+	shutdownCaneResources();
+}
+
+static void gotoMainMenuCB(void* tCaller) {
+	(void)tCaller;
+	stopCane();
+	setNewScreen(&MainGameMenu);
+}
+
+
 static Screen* getNextTitleScreenScreen() {
+	if (hasPressedBFlank()) {
+		addFadeOut(30, gotoMainMenuCB, NULL);
+	}
+	
 	if (hasPressedAbortFlank()) {
-		removeActor(gData.mAnimationHandler);
-		shutdownCaneResources();
+		stopCane();
 		return &MainGameMenu;
 	}
 

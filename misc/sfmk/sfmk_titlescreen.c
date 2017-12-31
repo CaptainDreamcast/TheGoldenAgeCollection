@@ -94,7 +94,17 @@ static void gotoModeMenu() {
 	addTimerCB(gData.mHeader.mPressStartDuration, setModeMenuFadeout, NULL);
 }
 
+static void gotoMiscMenuCB(void* tCaller) {
+	(void)tCaller;
+	setNewScreen(&MiscGameMenu);
+}
+
+
 static Screen* getNextTitleScreenScreen() {
+	if (hasPressedBFlank()) {
+		addFadeOut(30, gotoMiscMenuCB, NULL);
+	}
+
 	if (hasPressedAbortFlank()) {
 		return &MiscGameMenu;
 	}

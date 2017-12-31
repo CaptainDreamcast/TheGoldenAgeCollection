@@ -6,6 +6,7 @@
 #include <tari/input.h>
 #include <tari/mugenanimationhandler.h>
 #include <tari/file.h>
+#include <tari/sound.h>
 
 #include "cane_stage.h"
 #include "cane_gamescreen.h"
@@ -49,6 +50,8 @@ static void loadRetryScreen() {
 	addTravelledDistance();
 
 	gData.isTimerFinished = 0;
+
+	playTrack(27);
 }
 
 

@@ -4,9 +4,11 @@
 #include <tari/optionhandler.h>
 #include <tari/screeneffect.h>
 #include <tari/mugenanimationhandler.h>
+#include <tari/sound.h>
 
 #include "mainmenu.h"
 #include "controlscreen.h"
+#include "titlescreen.h"
 
 #include "misc/luck/luck_main.h"
 #include "misc/best/bestgameever.h"
@@ -89,6 +91,10 @@ static void selectObjectificationCB() {
 	addFadeOut(30, gotoObjectificationCB, NULL);
 }
 
+static void gotoMainMenuCB(void* tCaller) {
+	setNewScreen(&MainMenu);
+}
+
 static void setSelectedActive() {
 	int i;
 	for (i = 0; i < 7; i++) {
@@ -146,6 +152,8 @@ static void loadMiscGameMenu() {
 
 	setSelectedActive();
 
+	playTrack(21);
+
 	addFadeIn(30, NULL, NULL);
 }
 
@@ -186,8 +194,12 @@ static void updateMiscGameMenu() {
 	updateDirectionalInput();
 	updateSelectionInput();
 
+	if (hasPressedBFlank()) {
+		addFadeOut(30, gotoMainMenuCB, NULL);
+	}
+
 	if (hasPressedAbortFlank()) {
-		setNewScreen(&MainMenu);
+		setNewScreen(&TitleScreen);
 	}
 }
 

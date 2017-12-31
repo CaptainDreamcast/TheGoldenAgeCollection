@@ -16,7 +16,11 @@ static struct {
 
 	int mIsWinScreen;
 	int mScreenStage;
+
+	int mIsCrashScreen;
 } gData;
+
+static void setCrashScreen();
 
 static void loadEndScreen() {
 	if (gData.mIsWinScreen) {
@@ -33,6 +37,16 @@ static void loadEndScreen() {
 	setAnimationTransparency(gData.mSecondAnimationID, gData.mSecondTextureAlpha);
 
 	gData.mScreenStage = 0;
+
+	if (gData.mIsCrashScreen) {
+		setCrashScreen();
+	}
+}
+
+static void setCrashScreen() {
+	gData.mSecondTextureAlpha = 1;
+	setAnimationTransparency(gData.mSecondAnimationID, gData.mSecondTextureAlpha);
+	gData.mScreenStage = 2;
 }
 
 static void gotoMenuScreen(void* tCaller) {
@@ -78,10 +92,18 @@ Screen BestEndScreen = {
 
 void setBestEndScreenWin()
 {
+	gData.mIsCrashScreen = 0;
 	gData.mIsWinScreen = 1;
 }
 
 void setBestEndScreenLose()
 {
+	gData.mIsCrashScreen = 0;
 	gData.mIsWinScreen = 0;
+}
+
+void setBestEndScreenCrash()
+{
+	gData.mIsCrashScreen = 1;
+	gData.mIsWinScreen = 1;
 }

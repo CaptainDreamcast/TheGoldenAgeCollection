@@ -21,6 +21,11 @@ static void fadeOut(Screen* tScreen) {
 	addFadeOut(30, fadeOutFinished, tScreen);
 }
 
+static void gotoMainMenuCB(void* tCaller) {
+	(void)tCaller;
+	stopDreamFight16();
+}
+
 static void loadTitleScreen() {
 	gData.mTexture = loadTexture("assets/main/fight/title/TITLE.pkg");
 	gData.mBGID = playOneFrameAnimationLoop(makePosition(0,0,1), &gData.mTexture);
@@ -29,6 +34,10 @@ static void loadTitleScreen() {
 }
 
 static void updateTitleScreen() {
+	if (hasPressedBFlank()) {
+		addFadeOut(30, gotoMainMenuCB, NULL);
+	}
+
 	if (hasPressedAbortFlank()) {
 		stopDreamFight16();
 	}

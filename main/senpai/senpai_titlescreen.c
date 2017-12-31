@@ -25,7 +25,17 @@ static void gotoGameScreen(void* tCaller) {
 	setNewScreen(&SenpaiGameScreen);
 }
 
+static void gotoMainMenuCB(void* tCaller) {
+	(void)tCaller;
+	setNewScreen(&MainGameMenu);
+}
+
+
 static void updateTitleScreen() {
+	if (hasPressedBFlank()) {
+		addFadeOut(30, gotoMainMenuCB, NULL);
+	}
+
 	if (hasPressedAbortFlank()) {
 		setNewScreen(&MainGameMenu);
 		return;

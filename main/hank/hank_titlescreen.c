@@ -5,6 +5,7 @@
 #include <tari/math.h>
 #include <tari/drawing.h>
 #include <tari/system.h>
+#include <tari/screeneffect.h>
 
 #include "hank_titledata.h"
 #include "hank_drawing.h"
@@ -43,9 +44,20 @@ static void checkDone() {
   }  
 }
 
+static void gotoMainMenuCB(void* tCaller) {
+	(void)tCaller;
+	setNewScreen(&MainGameMenu);
+}
+
+
 static void updateTitleScreen() {
   updateSystem();
   updateInput();
+
+  if (hasPressedBFlank()) {
+	  addFadeOut(30, gotoMainMenuCB, NULL);
+  }
+
   if (hasPressedAbortFlank()) {
 	  setNewScreen(&MainGameMenu);
 	 return;

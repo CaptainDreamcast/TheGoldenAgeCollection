@@ -18,12 +18,21 @@ static void loadTitleScreen() {
 	addFadeIn(30, NULL, NULL);
 }
 
+static void gotoMiscMenuCB(void* tCaller) {
+	(void)tCaller;
+	setNewScreen(&MiscGameMenu);
+}
+
 static void gotoGameScreenCB(void* tCaller) {
 	(void)tCaller;
 	setNewScreen(&OctoGameScreen);
 }
 
 static void updateTitleScreen() {
+	if (hasPressedBFlank()) {
+		addFadeOut(30, gotoMiscMenuCB, NULL);
+	}
+
 	if (hasPressedAbortFlank()) {
 		setNewScreen(&MiscGameMenu);
 	}

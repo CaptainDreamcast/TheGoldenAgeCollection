@@ -6,3 +6,4 @@ extern Screen BestEndScreen;
 
 void setBestEndScreenWin();
 void setBestEndScreenLose();
+void setBestEndScreenCrash();

@@ -2,6 +2,7 @@
 
 #include <tari/input.h>
 #include <tari/screeneffect.h>
+#include <tari/sound.h>
 
 #include "bombx_titlescreen.h"
 #include "bombx_levelhandler.h"
@@ -14,6 +15,7 @@ static void loadBombxGameScreen() {
 	instantiateActor(BombxLevelHandler);
 	instantiateActor(BombxPlayer);
 	
+	playTrack(23);
 
 	addFadeIn(30, NULL, NULL);
 }

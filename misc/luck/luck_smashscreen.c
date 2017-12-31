@@ -4,6 +4,7 @@
 
 #include <tari/input.h>
 #include <tari/animation.h>
+#include <tari/sound.h>
 
 #include "luck_bg.h"
 #include "luck_hank.h"
@@ -31,6 +32,8 @@ static void loadSmashScreen() {
 
 	gData.mBGTexture = loadTexture("assets/misc/luck/sprites/SMASH.pkg");
 	gData.mBG = playOneFrameAnimationLoop(makePosition(0, 0, 1), &gData.mBGTexture);
+
+	playTrack(29);
 }
 
 static Screen* getNextSmashScreenScreen() {

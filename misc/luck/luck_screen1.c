@@ -2,6 +2,8 @@
 
 #include <stdio.h>
 #include <tari/input.h>
+#include <tari/sound.h>
+
 
 #include "luck_bg.h"
 #include "luck_hank.h"
@@ -25,6 +27,8 @@ static void loadScreen1() {
 	instantiateActor(LuckEnemyHandlerBP);
 	setLuckHankSupposedToGoRight();
 	setLuckHankPosition(makePosition(320, 150, 2));
+
+	playTrack(29);
 }
 
 static Screen* getScreen1NextScreen() {

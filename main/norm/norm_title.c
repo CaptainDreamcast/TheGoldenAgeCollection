@@ -4,6 +4,7 @@
 #include <tari/physicshandler.h>
 #include <tari/input.h>
 #include <tari/sound.h>
+#include <tari/screeneffect.h>
 
 #include "../../maingamemenu.h"
 
@@ -32,6 +33,11 @@ static void loadTitleScreen() {
 
 }
 
+static void gotoMainMenuCB(void* tCaller) {
+	(void)tCaller;
+	setNewScreen(&MainGameMenu);
+}
+
 static void updateTitleScreen() {
 	Position p = *getHandledPhysicsPositionReference(gData.mBGPhysics);
 
@@ -39,6 +45,9 @@ static void updateTitleScreen() {
 	if (p.x > -10) v->x = -1;
 	if (p.x < -(1000 - 640)) v->x = 1;
 
+	if (hasPressedBFlank()) {
+		addFadeOut(30, gotoMainMenuCB, NULL);
+	}
 
 	if (hasPressedAbortFlank()) {
 		setNewScreen(&MainGameMenu);

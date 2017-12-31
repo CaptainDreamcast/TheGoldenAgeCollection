@@ -3,6 +3,7 @@
 #include <tari/mugenanimationhandler.h>
 #include <tari/input.h>
 #include <tari/screeneffect.h>
+#include <tari/sound.h>
 
 #include "hack_titlescreen.h"
 #include "hack_performancehandler.h"
@@ -37,6 +38,8 @@ static void loadTitleScreen() {
 
 
 	addFadeIn(30, NULL, NULL);
+
+	playTrack(24);
 }
 
 static void addCharacter() {

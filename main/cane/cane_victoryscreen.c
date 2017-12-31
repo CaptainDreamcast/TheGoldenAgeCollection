@@ -5,6 +5,7 @@
 #include <tari/physicshandler.h>
 #include <tari/timer.h>
 #include <tari/screeneffect.h>
+#include <tari/sound.h>
 
 #include "cane_resources.h"
 #include "cane_stage.h"
@@ -59,6 +60,8 @@ static void loadVictoryScreen() {
 
 	addTimerCB(60, setGirlfriendStolen, NULL);
 	addTimerCB(300, fadeToGameAgain, NULL);
+
+	playTrack(27);
 }
 
 

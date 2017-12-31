@@ -5,6 +5,7 @@
 #include <tari/screeneffect.h>
 #include <tari/optionhandler.h>
 #include <tari/math.h>
+#include <tari/sound.h>
 
 #include "hack_selectscreen.h"
 #include "hack_performancehandler.h"
@@ -28,6 +29,8 @@ static void loadTitleScreen() {
 	loadScreenOptions();
 
 	addFadeIn(30, NULL, NULL);
+
+	playTrack(24);
 }
 
 static void gotoCode(void* tCaller) {

@@ -501,7 +501,7 @@ static void updateSinglePlayerSelect(int i) {
 		}
 	}
 
-	if (hasPressedStartFlankSingle(i)) {
+	if (i == 0 && hasPressedStartFlankSingle(i)) {
 		if (isPlayerActive(i)) {
 			selectCharacter(i);
 		}

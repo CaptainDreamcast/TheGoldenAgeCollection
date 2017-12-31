@@ -7,6 +7,7 @@
 #include <tari/texthandler.h>
 #include <tari/math.h>
 #include <tari/optionhandler.h>
+#include <tari/sound.h>
 
 #include "object_titlescreen.h"
 #include "object_gamelogic.h"
@@ -42,6 +43,8 @@ static void loadExplanationScreen() {
 	loadNextScriptGroup();
 
 	addFadeIn(30, NULL, NULL);
+
+	playTrack(25);
 }
 
 static void loadNextScriptGroup() {

@@ -27,7 +27,13 @@
 static void playGameMusic() {
 	if (!isUltimateFrontier() && getBeyondCurrentLevel() == 4) {
 		playTrack(14);
-	}	
+	}
+	else if (!isUltimateFrontier()) {
+		playTrack(20);
+	}
+	else {
+		playTrack(19);
+	}
 }
 
 static void loadGameScreen() {

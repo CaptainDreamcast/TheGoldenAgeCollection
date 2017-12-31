@@ -45,9 +45,18 @@ static void goToGame(void* tCaller) {
 	setNewScreen(&BeyondGameScreen);
 }
 
+static void gotoMainMenuCB(void* tCaller) {
+	(void)tCaller;
+	setNewScreen(&MainGameMenu);
+}
+
 static void updateTitleScreen() {
 	if (hasPressedStartFlank()) {
 		addFadeOut(30, goToGame, NULL);
+	}
+
+	if (hasPressedBFlank()) {
+		addFadeOut(30, gotoMainMenuCB, NULL);
 	}
 
 	if (hasPressedAbortFlank()) {

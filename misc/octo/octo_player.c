@@ -41,11 +41,14 @@ static void playerHitCB(void* tCaller, void* tCollisionData) {
 static void constraintPlayer() {
 	Position* pos = getHandledPhysicsPositionReference(gData.mPhysicsID);
 	Velocity* vel = getHandledPhysicsVelocityReference(gData.mPhysicsID);
+	Velocity* acc = getHandledPhysicsAccelerationReference(gData.mPhysicsID);
 
 	if (pos->y < 0 && vel->y < 0) pos->y = 0;
 	if (pos->y >= 480 && vel->y > 0) {
 		pos->y = 480;
 		vel->y = 0;
+		acc->y = 0;
+		
 	}
 	
 	if (pos->x < 0 && vel->x < 0) {
@@ -59,6 +62,19 @@ static void constraintPlayer() {
 	}
 }
 
+#ifdef DREAMCAST
+
+static void updateUpInput() {
+	double intensity = getFishingRodIntensity();
+
+	double speed = -0.1;
+	double factor = intensity - 0.3;
+
+	addAccelerationToHandledPhysics(gData.mPhysicsID, makePosition(0, speed*factor, 0));
+}
+	
+#else
+
 static void updateUpInput() {
 	double volume = getMicrophoneVolume();
 
@@ -69,6 +85,8 @@ static void updateUpInput() {
 
 	vel->y = -speed*factor;
 }
+
+#endif
 
 static void updatePlayer(void* tData) {
 	(void)tData;

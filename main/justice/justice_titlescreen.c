@@ -8,13 +8,12 @@
 #include <tari/input.h>
 #include <tari/timer.h>
 
-#include "../../maingamemenu.h"
-
 #include "justice_gamestate.h"
 #include "justice_gamescreen.h"
 #include "justice_titlescreen.h"
 #include "justice_sound.h"
 #include "justice_congratsscreen.h"
+#include "justice_main.h"
 
 static struct {
 
@@ -130,27 +129,17 @@ static void enemyAnimationFinished(void* caller) {
 }
 
 static void updateTitleScreen() {
-
+	if(hasPressedAbortFlank()) {
+		stopFistsOfJustice();
+	} else if(hasPressedStartFlank()) {
+		resetJusticeGameState();
+  		setCurrentJusticeLevelName("level1");
+		setNewScreen(&JusticeGameScreen);
+	}
 }
 
 static void drawTitleScreen() {
 	
-}
-
-static Screen* getTitleScreenNextScreen() {
-	
-	if(hasPressedAbortFlank()) {
-		return &MainGameMenu;
-	}
-	else if(hasPressedStartFlank()) {
-		resetJusticeGameState();
-  		setCurrentJusticeLevelName("level1");
-		return &JusticeGameScreen;
-	}
-
-	
-
-	return NULL;
 }
 
 
@@ -159,6 +148,5 @@ Screen JusticeTitleScreen =  {
 	.mUpdate = updateTitleScreen,
 	.mDraw = drawTitleScreen,
 	.mUnload = unloadTitleScreen,
-	.mGetNextScreen = getTitleScreenNextScreen
 };
 

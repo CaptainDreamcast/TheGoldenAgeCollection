@@ -22,7 +22,6 @@ static void loadTitleScreen() {
 static void gotoSplashScreen(void* tCaller) {
 	(void)tCaller;
 	setNewScreen(&MedusaSplashScreen);
-	setNewScreen(&MedusaGameScreen); // TODO remove
 }
 
 static void updateTitleScreen() {

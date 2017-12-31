@@ -930,6 +930,9 @@
     <ClCompile Include="..\main\slo\slo_storyscreen.c">
       <Filter>Main\SloMoDo</Filter>
     </ClCompile>
+    <ClCompile Include="..\controlscreen.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="resource.h">
@@ -1801,6 +1804,9 @@
     </ClInclude>
     <ClInclude Include="..\main\slo\slo_storyscreen.h">
       <Filter>Main\SloMoDo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\controlscreen.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

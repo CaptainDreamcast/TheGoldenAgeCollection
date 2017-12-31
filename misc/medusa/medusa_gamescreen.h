@@ -3,3 +3,5 @@
 #include <tari/wrapper.h>
 
 extern Screen MedusaGameScreen;
+
+void resetMedusaLevel();

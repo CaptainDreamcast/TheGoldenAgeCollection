@@ -1,5 +1,6 @@
 main.o \
 maingamemenu.o mainmenu.o miscgamemenu.o titlescreen.o \
+controlscreen.o \
 stormstorm/stormstorm.o \
 stormstorm/storm_ball.o stormstorm/storm_collision.o stormstorm/storm_enemyhandler.o \
 stormstorm/storm_gameoverscreen.o stormstorm/storm_gamescreen.o stormstorm/storm_paddle.o \

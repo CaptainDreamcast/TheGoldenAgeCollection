@@ -8,6 +8,7 @@
 
 #include "titlescreen.h"
 #include "mainmenu.h"
+#include "controlscreen.h"
 #include "stormstorm/stormstorm.h"
 #include "bombx/bombx.h"
 #include "main/beyond/beyond_main.h"
@@ -43,7 +44,7 @@ static struct {
 
 static void gotoStormStormCB(void* tData) {
 	(void)tData;
-	startStormStorm();
+	startControlScreen(startStormStorm, "main", "STORM", 1, &MainGameMenu);
 }
 
 static void selectStormStormCB() {
@@ -52,7 +53,7 @@ static void selectStormStormCB() {
 
 static void gotoBombxCB(void* tData) {
 	(void)tData;
-	startBombx();
+	startControlScreen(startBombx, "main", "BOMBX", 1, &MainGameMenu);
 }
 
 static void selectBombxCB() {
@@ -61,7 +62,7 @@ static void selectBombxCB() {
 
 static void gotoEyeOfTheMedusa2CB(void* tData) {
 	(void)tData;
-	startEyeOfTheMedusa2();
+	startControlScreen(startEyeOfTheMedusa2, "main", "FRONTIER", 1, &MainGameMenu);
 }
 
 static void selectEyeOfTheMedusa2CB() {
@@ -70,7 +71,7 @@ static void selectEyeOfTheMedusa2CB() {
 
 static void gotoEyeOfTheMedusa3CB(void* tData) {
 	(void)tData;
-	startEyeOfTheMedusa3();
+	startControlScreen(startEyeOfTheMedusa3, "main", "BEYOND", 1, &MainGameMenu);
 }
 
 static void selectEyeOfTheMedusa3CB() {
@@ -88,7 +89,7 @@ static void selectGoldenAgeCB() {
 
 static void gotoHazyHankCB(void* tData) {
 	(void)tData;
-	startHazyHank();
+	startControlScreen(startHazyHank, "main", "HANK", 1, &MainGameMenu);
 }
 
 static void selectHazyHankCB() {
@@ -97,7 +98,7 @@ static void selectHazyHankCB() {
 
 static void gotoFistsOfJusticeCB(void* tData) {
 	(void)tData;
-	startFistsOfJustice();
+	startControlScreen(startFistsOfJustice, "main", "JUSTICE", 1, &MainGameMenu);
 }
 
 static void selectFistsOfJusticeCB() {
@@ -106,7 +107,7 @@ static void selectFistsOfJusticeCB() {
 
 static void gotoLaMorteDiUnCaneCB(void* tData) {
 	(void)tData;
-	startLaMorteDiUnCane();
+	startControlScreen(startLaMorteDiUnCane, "main", "CANE", 1, &MainGameMenu);
 }
 
 static void selectLaMorteDiUnCaneCB() {
@@ -115,7 +116,7 @@ static void selectLaMorteDiUnCaneCB() {
 
 static void gotoMirklingsCB(void* tData) {
 	(void)tData;
-	startMirklings();
+	startControlScreen(startMirklings, "main", "MIRKLINGS", 0, &MainGameMenu);
 }
 
 static void selectMirklingsCB() {
@@ -124,7 +125,7 @@ static void selectMirklingsCB() {
 
 static void gotoQuestForNormalcyCB(void* tData) {
 	(void)tData;
-	startQuestForNormalcy();
+	startControlScreen(startQuestForNormalcy, "main", "NORM", 1, &MainGameMenu);
 }
 
 static void selectQuestForNormalcyCB() {
@@ -133,7 +134,7 @@ static void selectQuestForNormalcyCB() {
 
 static void gotoDreamFight16CB(void* tData) {
 	(void)tData;
-	startDreamFight16();
+	startControlScreen(startDreamFight16, "main", "FIGHT", 1, &MainGameMenu);
 }
 
 static void selectDreamFight16CB() {
@@ -142,7 +143,7 @@ static void selectDreamFight16CB() {
 
 static void gotoSenpaiScreamsCB(void* tData) {
 	(void)tData;
-	startSenpaiScreams();
+	startControlScreen(startSenpaiScreams, "main", "SENPAI", 1, &MainGameMenu);
 }
 
 static void selectSenpaiScreamsCB() {
@@ -151,7 +152,7 @@ static void selectSenpaiScreamsCB() {
 
 static void gotoSloMoDoCB(void* tData) {
 	(void)tData;
-	startSloMoDo();
+	startControlScreen(startSloMoDo, "main", "SLOMODO", 1, &MainGameMenu);
 }
 
 static void selectSloMoDoCB() {

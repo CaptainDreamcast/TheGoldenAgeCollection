@@ -6,6 +6,7 @@
 #include <tari/mugenanimationhandler.h>
 
 #include "mainmenu.h"
+#include "controlscreen.h"
 
 #include "misc/luck/luck_main.h"
 #include "misc/best/bestgameever.h"
@@ -26,7 +27,7 @@ static struct {
 
 static void gotoHankInLuckCB(void* tData) {
 	(void)tData;
-	startHankInLuck();
+	startControlScreen(startHankInLuck, "misc", "LUCK", 1, &MiscGameMenu);
 }
 
 static void selectHankInLuckCB() {
@@ -36,7 +37,7 @@ static void selectHankInLuckCB() {
 
 static void gotoTheBestGameEverCB(void* tData) {
 	(void)tData;
-	startTheBestGameEver();
+	startControlScreen(startTheBestGameEver, "misc", "BEST", 1, &MiscGameMenu);
 }
 
 static void selectTheBestGameEverCB() {
@@ -45,7 +46,7 @@ static void selectTheBestGameEverCB() {
 
 static void gotoStreetFighterVersusMortalKombatCB(void* tData) {
 	(void)tData;
-	startStreetFighterVersusMortalKombat();
+	startControlScreen(startStreetFighterVersusMortalKombat, "misc", "SFMK", 1, &MiscGameMenu);
 }
 
 static void selectStreetFighterVersusMortalKombatCB() {
@@ -54,7 +55,7 @@ static void selectStreetFighterVersusMortalKombatCB() {
 
 static void gotoEyeOfTheMedusaCB(void* tData) {
 	(void)tData;
-	startEyeOfTheMedusa();
+	startControlScreen(startEyeOfTheMedusa, "misc", "MEDUSA", 1, &MiscGameMenu);
 }
 
 static void selectEyeOfTheMedusaCB() {
@@ -63,7 +64,7 @@ static void selectEyeOfTheMedusaCB() {
 
 static void gotoOctolord3CB(void* tData) {
 	(void)tData;
-	startOctolord3();
+	startControlScreen(startOctolord3, "misc", "OCTO", 0, &MiscGameMenu);
 }
 
 static void selectOctolord3CB() {
@@ -72,7 +73,7 @@ static void selectOctolord3CB() {
 
 static void gotoHackathonSimulator2017CB(void* tData) {
 	(void)tData;
-	startHackathonSimulator2017();
+	startControlScreen(startHackathonSimulator2017, "misc", "HACK", 1, &MiscGameMenu);
 }
 
 static void selectHackathonSimulator2017CB() {
@@ -81,7 +82,7 @@ static void selectHackathonSimulator2017CB() {
 
 static void gotoObjectificationCB(void* tData) {
 	(void)tData;
-	startObjectification();
+	startControlScreen(startObjectification, "misc", "OBJECT", 1, &MiscGameMenu);
 }
 
 static void selectObjectificationCB() {

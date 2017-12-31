@@ -24,9 +24,18 @@
 #include "beyond_finalbossscene.h"
 #include "beyond_main.h"
 
+static void playGameMusic() {
+	if (!isUltimateFrontier() && getBeyondCurrentLevel() == 4) {
+		playTrack(14);
+	}	
+}
+
 static void loadGameScreen() {
 	instantiateActor(getMugenAnimationHandlerActorBlueprint());
 
+	if(!isUltimateFrontier() && getBeyondCurrentLevel() == 3) {
+		setMemoryHandlerCompressionActive();
+	}
 	
 	loadBeyondCollisions();
 	instantiateActor(BeyondAssignmentHandler);
@@ -44,9 +53,11 @@ static void loadGameScreen() {
 
 	instantiateActor(BeyondLevelHandler);
 
-	if (!isUltimateFrontier() && getBeyondCurrentLevel() == 4) {
-		playTrack(14);
+	if(!isUltimateFrontier() && getBeyondCurrentLevel() == 3) {
+		setMemoryHandlerCompressionInactive();
 	}
+
+	playGameMusic();
 
 	// activateCollisionHandlerDebugMode();
 }

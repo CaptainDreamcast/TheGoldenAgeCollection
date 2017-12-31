@@ -2,6 +2,8 @@
 
 #include <stdio.h>
 
+#include <tari/memoryhandler.h>
+
 #include "beyond_titlescreen.h"
 
 static struct {
@@ -34,6 +36,7 @@ void startEyeOfTheMedusa2()
 void startEyeOfTheMedusa3()
 {
 	setBeyond();
+	setMemoryHandlerCompressionActive();
 	setNewScreen(&BeyondTitleScreen);
 }
 

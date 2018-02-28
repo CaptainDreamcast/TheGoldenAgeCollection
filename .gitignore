@@ -8,6 +8,7 @@ dc-tool_*
 *.pkg
 filesystem
 *.psd
+*.ogg
 
 web/*
 *.html

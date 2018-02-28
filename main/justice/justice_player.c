@@ -2,19 +2,19 @@
 
 #include <stdlib.h>
 
-#include <tari/system.h>
-#include <tari/log.h>
-#include <tari/animation.h>
-#include <tari/texture.h>
-#include <tari/script.h>
-#include <tari/physicshandler.h>
-#include <tari/input.h>
-#include <tari/collision.h>
-#include <tari/memoryhandler.h>
-#include <tari/datastructures.h>
-#include <tari/collisionanimation.h>
-#include <tari/timer.h>
-#include <tari/math.h>
+#include <prism/system.h>
+#include <prism/log.h>
+#include <prism/animation.h>
+#include <prism/texture.h>
+#include <prism/script.h>
+#include <prism/physicshandler.h>
+#include <prism/input.h>
+#include <prism/collision.h>
+#include <prism/memoryhandler.h>
+#include <prism/datastructures.h>
+#include <prism/collisionanimation.h>
+#include <prism/timer.h>
+#include <prism/math.h>
 
 #include "justice_collision.h"
 #include "justice_userinterface.h"

@@ -1,9 +1,9 @@
 #include "medusa_shothandler.h"
 
-#include <tari/animation.h>
-#include <tari/datastructures.h>
-#include <tari/physicshandler.h>
-#include <tari/collisionhandler.h>
+#include <prism/animation.h>
+#include <prism/datastructures.h>
+#include <prism/physicshandler.h>
+#include <prism/collisionhandler.h>
 
 #include "medusa_collision.h"
 #include "medusa_resources.h"

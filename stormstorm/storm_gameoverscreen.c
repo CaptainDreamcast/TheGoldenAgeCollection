@@ -1,6 +1,6 @@
 #include "storm_gameoverscreen.h"
 
-#include <tari/input.h>
+#include <prism/input.h>
 
 #include "vectrex_simulation.h"
 #include "vectrexanimations.h"

@@ -1,8 +1,8 @@
 #include "justice_userinterface.h"
 
-#include <tari/animation.h>
-#include <tari/input.h>
-#include <tari/wrapper.h>
+#include <prism/animation.h>
+#include <prism/input.h>
+#include <prism/wrapper.h>
 
 #include "justice_gamestate.h"
 #include "justice_stage.h"

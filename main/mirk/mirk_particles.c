@@ -1,11 +1,11 @@
 #include "mirk_particles.h"
 
-#include <tari/actorhandler.h>
-#include <tari/animation.h>
-#include <tari/physicshandler.h>
-#include <tari/math.h>
-#include <tari/log.h>
-#include <tari/system.h>
+#include <prism/actorhandler.h>
+#include <prism/animation.h>
+#include <prism/physicshandler.h>
+#include <prism/math.h>
+#include <prism/log.h>
+#include <prism/system.h>
 
 #include "mirk_stage.h"
 

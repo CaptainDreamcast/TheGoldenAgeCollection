@@ -1,13 +1,13 @@
 #include "mirk_preciouspeople.h"
 
-#include <tari/actorhandler.h>
-#include <tari/animation.h>
-#include <tari/collisionhandler.h>
-#include <tari/stagehandler.h>
-#include <tari/tweening.h>
-#include <tari/soundeffect.h>
-#include <tari/timer.h>
-#include <tari/system.h>
+#include <prism/actorhandler.h>
+#include <prism/animation.h>
+#include <prism/collisionhandler.h>
+#include <prism/stagehandler.h>
+#include <prism/tweening.h>
+#include <prism/soundeffect.h>
+#include <prism/timer.h>
+#include <prism/system.h>
 
 #include "mirk_stage.h"
 #include "mirk_collision.h"

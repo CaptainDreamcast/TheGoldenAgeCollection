@@ -2,14 +2,14 @@
 
 #include <stdlib.h>
 
-#include <tari/datastructures.h>
-#include <tari/geometry.h>
-#include <tari/physicshandler.h>
-#include <tari/memoryhandler.h>
-#include <tari/collisionhandler.h>
-#include <tari/log.h>
-#include <tari/math.h>
-#include <tari/mugenanimationhandler.h>
+#include <prism/datastructures.h>
+#include <prism/geometry.h>
+#include <prism/physicshandler.h>
+#include <prism/memoryhandler.h>
+#include <prism/collisionhandler.h>
+#include <prism/log.h>
+#include <prism/math.h>
+#include <prism/mugenanimationhandler.h>
 
 #include "cane_collision.h"
 #include "cane_resources.h"

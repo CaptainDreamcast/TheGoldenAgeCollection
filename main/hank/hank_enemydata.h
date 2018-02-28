@@ -1,8 +1,8 @@
 #ifndef ENEMYDATA_H
 #define ENEMYDATA_H
 
-#include <tari/physics.h>
-#include <tari/animation.h>
+#include <prism/physics.h>
+#include <prism/animation.h>
 
 #include "hank_basetypes.h"
 

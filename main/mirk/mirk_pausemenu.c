@@ -1,11 +1,11 @@
 #include "mirk_pausemenu.h"
 
-#include <tari/optionhandler.h>
-#include <tari/animation.h>
-#include <tari/wrapper.h>
-#include <tari/input.h>
-#include <tari/sound.h>
-#include <tari/soundeffect.h>
+#include <prism/optionhandler.h>
+#include <prism/animation.h>
+#include <prism/wrapper.h>
+#include <prism/input.h>
+#include <prism/sound.h>
+#include <prism/soundeffect.h>
 
 #include "mirk_pussymode.h"
 #include "mirk_titlescreen.h"

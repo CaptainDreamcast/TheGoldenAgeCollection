@@ -2,21 +2,21 @@
 
 #include <math.h>
 
-#include <tari/datastructures.h>
-#include <tari/animation.h>
-#include <tari/texture.h>
-#include <tari/collision.h>
-#include <tari/script.h>
-#include <tari/memoryhandler.h>
-#include <tari/physicshandler.h>
-#include <tari/collisionhandler.h>
-#include <tari/system.h>
-#include <tari/math.h>
-#include <tari/file.h>
-#include <tari/collisionanimation.h>
-#include <tari/timer.h>
+#include <prism/datastructures.h>
+#include <prism/animation.h>
+#include <prism/texture.h>
+#include <prism/collision.h>
+#include <prism/script.h>
+#include <prism/memoryhandler.h>
+#include <prism/physicshandler.h>
+#include <prism/collisionhandler.h>
+#include <prism/system.h>
+#include <prism/math.h>
+#include <prism/file.h>
+#include <prism/collisionanimation.h>
+#include <prism/timer.h>
 
-#include <tari/log.h>
+#include <prism/log.h>
 
 
 #include "justice_collision.h"

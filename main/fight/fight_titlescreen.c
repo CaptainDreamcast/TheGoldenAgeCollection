@@ -1,8 +1,8 @@
 #include "fight_titlescreen.h"
 
-#include <tari/animation.h>
-#include <tari/screeneffect.h>
-#include <tari/input.h>
+#include <prism/animation.h>
+#include <prism/screeneffect.h>
+#include <prism/input.h>
 
 #include "fight_menuscreen.h"
 #include "fight_main.h"

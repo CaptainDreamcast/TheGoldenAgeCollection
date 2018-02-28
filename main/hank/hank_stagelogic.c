@@ -2,8 +2,8 @@
 
 #include <stdlib.h>
 
-#include <tari/log.h>
-#include <tari/input.h>
+#include <prism/log.h>
+#include <prism/input.h>
 
 #include "hank_collision.h"
 

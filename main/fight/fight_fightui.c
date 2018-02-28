@@ -2,13 +2,13 @@
 
 #include <assert.h>
 
-#include <tari/file.h>
-#include <tari/texthandler.h>
-#include <tari/math.h>
-#include <tari/input.h>
-#include <tari/mugendefreader.h>
-#include <tari/mugenspritefilereader.h>
-#include <tari/mugenanimationreader.h>
+#include <prism/file.h>
+#include <prism/texthandler.h>
+#include <prism/math.h>
+#include <prism/input.h>
+#include <prism/mugendefreader.h>
+#include <prism/mugenspritefilereader.h>
+#include <prism/mugenanimationreader.h>
 
 #include "fight_mugenanimationhandler.h"
 #include "fight_stage.h"

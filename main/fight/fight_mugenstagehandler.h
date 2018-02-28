@@ -1,9 +1,9 @@
 #pragma once
 
-#include <tari/actorhandler.h>
-#include <tari/animation.h>
-#include <tari/mugenspritefilereader.h>
-#include <tari/mugenanimationreader.h>
+#include <prism/actorhandler.h>
+#include <prism/animation.h>
+#include <prism/mugenspritefilereader.h>
+#include <prism/mugenanimationreader.h>
 
 void setDreamMugenStageHandlerCameraCoordinates(Vector3DI tCoordinates);
 void setDreamMugenStageHandlerCameraRange(GeoRectangle tRect);

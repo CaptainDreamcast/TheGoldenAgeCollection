@@ -1,10 +1,10 @@
 #include "norm_title.h"
 
-#include <tari/animation.h>
-#include <tari/physicshandler.h>
-#include <tari/input.h>
-#include <tari/sound.h>
-#include <tari/screeneffect.h>
+#include <prism/animation.h>
+#include <prism/physicshandler.h>
+#include <prism/input.h>
+#include <prism/sound.h>
+#include <prism/screeneffect.h>
 
 #include "../../maingamemenu.h"
 

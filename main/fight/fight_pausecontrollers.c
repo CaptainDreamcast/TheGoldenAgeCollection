@@ -2,7 +2,7 @@
 
 #include <assert.h>
 
-#include <tari/mugenanimationreader.h>
+#include <prism/mugenanimationreader.h>
 
 #include "fight_playerdefinition.h"
 #include "fight_fightui.h"

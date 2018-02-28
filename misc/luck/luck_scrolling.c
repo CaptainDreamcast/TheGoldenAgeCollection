@@ -1,6 +1,6 @@
 #include "luck_scrolling.h"
 
-#include <tari/stagehandler.h>
+#include <prism/stagehandler.h>
 
 static struct {
 	int mLayer;

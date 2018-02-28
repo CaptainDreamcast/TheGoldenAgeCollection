@@ -1,11 +1,11 @@
 #include "cane_kidnapper.h"
 
-#include <tari/file.h>
-#include <tari/physicshandler.h>
-#include <tari/mugenanimationhandler.h>
-#include <tari/collisionhandler.h>
-#include <tari/screeneffect.h>
-#include <tari/math.h>
+#include <prism/file.h>
+#include <prism/physicshandler.h>
+#include <prism/mugenanimationhandler.h>
+#include <prism/collisionhandler.h>
+#include <prism/screeneffect.h>
+#include <prism/math.h>
 
 #include "cane_shadow.h"
 #include "cane_resources.h"

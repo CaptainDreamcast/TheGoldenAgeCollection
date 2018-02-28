@@ -2,10 +2,10 @@
 
 #include <stdio.h>
 
-#include <tari/input.h>
-#include <tari/mugenanimationhandler.h>
-#include <tari/collisionhandler.h>
-#include <tari/sound.h>
+#include <prism/input.h>
+#include <prism/mugenanimationhandler.h>
+#include <prism/collisionhandler.h>
+#include <prism/sound.h>
 
 #include "beyond_player.h"
 #include "beyond_bg.h"

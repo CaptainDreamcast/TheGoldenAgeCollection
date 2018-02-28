@@ -1,11 +1,11 @@
 #include "bombx_bombxhandler.h"
 
-#include <tari/datastructures.h>
-#include <tari/animation.h>
-#include <tari/physicshandler.h>
-#include <tari/log.h>
-#include <tari/system.h>
-#include <tari/tweening.h>
+#include <prism/datastructures.h>
+#include <prism/animation.h>
+#include <prism/physicshandler.h>
+#include <prism/log.h>
+#include <prism/system.h>
+#include <prism/tweening.h>
 
 #include "bombx_levelhandler.h"
 #include "bombx_player.h"

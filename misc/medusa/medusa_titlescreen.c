@@ -1,8 +1,8 @@
 #include "medusa_titlescreen.h"
 
-#include <tari/animation.h>
-#include <tari/input.h>
-#include <tari/screeneffect.h>
+#include <prism/animation.h>
+#include <prism/input.h>
+#include <prism/screeneffect.h>
 
 #include "../../miscgamemenu.h"
 #include "medusa_splashscreen.h"

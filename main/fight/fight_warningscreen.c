@@ -1,10 +1,10 @@
 #include "fight_warningscreen.h"
 
-#include <tari/animation.h>
-#include <tari/timer.h>
-#include <tari/tweening.h>
-#include <tari/screeneffect.h>
-#include <tari/input.h>
+#include <prism/animation.h>
+#include <prism/timer.h>
+#include <prism/tweening.h>
+#include <prism/screeneffect.h>
+#include <prism/input.h>
 
 #include "fight_titlescreen.h"
 #include "fight_main.h"

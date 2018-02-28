@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.26730.15
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DogmaTheGoldenAge", "DogmaTheGoldenAge.vcxproj", "{51C88FFD-8A77-4EF5-A3DB-DAD14AC2DE57}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libtari", "..\..\addons\libtari\windows\vs17\libtari.vcxproj", "{3572E463-893D-4815-8ECC-E65F3B8C6D90}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "prism", "..\..\addons\prism\windows\vs17\prism.vcxproj", "{3572E463-893D-4815-8ECC-E65F3B8C6D90}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

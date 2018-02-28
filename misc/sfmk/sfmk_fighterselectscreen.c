@@ -3,14 +3,14 @@
 #include <stdlib.h>
 #include <stdint.h>
 
-#include <tari/input.h>
-#include <tari/file.h>
-#include <tari/datastructures.h>
-#include <tari/geometry.h>
-#include <tari/animation.h>
-#include <tari/memoryhandler.h>
-#include <tari/screeneffect.h>
-#include <tari/timer.h>
+#include <prism/input.h>
+#include <prism/file.h>
+#include <prism/datastructures.h>
+#include <prism/geometry.h>
+#include <prism/animation.h>
+#include <prism/memoryhandler.h>
+#include <prism/screeneffect.h>
+#include <prism/timer.h>
 
 #include "sfmk_titlescreen.h"
 #include "sfmk_animation.h"

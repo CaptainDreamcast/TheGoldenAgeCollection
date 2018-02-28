@@ -1,6 +1,6 @@
 #pragma once
 
-#include <tari/mugenanimationhandler.h>
+#include <prism/mugenanimationhandler.h>
 
 void setupOctoAssets();
 MugenAnimations* getOctoAnimations();

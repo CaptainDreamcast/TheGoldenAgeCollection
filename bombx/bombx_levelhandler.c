@@ -2,12 +2,12 @@
 
 #include <stdlib.h>
 
-#include <tari/file.h>
-#include <tari/log.h>
-#include <tari/system.h>
-#include <tari/geometry.h>
-#include <tari/animation.h>
-#include <tari/screeneffect.h>
+#include <prism/file.h>
+#include <prism/log.h>
+#include <prism/system.h>
+#include <prism/geometry.h>
+#include <prism/animation.h>
+#include <prism/screeneffect.h>
 
 #include "bombx_bombxhandler.h"
 #include "bombx_gamescreen.h"

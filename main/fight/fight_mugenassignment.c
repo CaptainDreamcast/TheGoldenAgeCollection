@@ -5,10 +5,10 @@
 #include <assert.h>
 #include <math.h>
 
-#include <tari/memoryhandler.h>
-#include <tari/log.h>
-#include <tari/system.h>
-#include <tari/math.h>
+#include <prism/memoryhandler.h>
+#include <prism/log.h>
+#include <prism/system.h>
+#include <prism/math.h>
 
 #include "fight_playerdefinition.h"
 #include "fight_stage.h"

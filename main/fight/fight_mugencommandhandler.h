@@ -1,6 +1,6 @@
 #pragma once
 
-#include <tari/actorhandler.h>
+#include <prism/actorhandler.h>
 
 #include "fight_mugencommandreader.h"
 #include "fight_mugenanimationhandler.h"

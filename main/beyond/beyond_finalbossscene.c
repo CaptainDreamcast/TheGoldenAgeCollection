@@ -1,10 +1,10 @@
 #include "beyond_finalbossscene.h"
 
-#include <tari/animation.h>
-#include <tari/tweening.h>
-#include <tari/texthandler.h>
-#include <tari/math.h>
-#include <tari/timer.h>
+#include <prism/animation.h>
+#include <prism/tweening.h>
+#include <prism/texthandler.h>
+#include <prism/math.h>
+#include <prism/timer.h>
 
 #include "beyond_shothandler.h"
 #include "beyond_player.h"

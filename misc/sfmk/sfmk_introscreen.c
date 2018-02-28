@@ -2,10 +2,10 @@
 
 #include <stdlib.h>
 
-#include <tari/input.h>
-#include <tari/storyboard.h>
-#include <tari/drawing.h>
-#include <tari/file.h>
+#include <prism/input.h>
+#include <prism/storyboard.h>
+#include <prism/drawing.h>
+#include <prism/file.h>
 
 #include "sfmk_titlescreen.h"
 

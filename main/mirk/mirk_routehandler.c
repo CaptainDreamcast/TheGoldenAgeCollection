@@ -1,7 +1,7 @@
 #include "mirk_routehandler.h"
 
-#include <tari/math.h>
-#include <tari/wrapper.h>
+#include <prism/math.h>
+#include <prism/wrapper.h>
 
 #include "routes/mirk_standardroute.h"
 #include "routes/mirk_pukeroute.h"

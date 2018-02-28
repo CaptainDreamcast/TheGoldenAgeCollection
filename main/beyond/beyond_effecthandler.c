@@ -1,6 +1,6 @@
 #include "beyond_effecthandler.h"
 
-#include <tari/mugenanimationhandler.h>
+#include <prism/mugenanimationhandler.h>
 
 #include "beyond_main.h"
 

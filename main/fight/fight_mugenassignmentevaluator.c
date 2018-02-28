@@ -2,9 +2,9 @@
 
 #include <assert.h>
 
-#include <tari/log.h>
-#include <tari/system.h>
-#include <tari/math.h>
+#include <prism/log.h>
+#include <prism/system.h>
+#include <prism/math.h>
 
 #include "fight_gamelogic.h"
 #include "fight_stage.h"

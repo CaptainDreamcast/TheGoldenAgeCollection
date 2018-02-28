@@ -1,7 +1,7 @@
 #ifndef TITLESCREEN_H
 #define TITLESCREEN_H
 
-#include <tari/wrapper.h>
+#include <prism/wrapper.h>
 
 extern Screen JusticeTitleScreen;
 

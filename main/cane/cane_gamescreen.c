@@ -2,13 +2,13 @@
 
 #include <stdlib.h>
 
-#include <tari/input.h>
-#include <tari/wrapper.h>
-#include <tari/animationtree.h>
-#include <tari/stagehandler.h>
-#include <tari/collisionhandler.h>
-#include <tari/mugenanimationhandler.h>
-#include <tari/sound.h>
+#include <prism/input.h>
+#include <prism/wrapper.h>
+#include <prism/animationtree.h>
+#include <prism/stagehandler.h>
+#include <prism/collisionhandler.h>
+#include <prism/mugenanimationhandler.h>
+#include <prism/sound.h>
 
 #include "cane_player.h"
 #include "cane_bullet.h"

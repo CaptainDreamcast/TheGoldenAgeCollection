@@ -1,9 +1,9 @@
 #include "object_titlescreen.h"
 
-#include <tari/input.h>
-#include <tari/mugenanimationhandler.h>
-#include <tari/screeneffect.h>
-#include <tari/sound.h>
+#include <prism/input.h>
+#include <prism/mugenanimationhandler.h>
+#include <prism/screeneffect.h>
+#include <prism/sound.h>
 
 #include "../../miscgamemenu.h"
 

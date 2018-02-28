@@ -1,9 +1,9 @@
 #include "senpai_finalboss.h"
 
-#include <tari/input.h>
-#include <tari/texthandler.h>
-#include <tari/math.h>
-#include <tari/screeneffect.h>
+#include <prism/input.h>
+#include <prism/texthandler.h>
+#include <prism/math.h>
+#include <prism/screeneffect.h>
 
 #include "senpai_enemyhandler.h"
 #include "senpai_creditscreen.h"

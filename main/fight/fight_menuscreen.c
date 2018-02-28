@@ -1,9 +1,9 @@
 #include "fight_menuscreen.h"
 
-#include <tari/optionhandler.h>
-#include <tari/screeneffect.h>
-#include <tari/input.h>
-#include <tari/mugenanimationhandler.h>
+#include <prism/optionhandler.h>
+#include <prism/screeneffect.h>
+#include <prism/input.h>
+#include <prism/mugenanimationhandler.h>
 
 #include "fight_fightscreen.h"
 #include "fight_titlescreen.h"

@@ -1,7 +1,7 @@
 #ifndef GAMEOVERSCREEN_H
 #define GAMEOVERSCREEN_H
 
-#include <tari/wrapper.h>
+#include <prism/wrapper.h>
 
 extern Screen JusticeGameOverScreen;
 

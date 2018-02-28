@@ -1,6 +1,6 @@
 #include "mirk_standard1.h"
 
-#include <tari/math.h>
+#include <prism/math.h>
 
 #include "mirk_standard.h"
 

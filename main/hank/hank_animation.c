@@ -1,6 +1,6 @@
 #include "hank_animation.h"
 
-#include <tari/animation.h>
+#include <prism/animation.h>
 
 void handleHankCharacterAnimation(HankWorldData* tWorldData, HankCharacterData* tCharacterData) {
   HankCharacterState st = tCharacterData->state;

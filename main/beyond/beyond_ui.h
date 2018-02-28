@@ -1,7 +1,7 @@
 #pragma once
 
-#include <tari/actorhandler.h>
-#include <tari/mugenspritefilereader.h>
+#include <prism/actorhandler.h>
+#include <prism/mugenspritefilereader.h>
 
 extern ActorBlueprint BeyondUserInterface;
 

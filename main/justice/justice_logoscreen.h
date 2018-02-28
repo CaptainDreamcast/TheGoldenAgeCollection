@@ -1,7 +1,7 @@
 #ifndef LOGOSCREEN_H
 #define LOGOSCREEN_H
 
-#include <tari/wrapper.h>
+#include <prism/wrapper.h>
 
 extern Screen JusticeLogoScreen;
 

@@ -1,12 +1,12 @@
 #include "fight_twoplayerselectscreen.h"
 
-#include <tari/geometry.h>
-#include <tari/animation.h>
-#include <tari/input.h>
-#include <tari/screeneffect.h>
-#include <tari/texthandler.h>
-#include <tari/math.h>
-#include <tari/mugenanimationhandler.h>
+#include <prism/geometry.h>
+#include <prism/animation.h>
+#include <prism/input.h>
+#include <prism/screeneffect.h>
+#include <prism/texthandler.h>
+#include <prism/math.h>
+#include <prism/mugenanimationhandler.h>
 
 #include "fight_titlescreen.h"
 #include "fight_fightscreen.h"

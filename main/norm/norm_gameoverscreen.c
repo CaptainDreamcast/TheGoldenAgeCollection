@@ -1,8 +1,8 @@
 #include "norm_congratsscreen.h"
 
-#include <tari/animation.h>
-#include <tari/input.h>
-#include <tari/sound.h>
+#include <prism/animation.h>
+#include <prism/input.h>
+#include <prism/sound.h>
 
 #include "norm_title.h"
 

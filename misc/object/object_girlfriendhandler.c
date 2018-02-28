@@ -1,6 +1,6 @@
 #include "object_girlfriendhandler.h"
 
-#include <tari/math.h>
+#include <prism/math.h>
 
 #include "object_girlbarhandler.h"
 

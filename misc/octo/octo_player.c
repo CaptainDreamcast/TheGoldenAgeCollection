@@ -1,9 +1,9 @@
 #include "octo_player.h"
 
-#include <tari/physicshandler.h>
-#include <tari/input.h>
-#include <tari/mugenanimationhandler.h>
-#include <tari/sound.h>
+#include <prism/physicshandler.h>
+#include <prism/input.h>
+#include <prism/mugenanimationhandler.h>
+#include <prism/sound.h>
 
 #include "octo_assethandler.h"
 #include "octo_collision.h"

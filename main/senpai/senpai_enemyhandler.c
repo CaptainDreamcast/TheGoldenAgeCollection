@@ -1,14 +1,14 @@
 #include "senpai_enemyhandler.h"
 
-#include <tari/datastructures.h>
-#include <tari/animation.h>
-#include <tari/math.h>
-#include <tari/input.h>
-#include <tari/mugenanimationhandler.h>
-#include <tari/tweening.h>
-#include <tari/timer.h>
-#include <tari/texthandler.h>
-#include <tari/screeneffect.h>
+#include <prism/datastructures.h>
+#include <prism/animation.h>
+#include <prism/math.h>
+#include <prism/input.h>
+#include <prism/mugenanimationhandler.h>
+#include <prism/tweening.h>
+#include <prism/timer.h>
+#include <prism/texthandler.h>
+#include <prism/screeneffect.h>
 
 #include "senpai_levelhandler.h"
 #include "senpai_player.h"

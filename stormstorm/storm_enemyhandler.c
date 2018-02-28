@@ -2,12 +2,12 @@
 
 #include <stdio.h>
 
-#include <tari/datastructures.h>
-#include <tari/physicshandler.h>
-#include <tari/collisionhandler.h>
-#include <tari/memoryhandler.h>
-#include <tari/math.h>
-#include <tari/timer.h>
+#include <prism/datastructures.h>
+#include <prism/physicshandler.h>
+#include <prism/collisionhandler.h>
+#include <prism/memoryhandler.h>
+#include <prism/math.h>
+#include <prism/timer.h>
 
 #include "storm_collision.h"
 #include "vectrexanimations.h"

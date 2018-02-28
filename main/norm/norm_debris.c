@@ -1,10 +1,10 @@
 #include "norm_debris.h"
 
-#include <tari/animation.h>
-#include <tari/actorhandler.h>
-#include <tari/math.h>
-#include <tari/physicshandler.h>
-#include <tari/soundeffect.h>
+#include <prism/animation.h>
+#include <prism/actorhandler.h>
+#include <prism/math.h>
+#include <prism/physicshandler.h>
+#include <prism/soundeffect.h>
 
 
 static struct {

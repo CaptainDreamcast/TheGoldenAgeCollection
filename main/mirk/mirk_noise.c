@@ -1,8 +1,8 @@
 #include "mirk_noise.h"
 
-#include <tari/soundeffect.h>
-#include <tari/timer.h>
-#include <tari/math.h>
+#include <prism/soundeffect.h>
+#include <prism/timer.h>
+#include <prism/math.h>
 
 typedef struct {
 	Duration mNow;

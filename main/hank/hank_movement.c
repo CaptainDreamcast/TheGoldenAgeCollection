@@ -1,7 +1,7 @@
 #include "hank_movement.h"
 
-#include <tari/input.h>
-#include <tari/log.h>
+#include <prism/input.h>
+#include <prism/log.h>
 
 #include "hank_state.h"
 

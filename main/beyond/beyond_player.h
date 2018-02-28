@@ -1,8 +1,8 @@
 #pragma once
 
-#include <tari/actorhandler.h>
-#include <tari/geometry.h>
-#include <tari/physics.h>
+#include <prism/actorhandler.h>
+#include <prism/geometry.h>
+#include <prism/physics.h>
 
 extern ActorBlueprint BeyondPlayer;
 

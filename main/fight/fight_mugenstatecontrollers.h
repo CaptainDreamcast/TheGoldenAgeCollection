@@ -1,6 +1,6 @@
 #pragma once
 
-#include <tari/mugendefreader.h>
+#include <prism/mugendefreader.h>
 
 #include "fight_mugenassignment.h"
 #include "fight_playerdefinition.h"

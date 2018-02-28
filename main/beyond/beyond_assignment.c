@@ -3,8 +3,8 @@
 #include <stdio.h>
 #include <assert.h>
 
-#include <tari/mugenassignmentevaluator.h>
-#include <tari/math.h>
+#include <prism/mugenassignmentevaluator.h>
+#include <prism/math.h>
 
 #include "beyond_boss.h"
 #include "beyond_shothandler.h"

@@ -1,9 +1,9 @@
 #include "object_congratsgirlfriendscreen.h"
 
-#include <tari/mugenanimationhandler.h>
-#include <tari/timer.h>
-#include <tari/screeneffect.h>
-#include <tari/input.h>
+#include <prism/mugenanimationhandler.h>
+#include <prism/timer.h>
+#include <prism/screeneffect.h>
+#include <prism/input.h>
 
 #include "object_girlfriendhandler.h"
 #include "object_congratsscreen.h"

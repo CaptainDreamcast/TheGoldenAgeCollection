@@ -1,8 +1,8 @@
 #include "storm_ui.h"
 
-#include <tari/animation.h>
-#include <tari/math.h>
-#include <tari/wrapper.h>
+#include <prism/animation.h>
+#include <prism/math.h>
+#include <prism/wrapper.h>
 
 #include "vectrexanimations.h"
 #include "storm_gameoverscreen.h"

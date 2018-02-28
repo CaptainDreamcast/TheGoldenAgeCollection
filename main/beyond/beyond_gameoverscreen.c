@@ -1,8 +1,8 @@
 #include "beyond_gameoverscreen.h"
 
-#include <tari/screeneffect.h>
-#include <tari/animation.h>
-#include <tari/input.h>
+#include <prism/screeneffect.h>
+#include <prism/animation.h>
+#include <prism/input.h>
 
 #include "beyond_titlescreen.h"
 #include "beyond_main.h"

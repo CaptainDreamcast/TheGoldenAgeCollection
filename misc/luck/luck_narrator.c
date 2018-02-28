@@ -1,8 +1,8 @@
 #include "luck_narrator.h"
 
-#include <tari/animation.h>
-#include <tari/texthandler.h>
-#include <tari/math.h>
+#include <prism/animation.h>
+#include <prism/texthandler.h>
+#include <prism/math.h>
 
 static struct {
 	TextureData mBG;

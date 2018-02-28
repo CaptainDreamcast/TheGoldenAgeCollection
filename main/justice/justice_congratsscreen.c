@@ -1,10 +1,10 @@
 #include "justice_continuescreen.h"
 
-#include <tari/file.h>
-#include <tari/texture.h>
-#include <tari/animation.h>
-#include <tari/input.h>
-#include <tari/physicshandler.h>
+#include <prism/file.h>
+#include <prism/texture.h>
+#include <prism/animation.h>
+#include <prism/input.h>
+#include <prism/physicshandler.h>
 
 #include "justice_titlescreen.h"
 

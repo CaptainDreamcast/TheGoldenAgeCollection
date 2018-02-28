@@ -3,10 +3,10 @@
 #include <stdlib.h>
 #include <math.h>
 
-#include <tari/input.h>
-#include <tari/mugenanimationhandler.h>
-#include <tari/file.h>
-#include <tari/sound.h>
+#include <prism/input.h>
+#include <prism/mugenanimationhandler.h>
+#include <prism/file.h>
+#include <prism/sound.h>
 
 #include "cane_stage.h"
 #include "cane_gamescreen.h"

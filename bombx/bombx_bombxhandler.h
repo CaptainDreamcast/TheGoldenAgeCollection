@@ -1,7 +1,7 @@
 #pragma once 
 
-#include <tari/geometry.h>
-#include <tari/actorhandler.h>
+#include <prism/geometry.h>
+#include <prism/actorhandler.h>
 
 extern ActorBlueprint BombxHandler;
 

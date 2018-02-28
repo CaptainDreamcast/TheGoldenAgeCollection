@@ -2,11 +2,11 @@
 
 #include <stdio.h>
 
-#include <tari/texture.h>
-#include <tari/input.h>
-#include <tari/physicshandler.h>
-#include <tari/math.h>
-#include <tari/mugenanimationhandler.h>
+#include <prism/texture.h>
+#include <prism/input.h>
+#include <prism/physicshandler.h>
+#include <prism/math.h>
+#include <prism/mugenanimationhandler.h>
 
 #include "cane_enemies.h"
 #include "cane_resources.h"

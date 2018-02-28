@@ -1,11 +1,11 @@
 #include "luck_pirate.h"
 
-#include <tari/log.h>
-#include <tari/animation.h>
-#include <tari/memoryhandler.h>
-#include <tari/physicshandler.h>
-#include <tari/actorhandler.h>
-#include <tari/collisionhandler.h>
+#include <prism/log.h>
+#include <prism/animation.h>
+#include <prism/memoryhandler.h>
+#include <prism/physicshandler.h>
+#include <prism/actorhandler.h>
+#include <prism/collisionhandler.h>
 
 #include "luck_collision.h"
 

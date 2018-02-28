@@ -1,6 +1,6 @@
 #include "octo_main.h"
 
-#include <tari/wrapper.h>
+#include <prism/wrapper.h>
 
 #include "octo_titlescreen.h"
 

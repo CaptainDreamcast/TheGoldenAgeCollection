@@ -1,9 +1,9 @@
 #include "mirk_limitedsightlevel.h"
 
-#include <tari/math.h>
-#include <tari/animation.h>
-#include <tari/system.h>
-#include <tari/animation.h>
+#include <prism/math.h>
+#include <prism/animation.h>
+#include <prism/system.h>
+#include <prism/animation.h>
 
 #include "../standardroute/mirk_standard.h"
 

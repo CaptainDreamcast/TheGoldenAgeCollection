@@ -1,7 +1,7 @@
 #pragma once
 
-#include <tari/datastructures.h>
-#include <tari/animation.h>
+#include <prism/datastructures.h>
+#include <prism/animation.h>
 
 #include "fight_mugenassignment.h"
 

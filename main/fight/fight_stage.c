@@ -3,15 +3,15 @@
 #include <stdio.h>
 #include <assert.h>
 
-#include <tari/memoryhandler.h>
-#include <tari/log.h>
-#include <tari/system.h>
-#include <tari/animation.h>
-#include <tari/stagehandler.h>
-#include <tari/math.h>
-#include <tari/input.h>
-#include <tari/mugendefreader.h>
-#include <tari/mugenspritefilereader.h>
+#include <prism/memoryhandler.h>
+#include <prism/log.h>
+#include <prism/system.h>
+#include <prism/animation.h>
+#include <prism/stagehandler.h>
+#include <prism/math.h>
+#include <prism/input.h>
+#include <prism/mugendefreader.h>
+#include <prism/mugenspritefilereader.h>
 
 #include "fight_playerdefinition.h"
 #include "fight_mugenstagehandler.h"

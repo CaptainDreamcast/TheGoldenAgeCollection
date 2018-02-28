@@ -1,8 +1,8 @@
 #pragma once
 
-#include <tari/actorhandler.h>
-#include <tari/geometry.h>
-#include <tari/mugenanimationhandler.h>
+#include <prism/actorhandler.h>
+#include <prism/geometry.h>
+#include <prism/mugenanimationhandler.h>
 
 extern ActorBlueprint SenpaiEnemyHandler;
 

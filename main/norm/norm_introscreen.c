@@ -1,12 +1,12 @@
 #include "norm_introscreen.h"
 
-#include <tari/optionhandler.h>
-#include <tari/texthandler.h>
-#include <tari/math.h>
-#include <tari/timer.h>
-#include <tari/input.h>
-#include <tari/sound.h>
-#include <tari/soundeffect.h>
+#include <prism/optionhandler.h>
+#include <prism/texthandler.h>
+#include <prism/math.h>
+#include <prism/timer.h>
+#include <prism/input.h>
+#include <prism/sound.h>
+#include <prism/soundeffect.h>
 
 #include "norm_gamescreen.h"
 #include "norm_title.h"

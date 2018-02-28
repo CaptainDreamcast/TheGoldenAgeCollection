@@ -1,6 +1,6 @@
 #include "justice_main.h"
 
-#include <tari/memoryhandler.h>
+#include <prism/memoryhandler.h>
 
 #include "../../maingamemenu.h"
 

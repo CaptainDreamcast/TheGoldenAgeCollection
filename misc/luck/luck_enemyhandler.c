@@ -1,6 +1,6 @@
 #include "luck_enemyhandler.h"
 
-#include <tari/timer.h>
+#include <prism/timer.h>
 
 #include "luck_door.h"
 #include "luck_pirate.h"

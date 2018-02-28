@@ -1,16 +1,16 @@
 #include "beyond_level.h"
 
-#include <tari/mugendefreader.h>
-#include <tari/animation.h>
-#include <tari/collisionhandler.h>
-#include <tari/mugenanimationreader.h>
-#include <tari/mugenassignmentevaluator.h>
-#include <tari/log.h>
-#include <tari/system.h>
-#include <tari/wrapper.h>
-#include <tari/screeneffect.h>
-#include <tari/mugenanimationhandler.h>
-#include <tari/math.h>
+#include <prism/mugendefreader.h>
+#include <prism/animation.h>
+#include <prism/collisionhandler.h>
+#include <prism/mugenanimationreader.h>
+#include <prism/mugenassignmentevaluator.h>
+#include <prism/log.h>
+#include <prism/system.h>
+#include <prism/wrapper.h>
+#include <prism/screeneffect.h>
+#include <prism/mugenanimationhandler.h>
+#include <prism/math.h>
 
 #include "beyond_enemyhandler.h"
 #include "beyond_boss.h"

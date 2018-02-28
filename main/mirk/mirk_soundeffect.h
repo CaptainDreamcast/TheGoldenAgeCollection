@@ -1,6 +1,6 @@
 #pragma once
 
-#include <tari/soundeffect.h>
+#include <prism/soundeffect.h>
 
 void initMirkGameSoundEffects();
 SoundEffectCollection getMirkTextSoundEffectCollection();

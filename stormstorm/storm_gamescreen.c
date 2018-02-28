@@ -1,8 +1,8 @@
 #include "storm_gamescreen.h"
 
-#include <tari/input.h>
-#include <tari/physicshandler.h>
-#include <tari/collisionhandler.h>
+#include <prism/input.h>
+#include <prism/physicshandler.h>
+#include <prism/collisionhandler.h>
 
 #include "storm_titlescreen.h"
 #include "vectrex_simulation.h"

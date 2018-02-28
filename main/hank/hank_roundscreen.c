@@ -2,11 +2,11 @@
 
 #include <stdio.h>
 
-#include <tari/drawing.h>
-#include <tari/animation.h>
-#include <tari/input.h>
-#include <tari/system.h>
-#include <tari/texture.h>
+#include <prism/drawing.h>
+#include <prism/animation.h>
+#include <prism/input.h>
+#include <prism/system.h>
+#include <prism/texture.h>
 
 #include "hank_round.h"
 #include "hank_titlescreen.h"

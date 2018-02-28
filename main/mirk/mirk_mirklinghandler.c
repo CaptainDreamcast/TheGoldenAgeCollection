@@ -2,12 +2,12 @@
 
 #include <stdio.h>
 
-#include <tari/wrapper.h>
-#include <tari/datastructures.h>
-#include <tari/math.h>
-#include <tari/file.h>
-#include <tari/texthandler.h>
-#include <tari/system.h>
+#include <prism/wrapper.h>
+#include <prism/datastructures.h>
+#include <prism/math.h>
+#include <prism/file.h>
+#include <prism/texthandler.h>
+#include <prism/system.h>
 
 #include "mirk_mirkling.h"
 

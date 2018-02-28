@@ -2,17 +2,17 @@
 
 #include <assert.h>
 
-#include <tari/mugenspritefilereader.h>
-#include <tari/mugenanimationreader.h>
-#include <tari/collisionhandler.h>
-#include <tari/physicshandler.h>
-#include <tari/log.h>
-#include <tari/system.h>
-#include <tari/mugenscriptparser.h>
-#include <tari/mugenassignmentevaluator.h>
-#include <tari/math.h>
-#include <tari/wrapper.h>
-#include <tari/drawing.h>
+#include <prism/mugenspritefilereader.h>
+#include <prism/mugenanimationreader.h>
+#include <prism/collisionhandler.h>
+#include <prism/physicshandler.h>
+#include <prism/log.h>
+#include <prism/system.h>
+#include <prism/mugenscriptparser.h>
+#include <prism/mugenassignmentevaluator.h>
+#include <prism/math.h>
+#include <prism/wrapper.h>
+#include <prism/drawing.h>
 
 #include "beyond_collision.h"
 #include "beyond_enemyhandler.h"

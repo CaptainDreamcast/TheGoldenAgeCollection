@@ -1,6 +1,6 @@
 #include "fight_config.h"
 
-#include <tari/mugendefreader.h>
+#include <prism/mugendefreader.h>
 
 static struct {
 	double mDefaultAttackDamageDoneToPowerMultiplier;

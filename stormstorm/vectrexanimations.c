@@ -1,8 +1,8 @@
 #include "vectrexanimations.h"
 
-#include <tari/datastructures.h>
-#include <tari/animation.h>
-#include <tari/math.h>
+#include <prism/datastructures.h>
+#include <prism/animation.h>
+#include <prism/math.h>
 
 typedef struct {
 	TextureData mTexture;

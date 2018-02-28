@@ -1,8 +1,8 @@
 #include "medusa_toucan.h"
 
-#include <tari/animation.h>
-#include <tari/physicshandler.h>
-#include <tari/input.h>
+#include <prism/animation.h>
+#include <prism/physicshandler.h>
+#include <prism/input.h>
 
 #include "medusa_shothandler.h"
 #include "medusa_resources.h"

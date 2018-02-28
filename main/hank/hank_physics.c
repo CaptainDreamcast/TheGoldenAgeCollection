@@ -1,7 +1,7 @@
 #include "hank_physics.h"
 
-#include <tari/physics.h>
-#include <tari/log.h>
+#include <prism/physics.h>
+#include <prism/log.h>
 
 void handleHankPhysicsForCharacter(HankWorldData* tWorldData, HankCharacterData* tCharacterData) {
   debugLog("Start handling physics");

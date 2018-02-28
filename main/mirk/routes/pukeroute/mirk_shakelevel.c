@@ -1,9 +1,9 @@
 #include "mirk_shakelevel.h"
 
-#include <tari/math.h>
-#include <tari/animation.h>
-#include <tari/system.h>
-#include <tari/stagehandler.h>
+#include <prism/math.h>
+#include <prism/animation.h>
+#include <prism/system.h>
+#include <prism/stagehandler.h>
 
 
 #include "../standardroute/mirk_standard.h"

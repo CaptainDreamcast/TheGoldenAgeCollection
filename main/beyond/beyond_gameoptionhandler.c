@@ -1,13 +1,13 @@
 #include "beyond_gameoptionhandler.h"
 
-#include <tari/animation.h>
-#include <tari/wrapper.h>
-#include <tari/input.h>
-#include <tari/optionhandler.h>
-#include <tari/texthandler.h>
-#include <tari/math.h>
-#include <tari/screeneffect.h>
-#include <tari/mugenanimationhandler.h>
+#include <prism/animation.h>
+#include <prism/wrapper.h>
+#include <prism/input.h>
+#include <prism/optionhandler.h>
+#include <prism/texthandler.h>
+#include <prism/math.h>
+#include <prism/screeneffect.h>
+#include <prism/mugenanimationhandler.h>
 
 #include "beyond_gamescreen.h"
 #include "beyond_titlescreen.h"

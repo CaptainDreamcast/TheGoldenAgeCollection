@@ -1,13 +1,13 @@
 #include "object_explanationscreen.h"
 
-#include <tari/mugendefreader.h>
-#include <tari/mugenanimationhandler.h>
-#include <tari/input.h>
-#include <tari/screeneffect.h>
-#include <tari/texthandler.h>
-#include <tari/math.h>
-#include <tari/optionhandler.h>
-#include <tari/sound.h>
+#include <prism/mugendefreader.h>
+#include <prism/mugenanimationhandler.h>
+#include <prism/input.h>
+#include <prism/screeneffect.h>
+#include <prism/texthandler.h>
+#include <prism/math.h>
+#include <prism/optionhandler.h>
+#include <prism/sound.h>
 
 #include "object_titlescreen.h"
 #include "object_gamelogic.h"

@@ -1,7 +1,7 @@
 #ifndef CONGRATSSCREEN_H
 #define CONGRATSSCREEN_H
 
-#include <tari/wrapper.h>
+#include <prism/wrapper.h>
 
 extern Screen JusticeCongratsScreen;
 

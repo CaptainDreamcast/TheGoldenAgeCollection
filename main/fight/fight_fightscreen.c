@@ -2,11 +2,11 @@
 
 #include <stdio.h>
 
-#include <tari/input.h>
-#include <tari/stagehandler.h>
-#include <tari/collisionhandler.h>
-#include <tari/system.h>
-#include <tari/mugenanimationreader.h>
+#include <prism/input.h>
+#include <prism/stagehandler.h>
+#include <prism/collisionhandler.h>
+#include <prism/system.h>
+#include <prism/mugenanimationreader.h>
 
 #include "fight_stage.h"
 #include "fight_mugencommandreader.h"

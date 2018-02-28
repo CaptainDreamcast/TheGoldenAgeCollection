@@ -2,15 +2,15 @@
 
 #include <assert.h>
 
-#include <tari/collisionhandler.h>
-#include <tari/datastructures.h>
-#include <tari/mugenanimationreader.h>
-#include <tari/mugenspritefilereader.h>
-#include <tari/physicshandler.h>
-#include <tari/mugenanimationhandler.h>
-#include <tari/math.h>
-#include <tari/mugenassignmentevaluator.h>
-#include <tari/wrapper.h>
+#include <prism/collisionhandler.h>
+#include <prism/datastructures.h>
+#include <prism/mugenanimationreader.h>
+#include <prism/mugenspritefilereader.h>
+#include <prism/physicshandler.h>
+#include <prism/mugenanimationhandler.h>
+#include <prism/math.h>
+#include <prism/mugenassignmentevaluator.h>
+#include <prism/wrapper.h>
 
 #include "beyond_shothandler.h"
 #include "beyond_collision.h"

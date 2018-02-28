@@ -1,9 +1,9 @@
 #include "senpai_creditscreen.h"
 
-#include <tari/animation.h>
-#include <tari/physicshandler.h>
-#include <tari/screeneffect.h>
-#include <tari/input.h>
+#include <prism/animation.h>
+#include <prism/physicshandler.h>
+#include <prism/screeneffect.h>
+#include <prism/input.h>
 
 #include "senpai_titlescreen.h"
 

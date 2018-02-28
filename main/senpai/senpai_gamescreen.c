@@ -1,7 +1,7 @@
 #include "senpai_gamescreen.h"
 
-#include <tari/input.h>
-#include <tari/mugenanimationhandler.h>
+#include <prism/input.h>
+#include <prism/mugenanimationhandler.h>
 
 #include "senpai_titlescreen.h"
 #include "senpai_levelhandler.h"

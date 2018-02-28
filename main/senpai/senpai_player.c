@@ -1,8 +1,8 @@
 #include "senpai_player.h"
 
-#include <tari/animation.h>
-#include <tari/input.h>
-#include <tari/tweening.h>
+#include <prism/animation.h>
+#include <prism/input.h>
+#include <prism/tweening.h>
 
 #include "senpai_levelhandler.h"
 #include "senpai_enemyhandler.h"

@@ -1,11 +1,11 @@
 #include "hack_hackscreen.h"
 
-#include <tari/mugenanimationhandler.h>
-#include <tari/input.h>
-#include <tari/screeneffect.h>
-#include <tari/optionhandler.h>
-#include <tari/math.h>
-#include <tari/sound.h>
+#include <prism/mugenanimationhandler.h>
+#include <prism/input.h>
+#include <prism/screeneffect.h>
+#include <prism/optionhandler.h>
+#include <prism/math.h>
+#include <prism/sound.h>
 
 #include "hack_selectscreen.h"
 #include "hack_performancehandler.h"

@@ -1,8 +1,8 @@
 #include "mirk_rotatelevel.h"
 
-#include <tari/math.h>
-#include <tari/animation.h>
-#include <tari/system.h>
+#include <prism/math.h>
+#include <prism/animation.h>
+#include <prism/system.h>
 
 #include "../standardroute/mirk_standard.h"
 #include "../../mirk_mirklinghandler.h"

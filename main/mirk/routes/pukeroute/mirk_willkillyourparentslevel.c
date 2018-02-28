@@ -1,11 +1,11 @@
 #include "mirk_maybekilledyourparentslevel.h"
 
-#include <tari/math.h>
-#include <tari/animation.h>
-#include <tari/system.h>
-#include <tari/animation.h>
-#include <tari/physicshandler.h>
-#include <tari/texthandler.h>
+#include <prism/math.h>
+#include <prism/animation.h>
+#include <prism/system.h>
+#include <prism/animation.h>
+#include <prism/physicshandler.h>
+#include <prism/texthandler.h>
 
 #include "../standardroute/mirk_standard.h"
 #include "../../mirk_deathcount.h"

@@ -1,9 +1,9 @@
 #include "norm_player.h"
 
-#include <tari/animation.h>
-#include <tari/wrapper.h>
+#include <prism/animation.h>
+#include <prism/wrapper.h>
 
-#include <tari/stagehandler.h>
+#include <prism/stagehandler.h>
 
 #include "norm_ui.h"
 #include "norm_bg.h"

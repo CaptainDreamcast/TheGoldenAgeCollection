@@ -1,7 +1,7 @@
 #pragma once
 
-#include <tari/actorhandler.h>
-#include <tari/physics.h>
+#include <prism/actorhandler.h>
+#include <prism/physics.h>
 
 ActorBlueprint getStormPaddleBP();
 

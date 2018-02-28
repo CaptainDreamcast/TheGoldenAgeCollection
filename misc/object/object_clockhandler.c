@@ -1,8 +1,8 @@
 #include "object_clockhandler.h"
 
-#include <tari/mugenanimationhandler.h>
-#include <tari/texthandler.h>
-#include <tari/math.h>
+#include <prism/mugenanimationhandler.h>
+#include <prism/texthandler.h>
+#include <prism/math.h>
 
 static struct {
 	MugenSpriteFile mSprites;

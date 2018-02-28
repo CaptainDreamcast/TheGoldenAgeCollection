@@ -1,6 +1,6 @@
 #include "vectrex_simulation.h"
 
-#include <tari/animation.h>
+#include <prism/animation.h>
 
 #include "vectrexanimations.h"
 

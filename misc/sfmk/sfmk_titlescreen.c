@@ -2,11 +2,11 @@
 
 #include <stdlib.h>
 
-#include <tari/screeneffect.h>
-#include <tari/timer.h>
-#include <tari/input.h>
-#include <tari/file.h>
-#include <tari/physicshandler.h>
+#include <prism/screeneffect.h>
+#include <prism/timer.h>
+#include <prism/input.h>
+#include <prism/file.h>
+#include <prism/physicshandler.h>
 
 #include "../../miscgamemenu.h"
 

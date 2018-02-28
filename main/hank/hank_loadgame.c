@@ -1,7 +1,7 @@
 #include "hank_loadgame.h"
 
-#include <tari/physics.h>
-#include <tari/log.h>
+#include <prism/physics.h>
+#include <prism/log.h>
 
 #include "hank_generateLevel.h"
 #include "hank_basedefinitions.h"

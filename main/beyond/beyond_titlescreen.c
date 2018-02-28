@@ -2,9 +2,9 @@
 
 #include <stdio.h>
 
-#include <tari/mugenanimationhandler.h>
-#include <tari/input.h>
-#include <tari/screeneffect.h>
+#include <prism/mugenanimationhandler.h>
+#include <prism/input.h>
+#include <prism/screeneffect.h>
 
 #include "../../maingamemenu.h"
 

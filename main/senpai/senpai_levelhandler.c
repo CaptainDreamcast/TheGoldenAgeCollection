@@ -1,9 +1,9 @@
 #include "senpai_levelhandler.h"
 
-#include <tari/animation.h>
-#include <tari/math.h>
-#include <tari/texthandler.h>
-#include <tari/sound.h>
+#include <prism/animation.h>
+#include <prism/math.h>
+#include <prism/texthandler.h>
+#include <prism/sound.h>
 
 #include "senpai_player.h"
 #include "senpai_enemyhandler.h"

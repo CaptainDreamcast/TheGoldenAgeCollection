@@ -1,9 +1,9 @@
 #include "norm_timer.h"
 
-#include <tari/animation.h>
-#include <tari/framerate.h>
-#include <tari/timer.h>
-#include <tari/screeneffect.h>
+#include <prism/animation.h>
+#include <prism/framerate.h>
+#include <prism/timer.h>
+#include <prism/screeneffect.h>
 
 #include "norm_gameoverscreen.h"
 

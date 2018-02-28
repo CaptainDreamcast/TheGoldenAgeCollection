@@ -2,10 +2,10 @@
 
 #include <stdio.h>
 
-#include <tari/actorhandler.h>
-#include <tari/input.h>
-#include <tari/collisionhandler.h>
-#include <tari/stagehandler.h>
+#include <prism/actorhandler.h>
+#include <prism/input.h>
+#include <prism/collisionhandler.h>
+#include <prism/stagehandler.h>
 
 #include "mirk_stage.h"
 #include "mirk_mirklinghandler.h"

@@ -2,12 +2,12 @@
 
 #include <stdlib.h>
 
-#include <tari/input.h>
-#include <tari/animation.h>
-#include <tari/file.h>
-#include <tari/mugenanimationhandler.h>
-#include <tari/screeneffect.h>
-#include <tari/sound.h>
+#include <prism/input.h>
+#include <prism/animation.h>
+#include <prism/file.h>
+#include <prism/mugenanimationhandler.h>
+#include <prism/screeneffect.h>
+#include <prism/sound.h>
 
 #include "../../maingamemenu.h"
 

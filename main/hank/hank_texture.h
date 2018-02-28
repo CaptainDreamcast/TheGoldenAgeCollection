@@ -1,7 +1,7 @@
 #ifndef TEXTURE_H
 #define TEXTURE_H
 
-#include <tari/texture.h>
+#include <prism/texture.h>
 
 #include "hank_worlddata.h"
 #include "hank_characterdata.h"

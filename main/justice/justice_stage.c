@@ -3,16 +3,16 @@
 #include <string.h>
 #include <stdio.h>
 
-#include <tari/geometry.h>
-#include <tari/script.h>
-#include <tari/log.h>
-#include <tari/system.h>
-#include <tari/collisionhandler.h>
-#include <tari/memoryhandler.h>
-#include <tari/datastructures.h>
-#include <tari/timer.h>
-#include <tari/mugenanimationhandler.h>
-#include <tari/input.h>
+#include <prism/geometry.h>
+#include <prism/script.h>
+#include <prism/log.h>
+#include <prism/system.h>
+#include <prism/collisionhandler.h>
+#include <prism/memoryhandler.h>
+#include <prism/datastructures.h>
+#include <prism/timer.h>
+#include <prism/mugenanimationhandler.h>
+#include <prism/input.h>
 
 #include "justice_enemies.h"
 #include "justice_player.h"

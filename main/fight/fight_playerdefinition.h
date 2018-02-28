@@ -1,9 +1,9 @@
 #pragma once
 
-#include <tari/datastructures.h>
+#include <prism/datastructures.h>
 
-#include <tari/mugenspritefilereader.h>
-#include <tari/mugenanimationreader.h>
+#include <prism/mugenspritefilereader.h>
+#include <prism/mugenanimationreader.h>
 
 #include "fight_mugenstatereader.h"
 #include "fight_mugencommandreader.h"

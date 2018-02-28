@@ -1,6 +1,6 @@
 #include "cane_shadow.h"
 
-#include <tari/mugenanimationhandler.h>
+#include <prism/mugenanimationhandler.h>
 
 #include "cane_resources.h"
 

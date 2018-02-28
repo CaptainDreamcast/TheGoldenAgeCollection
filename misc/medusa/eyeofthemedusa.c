@@ -1,6 +1,6 @@
 #include "eyeofthemedusa.h"
 
-#include <tari/wrapper.h>
+#include <prism/wrapper.h>
 #include "medusa_titlescreen.h"
 
 

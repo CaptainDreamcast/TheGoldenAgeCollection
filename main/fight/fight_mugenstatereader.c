@@ -2,10 +2,10 @@
 
 #include <assert.h>
 
-#include <tari/log.h>
-#include <tari/system.h>
-#include <tari/memoryhandler.h>
-#include <tari/mugendefreader.h>
+#include <prism/log.h>
+#include <prism/system.h>
+#include <prism/memoryhandler.h>
+#include <prism/mugendefreader.h>
 
 #include "fight_mugenstatecontrollers.h"
 

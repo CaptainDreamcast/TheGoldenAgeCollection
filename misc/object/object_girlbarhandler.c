@@ -1,9 +1,9 @@
 #include "object_girlbarhandler.h"
 
-#include <tari/mugenanimationhandler.h>
-#include <tari/animation.h>
-#include <tari/texthandler.h>
-#include <tari/math.h>
+#include <prism/mugenanimationhandler.h>
+#include <prism/animation.h>
+#include <prism/texthandler.h>
+#include <prism/math.h>
 
 #include "object_girlfriendhandler.h"
 

@@ -1,8 +1,8 @@
 #include "luck_gameover.h"
 
-#include <tari/animation.h>
-#include <tari/optionhandler.h>
-#include <tari/input.h>
+#include <prism/animation.h>
+#include <prism/optionhandler.h>
+#include <prism/input.h>
 
 #include "luck_gamelogic.h"
 #include "luck_titlescreen.h"

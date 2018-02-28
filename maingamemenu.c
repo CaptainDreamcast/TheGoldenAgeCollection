@@ -1,11 +1,11 @@
 #include "maingamemenu.h"
 
-#include <tari/input.h>
-#include <tari/optionhandler.h>
-#include <tari/screeneffect.h>
-#include <tari/mugenanimationhandler.h>
-#include <tari/tweening.h>
-#include <tari/sound.h>
+#include <prism/input.h>
+#include <prism/optionhandler.h>
+#include <prism/screeneffect.h>
+#include <prism/mugenanimationhandler.h>
+#include <prism/tweening.h>
+#include <prism/sound.h>
 
 #include "titlescreen.h"
 #include "mainmenu.h"

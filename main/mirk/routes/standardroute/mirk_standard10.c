@@ -1,8 +1,8 @@
 #include "mirk_standard10.h"
 
-#include <tari/math.h>
-#include <tari/texthandler.h>
-#include <tari/timer.h>
+#include <prism/math.h>
+#include <prism/texthandler.h>
+#include <prism/timer.h>
 
 #include "mirk_standard.h"
 #include "../../mirk_preciouspeople.h"

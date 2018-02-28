@@ -1,7 +1,7 @@
 #pragma once
 
-#include <tari/actorhandler.h>
-#include <tari/animation.h>
+#include <prism/actorhandler.h>
+#include <prism/animation.h>
 
 extern ActorBlueprint MirkMirklingHandlerBP;
 

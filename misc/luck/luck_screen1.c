@@ -1,8 +1,8 @@
 #include "luck_screen1.h"
 
 #include <stdio.h>
-#include <tari/input.h>
-#include <tari/sound.h>
+#include <prism/input.h>
+#include <prism/sound.h>
 
 
 #include "luck_bg.h"

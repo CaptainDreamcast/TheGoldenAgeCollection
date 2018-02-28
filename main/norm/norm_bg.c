@@ -1,8 +1,8 @@
 #include "norm_bg.h"
 
-#include <tari/animation.h>
-#include <tari/tweening.h>
-#include <tari/stagehandler.h>
+#include <prism/animation.h>
+#include <prism/tweening.h>
+#include <prism/stagehandler.h>
 
 static struct {
 	TextureData mBGTexture;

@@ -2,9 +2,9 @@
 
 #include <stdio.h>
 
-#include <tari/input.h>
-#include <tari/animation.h>
-#include <tari/sound.h>
+#include <prism/input.h>
+#include <prism/animation.h>
+#include <prism/sound.h>
 
 #include "luck_bg.h"
 #include "luck_hank.h"

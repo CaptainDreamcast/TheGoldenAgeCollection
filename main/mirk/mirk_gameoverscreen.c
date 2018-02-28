@@ -2,12 +2,12 @@
 
 #include <stdio.h>
 
-#include <tari/input.h>
-#include <tari/animation.h>
-#include <tari/texthandler.h>
-#include <tari/math.h>
-#include <tari/timer.h>
-#include <tari/optionhandler.h>
+#include <prism/input.h>
+#include <prism/animation.h>
+#include <prism/texthandler.h>
+#include <prism/math.h>
+#include <prism/timer.h>
+#include <prism/optionhandler.h>
 
 #include "mirk_titlescreen.h"
 #include "mirk_soundeffect.h"

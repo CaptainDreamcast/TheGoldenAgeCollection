@@ -1,15 +1,15 @@
 #include "mirk_mirkling.h"
 
-#include <tari/actorhandler.h>
-#include <tari/memoryhandler.h>
-#include <tari/physicshandler.h>
-#include <tari/animation.h>
-#include <tari/math.h>
-#include <tari/input.h>
-#include <tari/collisionhandler.h>
-#include <tari/stagehandler.h>
-#include <tari/log.h>
-#include <tari/system.h>
+#include <prism/actorhandler.h>
+#include <prism/memoryhandler.h>
+#include <prism/physicshandler.h>
+#include <prism/animation.h>
+#include <prism/math.h>
+#include <prism/input.h>
+#include <prism/collisionhandler.h>
+#include <prism/stagehandler.h>
+#include <prism/log.h>
+#include <prism/system.h>
 
 #include "mirk_mirklinghandler.h"
 #include "mirk_stage.h"

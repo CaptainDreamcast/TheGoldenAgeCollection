@@ -1,7 +1,7 @@
 #ifndef USERINTERFACE_H
 #define USERINTERFACE_H
 
-#include <tari/geometry.h>
+#include <prism/geometry.h>
 
 void loadJusticeUserInterface();
 void updateJusticeUserInterface();

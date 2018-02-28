@@ -1,10 +1,10 @@
 #include "beyond_bg.h"
 
-#include <tari/mugenanimationhandler.h>
-#include <tari/mugendefreader.h>
-#include <tari/mugenscriptparser.h>
-#include <tari/animation.h>
-#include <tari/wrapper.h>
+#include <prism/mugenanimationhandler.h>
+#include <prism/mugendefreader.h>
+#include <prism/mugenscriptparser.h>
+#include <prism/animation.h>
+#include <prism/wrapper.h>
 
 typedef struct {
 	Position mPosition;

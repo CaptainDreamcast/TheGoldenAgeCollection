@@ -1,7 +1,7 @@
 #pragma once
 
-#include <tari/actorhandler.h>
-#include <tari/mugenanimationreader.h>
+#include <prism/actorhandler.h>
+#include <prism/mugenanimationreader.h>
 
 extern ActorBlueprint BeyondBackgroundHandler;
 

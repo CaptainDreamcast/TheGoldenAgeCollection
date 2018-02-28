@@ -1,6 +1,6 @@
 #include "stormstorm.h"
 
-#include <tari/wrapper.h>
+#include <prism/wrapper.h>
 
 #include "storm_titlescreen.h"
 

@@ -1,7 +1,7 @@
 #include "mirk_soundeffect.h"
 
-#include <tari/file.h>
-#include <tari/memoryhandler.h>
+#include <prism/file.h>
+#include <prism/memoryhandler.h>
 
 static struct {
 	SoundEffectCollection mTextSoundEffects;

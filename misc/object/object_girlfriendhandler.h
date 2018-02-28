@@ -1,8 +1,8 @@
 #pragma once
 
-#include <tari/mugenanimationhandler.h>
-#include <tari/actorhandler.h>
-#include <tari/mugendefreader.h>
+#include <prism/mugenanimationhandler.h>
+#include <prism/actorhandler.h>
+#include <prism/mugendefreader.h>
 
 void initObjectGirlfriends();
 int getNewObjectGirlID();

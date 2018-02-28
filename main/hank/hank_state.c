@@ -1,6 +1,6 @@
 #include "hank_state.h"
 
-#include <tari/log.h>
+#include <prism/log.h>
 
 #include "hank_animation.h"
 

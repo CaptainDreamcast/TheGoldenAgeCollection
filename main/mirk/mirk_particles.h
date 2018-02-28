@@ -1,7 +1,7 @@
 #pragma once
 
-#include <tari/geometry.h>
-#include <tari/drawing.h>
+#include <prism/geometry.h>
+#include <prism/drawing.h>
 
 void loadMirkParticles();
 void addMirkBloodParticles(Position p, Color c);

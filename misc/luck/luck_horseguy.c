@@ -1,7 +1,7 @@
 #include "luck_horseguy.h"
 
-#include <tari/animation.h>
-#include <tari/collisionhandler.h>
+#include <prism/animation.h>
+#include <prism/collisionhandler.h>
 
 #include "luck_collision.h"
 #include "luck_gamelogic.h"

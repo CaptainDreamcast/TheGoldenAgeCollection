@@ -1,8 +1,8 @@
 #pragma once
 
-#include <tari/mugendefreader.h>
-#include <tari/actorhandler.h>
-#include <tari/physics.h>
+#include <prism/mugendefreader.h>
+#include <prism/actorhandler.h>
+#include <prism/physics.h>
 
 void getBeyondShotAngleTowardsPlayer(char* tOutput, void* tCaller);
 

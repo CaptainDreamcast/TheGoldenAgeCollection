@@ -3,14 +3,14 @@
 #include <assert.h>
 #include <string.h>
 
-#include <tari/file.h>
-#include <tari/physicshandler.h>
-#include <tari/log.h>
-#include <tari/system.h>
-#include <tari/timer.h>
-#include <tari/math.h>
-#include <tari/mugendefreader.h>
-#include <tari/mugenanimationreader.h>
+#include <prism/file.h>
+#include <prism/physicshandler.h>
+#include <prism/log.h>
+#include <prism/system.h>
+#include <prism/timer.h>
+#include <prism/math.h>
+#include <prism/mugendefreader.h>
+#include <prism/mugenanimationreader.h>
 
 #include "fight_mugencommandreader.h"
 #include "fight_mugenstatereader.h"

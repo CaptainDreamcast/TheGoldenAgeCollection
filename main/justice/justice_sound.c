@@ -1,6 +1,6 @@
 #include "justice_sound.h"
 
-#include <tari/soundeffect.h>
+#include <prism/soundeffect.h>
 
 static struct {
 	int punchSFX;

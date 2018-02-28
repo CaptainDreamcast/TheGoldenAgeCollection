@@ -1,9 +1,9 @@
 #include "hank_gamescreen.h"
 
-#include <tari/drawing.h>
-#include <tari/log.h>
-#include <tari/input.h>
-#include <tari/system.h>
+#include <prism/drawing.h>
+#include <prism/log.h>
+#include <prism/input.h>
+#include <prism/system.h>
 
 #include "hank_physics.h"
 #include "hank_collision.h"

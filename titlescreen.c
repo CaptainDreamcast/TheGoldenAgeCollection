@@ -1,15 +1,15 @@
 #include "titlescreen.h"
 
-#include <tari/animation.h>
-#include <tari/screeneffect.h>
-#include <tari/input.h>
-#include <tari/system.h>
-#include <tari/mugenanimationhandler.h>
-#include <tari/tweening.h>
-#include <tari/math.h>
-#include <tari/physicshandler.h>
-#include <tari/tweening.h>
-#include <tari/sound.h>
+#include <prism/animation.h>
+#include <prism/screeneffect.h>
+#include <prism/input.h>
+#include <prism/system.h>
+#include <prism/mugenanimationhandler.h>
+#include <prism/tweening.h>
+#include <prism/math.h>
+#include <prism/physicshandler.h>
+#include <prism/tweening.h>
+#include <prism/sound.h>
 
 #include "mainmenu.h"
 

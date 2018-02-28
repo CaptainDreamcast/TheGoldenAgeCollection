@@ -1,15 +1,15 @@
 #include "beyond_player.h"
 
-#include <tari/animation.h>
-#include <tari/input.h>
-#include <tari/physicshandler.h>
-#include <tari/collisionhandler.h>
-#include <tari/log.h>
-#include <tari/system.h>
-#include <tari/math.h>
-#include <tari/screeneffect.h>
-#include <tari/wrapper.h>
-#include <tari/mugenanimationhandler.h>
+#include <prism/animation.h>
+#include <prism/input.h>
+#include <prism/physicshandler.h>
+#include <prism/collisionhandler.h>
+#include <prism/log.h>
+#include <prism/system.h>
+#include <prism/math.h>
+#include <prism/screeneffect.h>
+#include <prism/wrapper.h>
+#include <prism/mugenanimationhandler.h>
 
 #include "beyond_collision.h"
 #include "beyond_shothandler.h"

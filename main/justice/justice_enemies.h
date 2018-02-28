@@ -1,7 +1,7 @@
 #ifndef ENEMIES_H
 #define ENEMIES_H
 
-#include <tari/geometry.h>
+#include <prism/geometry.h>
 
 void loadJusticeEnemies();
 void updateJusticeEnemies();

@@ -1,6 +1,6 @@
 #pragma once
 
-#include <tari/geometry.h>
+#include <prism/geometry.h>
 
 void loadMirkExplosions();
 

@@ -1,8 +1,8 @@
 #pragma once
 
-#include <tari/actorhandler.h>
-#include <tari/geometry.h>
-#include <tari/drawing.h>
+#include <prism/actorhandler.h>
+#include <prism/geometry.h>
+#include <prism/drawing.h>
 
 extern ActorBlueprint MirkStageBP;
 

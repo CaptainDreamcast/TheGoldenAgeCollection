@@ -1,13 +1,13 @@
-#include <tari/framerateselectscreen.h>
-#include <tari/pvr.h>
-#include <tari/physics.h>
-#include <tari/file.h>
-#include <tari/drawing.h>
-#include <tari/log.h>
-#include <tari/wrapper.h>
-#include <tari/system.h>
-#include <tari/stagehandler.h>
-#include <tari/logoscreen.h>
+#include <prism/framerateselectscreen.h>
+#include <prism/pvr.h>
+#include <prism/physics.h>
+#include <prism/file.h>
+#include <prism/drawing.h>
+#include <prism/log.h>
+#include <prism/wrapper.h>
+#include <prism/system.h>
+#include <prism/stagehandler.h>
+#include <prism/logoscreen.h>
 
 #include "mainmenu.h"
 #include "titlescreen.h"
@@ -22,7 +22,7 @@ KOS_INIT_ROMDISK(romdisk);
 
 
 void exitGame() {
-	shutdownTariWrapper();
+	shutdownPrismWrapper();
 
 #ifdef DEVELOP
 	abortSystem();
@@ -46,7 +46,7 @@ int main(int argc, char** argv) {
 	setGameName("DOGMA: THE GOLDEN AGE");
 	setScreenSize(640, 480);
 	
-	initTariWrapperWithDefaultFlags();
+	initPrismWrapperWithDefaultFlags();
 	setFont("$/rd/fonts/segoe.hdr", "$/rd/fonts/segoe.pkg");
 
 	logg("Check framerate");

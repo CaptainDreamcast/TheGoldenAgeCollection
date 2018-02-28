@@ -1,8 +1,8 @@
 #include "luck_screen8.h"
 
 #include <stdio.h>
-#include <tari/input.h>
-#include <tari/sound.h>
+#include <prism/input.h>
+#include <prism/sound.h>
 
 #include "luck_hank.h"
 #include "luck_narrator.h"

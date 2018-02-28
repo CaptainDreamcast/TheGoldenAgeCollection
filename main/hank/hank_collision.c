@@ -1,7 +1,7 @@
 #include "hank_collision.h"
 
-#include <tari/log.h>
-#include <tari/collision.h>
+#include <prism/log.h>
+#include <prism/collision.h>
 
 #include "hank_state.h"
 

@@ -1,13 +1,13 @@
 #include "mirk_player.h"
 
-#include <tari/input.h>
-#include <tari/datastructures.h>
-#include <tari/memoryhandler.h>
-#include <tari/timer.h>
-#include <tari/collisionhandler.h>
-#include <tari/soundeffect.h>
-#include <tari/stagehandler.h>
-#include <tari/wrapper.h>
+#include <prism/input.h>
+#include <prism/datastructures.h>
+#include <prism/memoryhandler.h>
+#include <prism/timer.h>
+#include <prism/collisionhandler.h>
+#include <prism/soundeffect.h>
+#include <prism/stagehandler.h>
+#include <prism/wrapper.h>
 
 #include "mirk_collision.h"
 #include "mirk_stage.h"

@@ -1,11 +1,11 @@
 #include "cane_victoryscreen.h"
 
-#include <tari/input.h>
-#include <tari/mugenanimationhandler.h>
-#include <tari/physicshandler.h>
-#include <tari/timer.h>
-#include <tari/screeneffect.h>
-#include <tari/sound.h>
+#include <prism/input.h>
+#include <prism/mugenanimationhandler.h>
+#include <prism/physicshandler.h>
+#include <prism/timer.h>
+#include <prism/screeneffect.h>
+#include <prism/sound.h>
 
 #include "cane_resources.h"
 #include "cane_stage.h"

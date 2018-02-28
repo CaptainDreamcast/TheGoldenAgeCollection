@@ -2,12 +2,12 @@
 
 #include <stdio.h>
 
-#include <tari/file.h>
-#include <tari/texture.h>
-#include <tari/animation.h>
-#include <tari/input.h>
-#include <tari/timer.h>
-#include <tari/screeneffect.h>
+#include <prism/file.h>
+#include <prism/texture.h>
+#include <prism/animation.h>
+#include <prism/input.h>
+#include <prism/timer.h>
+#include <prism/screeneffect.h>
 
 #include "justice_gamestate.h"
 #include "justice_gamescreen.h"

@@ -3,11 +3,11 @@
 #include <stdio.h>
 #include <string.h>
 
-#include <tari/input.h>
-#include <tari/animation.h>
-#include <tari/tweening.h>
-#include <tari/timer.h>
-#include <tari/screeneffect.h>
+#include <prism/input.h>
+#include <prism/animation.h>
+#include <prism/tweening.h>
+#include <prism/timer.h>
+#include <prism/screeneffect.h>
 
 #include "mirk_titlescreen.h"
 

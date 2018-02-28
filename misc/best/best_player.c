@@ -1,8 +1,8 @@
 #include "best_player.h"
 
-#include <tari/animation.h>
-#include <tari/math.h>
-#include <tari/input.h>
+#include <prism/animation.h>
+#include <prism/math.h>
+#include <prism/input.h>
 
 #include "best_endscreen.h"
 

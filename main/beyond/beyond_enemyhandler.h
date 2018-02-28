@@ -1,10 +1,10 @@
 #pragma once
 
-#include <tari/mugendefreader.h>
-#include <tari/animation.h>
-#include <tari/actorhandler.h>
-#include <tari/mugenanimationreader.h>
-#include <tari/mugenassignment.h>
+#include <prism/mugendefreader.h>
+#include <prism/animation.h>
+#include <prism/actorhandler.h>
+#include <prism/mugenanimationreader.h>
+#include <prism/mugenassignment.h>
 
 typedef enum {
 	ENEMY_MOVEMENT_TYPE_WAIT,

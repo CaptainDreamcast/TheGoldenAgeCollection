@@ -1,9 +1,9 @@
 #include "luck_box.h"
 
-#include <tari/animation.h>
-#include <tari/physicshandler.h>
-#include <tari/collisionhandler.h>
-#include <tari/math.h>
+#include <prism/animation.h>
+#include <prism/physicshandler.h>
+#include <prism/collisionhandler.h>
+#include <prism/math.h>
 
 #include "luck_collision.h"
 

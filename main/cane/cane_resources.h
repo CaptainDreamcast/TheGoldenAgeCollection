@@ -1,6 +1,6 @@
 #pragma once
 
-#include <tari/mugenanimationhandler.h>
+#include <prism/mugenanimationhandler.h>
 
 void loadCaneResources();
 void shutdownCaneResources();

@@ -1,8 +1,8 @@
 #include "luck_finalboss.h"
 
-#include <tari/actorhandler.h>
-#include <tari/animation.h>
-#include <tari/collisionhandler.h>
+#include <prism/actorhandler.h>
+#include <prism/animation.h>
+#include <prism/collisionhandler.h>
 
 #include "luck_collision.h"
 

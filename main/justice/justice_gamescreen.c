@@ -1,13 +1,13 @@
 #include "justice_gamescreen.h"
 
-#include <tari/file.h>
-#include <tari/datastructures.h>
-#include <tari/wrapper.h>
-#include <tari/input.h>
-#include <tari/memoryhandler.h>
-#include <tari/collisionhandler.h>
-#include <tari/mugenanimationhandler.h>
-#include <tari/sound.h>
+#include <prism/file.h>
+#include <prism/datastructures.h>
+#include <prism/wrapper.h>
+#include <prism/input.h>
+#include <prism/memoryhandler.h>
+#include <prism/collisionhandler.h>
+#include <prism/mugenanimationhandler.h>
+#include <prism/sound.h>
 
 #include <stdio.h>
 

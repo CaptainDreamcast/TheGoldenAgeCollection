@@ -2,12 +2,12 @@
 
 #include <stdio.h>
 
-#include <tari/input.h>
-#include <tari/animation.h>
-#include <tari/texthandler.h>
-#include <tari/math.h>
-#include <tari/memoryhandler.h>
-#include <tari/sound.h>
+#include <prism/input.h>
+#include <prism/animation.h>
+#include <prism/texthandler.h>
+#include <prism/math.h>
+#include <prism/memoryhandler.h>
+#include <prism/sound.h>
 
 #include "../../maingamemenu.h"
 

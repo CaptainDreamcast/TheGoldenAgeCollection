@@ -1,9 +1,9 @@
 #ifndef COLLISION_H
 #define COLLISION_H
 
-#include <tari/physics.h>
-#include <tari/script.h>
-#include <tari/collisionanimation.h>
+#include <prism/physics.h>
+#include <prism/script.h>
+#include <prism/collisionanimation.h>
 
 typedef struct {	
 	Acceleration force;

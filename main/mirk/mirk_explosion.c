@@ -1,8 +1,8 @@
 #include "mirk_explosion.h"
 
-#include <tari/animation.h>
-#include <tari/stagehandler.h>
-#include <tari/soundeffect.h>
+#include <prism/animation.h>
+#include <prism/stagehandler.h>
+#include <prism/soundeffect.h>
 
 #include "mirk_stage.h"
 #include "mirk_pussymode.h"

@@ -1,7 +1,7 @@
 #include "luck_boxgenerator.h"
 
-#include <tari/animation.h>
-#include <tari/math.h>
+#include <prism/animation.h>
+#include <prism/math.h>
 
 #include "luck_box.h"
 

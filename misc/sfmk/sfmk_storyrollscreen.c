@@ -3,9 +3,9 @@
 #include <stdio.h>
 #include <string.h>
 
-#include <tari/input.h>
-#include <tari/storyboard.h>
-#include <tari/actorhandler.h>
+#include <prism/input.h>
+#include <prism/storyboard.h>
+#include <prism/actorhandler.h>
 
 #include "sfmk_fighterselectscreen.h"
 #include "sfmk_titlescreen.h"

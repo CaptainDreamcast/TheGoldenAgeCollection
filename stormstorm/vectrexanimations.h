@@ -1,8 +1,8 @@
 #pragma once
 
-#include <tari/actorhandler.h>
-#include <tari/physics.h>
-#include <tari/animation.h>
+#include <prism/actorhandler.h>
+#include <prism/physics.h>
+#include <prism/animation.h>
 
 extern ActorBlueprint VectrexAnimationHandler;
 

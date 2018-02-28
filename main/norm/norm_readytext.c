@@ -1,9 +1,9 @@
 #include "norm_readytext.h"
 
-#include <tari/animation.h>
-#include <tari/timer.h>
-#include <tari/tweening.h>
-#include <tari/soundeffect.h>
+#include <prism/animation.h>
+#include <prism/timer.h>
+#include <prism/tweening.h>
+#include <prism/soundeffect.h>
 
 #include "norm_enemygenerator.h"
 

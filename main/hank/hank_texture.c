@@ -1,6 +1,6 @@
 #include "hank_texture.h"
 
-#include <tari/log.h>
+#include <prism/log.h>
 
 static TextureData gBackground;
 static TextureData gCharacter[2];

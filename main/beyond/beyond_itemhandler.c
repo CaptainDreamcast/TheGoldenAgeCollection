@@ -1,9 +1,9 @@
 #include "beyond_itemhandler.h"
 
-#include <tari/mugenspritefilereader.h>
-#include <tari/mugenanimationhandler.h>
-#include <tari/physicshandler.h>
-#include <tari/math.h>
+#include <prism/mugenspritefilereader.h>
+#include <prism/mugenanimationhandler.h>
+#include <prism/physicshandler.h>
+#include <prism/math.h>
 
 #include "beyond_collision.h"
 #include "beyond_main.h"

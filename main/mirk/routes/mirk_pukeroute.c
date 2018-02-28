@@ -1,6 +1,6 @@
 #include "mirk_pukeroute.h"
 
-#include <tari/wrapper.h>
+#include <prism/wrapper.h>
 
 #include "../mirk_levelhandler.h"
 #include "../mirk_endingscreen.h"

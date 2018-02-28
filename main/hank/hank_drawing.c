@@ -2,9 +2,9 @@
 
 #include <stdlib.h>
 
-#include <tari/log.h>
-#include <tari/drawing.h>
-#include <tari/math.h>
+#include <prism/log.h>
+#include <prism/drawing.h>
+#include <prism/math.h>
 
 #include "hank_texture.h"
 

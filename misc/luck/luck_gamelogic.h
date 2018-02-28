@@ -1,6 +1,6 @@
 #pragma once
 
-#include <tari/wrapper.h>
+#include <prism/wrapper.h>
 
 void setLuckCurrentScreen(Screen* tScreen);
 void setLuckNextScreen(Screen* tScreen);

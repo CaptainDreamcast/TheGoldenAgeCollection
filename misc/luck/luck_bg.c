@@ -1,6 +1,6 @@
 #include "luck_bg.h"
 
-#include <tari/animation.h>
+#include <prism/animation.h>
 
 static struct {
 	TextureData mTexture;

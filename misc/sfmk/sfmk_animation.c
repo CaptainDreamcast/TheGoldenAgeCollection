@@ -2,10 +2,10 @@
 
 #include <math.h>
 
-#include <tari/memoryhandler.h>
-#include <tari/timer.h>
-#include <tari/physicshandler.h>
-#include <tari/math.h>
+#include <prism/memoryhandler.h>
+#include <prism/timer.h>
+#include <prism/physicshandler.h>
+#include <prism/math.h>
 
 
 static void updateAnimationFlickering(void* tCaller) {

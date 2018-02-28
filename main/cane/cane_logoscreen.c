@@ -2,9 +2,9 @@
 
 #include <stdlib.h>
 
-#include <tari/input.h>
-#include <tari/timer.h>
-#include <tari/animation.h>
+#include <prism/input.h>
+#include <prism/timer.h>
+#include <prism/animation.h>
 
 #include "cane_titlescreen.h"
 

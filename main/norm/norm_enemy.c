@@ -1,9 +1,9 @@
 #include "norm_enemy.h"
 
-#include <tari/actorhandler.h>
-#include <tari/animation.h>
-#include <tari/physicshandler.h>
-#include <tari/math.h> 
+#include <prism/actorhandler.h>
+#include <prism/animation.h>
+#include <prism/physicshandler.h>
+#include <prism/math.h> 
 
 #include "norm_button.h"
 #include "norm_player.h"

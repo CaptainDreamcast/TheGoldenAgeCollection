@@ -2,8 +2,8 @@
 
 #include <stdio.h>
 
-#include <tari/physicshandler.h>
-#include <tari/collisionhandler.h>
+#include <prism/physicshandler.h>
+#include <prism/collisionhandler.h>
 
 #include "vectrexanimations.h"
 #include "storm_collision.h"

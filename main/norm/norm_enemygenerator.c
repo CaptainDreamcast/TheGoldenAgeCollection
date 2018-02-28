@@ -1,7 +1,7 @@
 #include "norm_enemygenerator.h"
 
-#include <tari/datastructures.h>
-#include <tari/animation.h>
+#include <prism/datastructures.h>
+#include <prism/animation.h>
 
 #include "norm_enemy.h"
 #include "norm_button.h"

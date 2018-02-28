@@ -1,6 +1,6 @@
 #include "mirk_trailerroute.h"
 
-#include <tari/math.h>
+#include <prism/math.h>
 
 #include "mirk_standard.h"
 

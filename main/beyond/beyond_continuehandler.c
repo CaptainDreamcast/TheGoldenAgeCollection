@@ -1,13 +1,13 @@
 #include "beyond_continuehandler.h"
 
-#include <tari/mugenanimationhandler.h>
-#include <tari/animation.h>
-#include <tari/wrapper.h>
-#include <tari/framerate.h>
-#include <tari/screeneffect.h>
-#include <tari/input.h>
-#include <tari/texthandler.h>
-#include <tari/math.h>
+#include <prism/mugenanimationhandler.h>
+#include <prism/animation.h>
+#include <prism/wrapper.h>
+#include <prism/framerate.h>
+#include <prism/screeneffect.h>
+#include <prism/input.h>
+#include <prism/texthandler.h>
+#include <prism/math.h>
 
 #include "beyond_titlescreen.h"
 #include "beyond_player.h"

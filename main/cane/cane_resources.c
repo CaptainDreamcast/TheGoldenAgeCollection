@@ -1,7 +1,7 @@
 #include "cane_resources.h"
 
-#include <tari/memoryhandler.h>
-#include <tari/physicshandler.h>
+#include <prism/memoryhandler.h>
+#include <prism/physicshandler.h>
 
 static struct {
 	MugenSpriteFile mSprites;

@@ -1,10 +1,10 @@
 #include "medusa_badasshandler.h"
 
-#include <tari/datastructures.h>
-#include <tari/animation.h>
-#include <tari/physicshandler.h>
-#include <tari/collisionhandler.h>
-#include <tari/math.h>
+#include <prism/datastructures.h>
+#include <prism/animation.h>
+#include <prism/physicshandler.h>
+#include <prism/collisionhandler.h>
+#include <prism/math.h>
 
 #include "medusa_resources.h"
 #include "medusa_collision.h"

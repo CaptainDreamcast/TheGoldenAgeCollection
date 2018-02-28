@@ -1,11 +1,11 @@
 #include "norm_button.h"
 
-#include <tari/animation.h>
-#include <tari/texture.h>
-#include <tari/input.h>
-#include <tari/actorhandler.h>
-#include <tari/math.h>
-#include <tari/physicshandler.h>
+#include <prism/animation.h>
+#include <prism/texture.h>
+#include <prism/input.h>
+#include <prism/actorhandler.h>
+#include <prism/math.h>
+#include <prism/physicshandler.h>
 
 #include "norm_ui.h"
 #include "norm_bg.h"

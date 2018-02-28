@@ -1,5 +1,5 @@
 #pragma once
 
-#include <tari/actorhandler.h>
+#include <prism/actorhandler.h>
 
 extern ActorBlueprint BeyondFinalBossSceneHandler;

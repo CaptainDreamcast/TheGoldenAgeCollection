@@ -2,11 +2,11 @@
 
 #include <assert.h>
 
-#include <tari/datastructures.h>
-#include <tari/math.h>
-#include <tari/drawing.h>
-#include <tari/collisionhandler.h>
-#include <tari/mugenspritefilereader.h>
+#include <prism/datastructures.h>
+#include <prism/math.h>
+#include <prism/drawing.h>
+#include <prism/collisionhandler.h>
+#include <prism/mugenspritefilereader.h>
 
 #include "fight_playerdefinition.h"
 #include "fight_stage.h"

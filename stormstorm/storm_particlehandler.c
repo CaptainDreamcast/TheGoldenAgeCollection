@@ -1,9 +1,9 @@
 #include "storm_particlehandler.h"
 
-#include <tari/animation.h>
-#include <tari/datastructures.h>
-#include <tari/physicshandler.h>
-#include <tari/math.h>
+#include <prism/animation.h>
+#include <prism/datastructures.h>
+#include <prism/physicshandler.h>
+#include <prism/math.h>
 
 #include "vectrexanimations.h"
 

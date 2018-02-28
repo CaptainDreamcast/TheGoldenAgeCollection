@@ -1,11 +1,11 @@
 #include "hank_titlescreen.h"
 
-#include <tari/log.h>
-#include <tari/input.h>
-#include <tari/math.h>
-#include <tari/drawing.h>
-#include <tari/system.h>
-#include <tari/screeneffect.h>
+#include <prism/log.h>
+#include <prism/input.h>
+#include <prism/math.h>
+#include <prism/drawing.h>
+#include <prism/system.h>
+#include <prism/screeneffect.h>
 
 #include "hank_titledata.h"
 #include "hank_drawing.h"

@@ -1,6 +1,6 @@
 #pragma once
 
-#include <tari/animation.h>
+#include <prism/animation.h>
 
 
 typedef struct {

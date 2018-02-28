@@ -1,6 +1,6 @@
 #include "justice_system.h"
 
-#include <tari/file.h>
+#include <prism/file.h>
 
 static struct {
 	char fs[100];

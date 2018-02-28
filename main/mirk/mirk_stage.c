@@ -2,10 +2,10 @@
 
 #include <stdio.h>
 
-#include <tari/animation.h>
-#include <tari/stagehandler.h>
-#include <tari/input.h>
-#include <tari/sound.h>
+#include <prism/animation.h>
+#include <prism/stagehandler.h>
+#include <prism/input.h>
+#include <prism/sound.h>
 
 #include "mirk_preciouspeople.h"
 

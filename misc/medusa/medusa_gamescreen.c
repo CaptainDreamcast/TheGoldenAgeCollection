@@ -2,11 +2,11 @@
 
 #include <stdio.h>
 
-#include <tari/input.h>
-#include <tari/actorhandler.h>
-#include <tari/collisionhandler.h>
-#include <tari/sound.h>
-#include <tari/timer.h>
+#include <prism/input.h>
+#include <prism/actorhandler.h>
+#include <prism/collisionhandler.h>
+#include <prism/sound.h>
+#include <prism/timer.h>
 
 #include "medusa_badasshandler.h"
 #include "medusa_shothandler.h"

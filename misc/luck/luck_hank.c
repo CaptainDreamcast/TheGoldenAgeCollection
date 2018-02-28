@@ -2,13 +2,13 @@
 
 #include <string.h>
 
-#include <tari/animation.h>
-#include <tari/physicshandler.h>
-#include <tari/input.h>
-#include <tari/collisionhandler.h>
-#include <tari/wrapper.h>
-#include <tari/collisionanimation.h>
-#include <tari/math.h>
+#include <prism/animation.h>
+#include <prism/physicshandler.h>
+#include <prism/input.h>
+#include <prism/collisionhandler.h>
+#include <prism/wrapper.h>
+#include <prism/collisionanimation.h>
+#include <prism/math.h>
 
 #include "luck_gameover.h"
 #include "luck_collision.h"

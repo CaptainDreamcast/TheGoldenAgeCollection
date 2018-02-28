@@ -3,9 +3,9 @@
 #include <stdio.h>
 #include <string.h>
 
-#include <tari/texthandler.h>
-#include <tari/animation.h>
-#include <tari/math.h>
+#include <prism/texthandler.h>
+#include <prism/animation.h>
+#include <prism/math.h>
 
 static struct {
 	int mDeathCountText;

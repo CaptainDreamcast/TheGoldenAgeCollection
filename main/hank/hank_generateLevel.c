@@ -5,9 +5,9 @@
 #include <string.h>
 #include <math.h>
 
-#include <tari/log.h>
-#include <tari/math.h>
-#include <tari/physics.h>
+#include <prism/log.h>
+#include <prism/math.h>
+#include <prism/physics.h>
 
 #include "hank_basedefinitions.h"
 #include "hank_texture.h"

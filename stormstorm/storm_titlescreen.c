@@ -1,7 +1,7 @@
 #include "storm_titlescreen.h" 
 
-#include <tari/input.h>
-#include <tari/screeneffect.h>
+#include <prism/input.h>
+#include <prism/screeneffect.h>
 
 #include "../maingamemenu.h"
 #include "vectrex_simulation.h"

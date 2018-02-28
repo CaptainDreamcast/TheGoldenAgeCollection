@@ -2,16 +2,16 @@
 
 #include <math.h>
 
-#include <tari/animationtree.h>
-#include <tari/input.h>
-#include <tari/physicshandler.h>
-#include <tari/file.h>
-#include <tari/math.h>
-#include <tari/collisionhandler.h>
-#include <tari/system.h>
-#include <tari/timer.h>
-#include <tari/math.h>
-#include <tari/mugenanimationhandler.h>
+#include <prism/animationtree.h>
+#include <prism/input.h>
+#include <prism/physicshandler.h>
+#include <prism/file.h>
+#include <prism/math.h>
+#include <prism/collisionhandler.h>
+#include <prism/system.h>
+#include <prism/timer.h>
+#include <prism/math.h>
+#include <prism/mugenanimationhandler.h>
 
 #include "cane_resources.h"
 #include "cane_bullet.h"

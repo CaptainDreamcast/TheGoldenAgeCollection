@@ -1,6 +1,6 @@
 #include "fight_collision.h"
 
-#include <tari/collisionhandler.h>
+#include <prism/collisionhandler.h>
 
 static struct {
 	int mPlayerAttackCollisionList[2];

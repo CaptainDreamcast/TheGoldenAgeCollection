@@ -1,6 +1,6 @@
 #include "mirk_simulationbreakdown2.h"
 
-#include <tari/math.h>
+#include <prism/math.h>
 
 #include "../../mirk_noise.h"
 #include "../../mirk_mirklinghandler.h"

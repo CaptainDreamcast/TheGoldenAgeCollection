@@ -1,8 +1,8 @@
 #include "luck_door.h"
 
-#include <tari/animation.h>
-#include <tari/math.h>
-#include <tari/tweening.h>
+#include <prism/animation.h>
+#include <prism/math.h>
+#include <prism/tweening.h>
 
 static struct {
 

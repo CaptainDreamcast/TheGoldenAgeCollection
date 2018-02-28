@@ -1,9 +1,9 @@
 #include "octo_enemyhandler.h"
 
-#include <tari/datastructures.h>
-#include <tari/mugenanimationhandler.h>
-#include <tari/physicshandler.h>
-#include <tari/math.h>
+#include <prism/datastructures.h>
+#include <prism/mugenanimationhandler.h>
+#include <prism/physicshandler.h>
+#include <prism/math.h>
 
 #include "octo_assethandler.h"
 #include "octo_player.h"

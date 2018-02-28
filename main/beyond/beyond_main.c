@@ -2,7 +2,7 @@
 
 #include <stdio.h>
 
-#include <tari/memoryhandler.h>
+#include <prism/memoryhandler.h>
 
 #include "beyond_titlescreen.h"
 

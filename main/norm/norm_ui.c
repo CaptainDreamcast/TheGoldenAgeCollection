@@ -1,6 +1,6 @@
 #include "norm_ui.h"
 
-#include <tari/animation.h>
+#include <prism/animation.h>
 
 #include "norm_button.h"
 #include "norm_bg.h"

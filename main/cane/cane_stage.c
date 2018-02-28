@@ -2,8 +2,8 @@
 
 #include <stdio.h>
 
-#include <tari/mugenanimationhandler.h>
-#include <tari/physicshandler.h>
+#include <prism/mugenanimationhandler.h>
+#include <prism/physicshandler.h>
 
 #include "cane_resources.h"
 

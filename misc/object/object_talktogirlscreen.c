@@ -1,17 +1,17 @@
 #include "object_talktogirlscreen.h"
 
-#include <tari/input.h>
-#include <tari/mugendefreader.h>
-#include <tari/log.h>
-#include <tari/system.h>
-#include <tari/texthandler.h>
-#include <tari/math.h>
-#include <tari/optionhandler.h>
-#include <tari/mugenanimationhandler.h>
-#include <tari/timer.h>
-#include <tari/screeneffect.h>
-#include <tari/animation.h>
-#include <tari/sound.h>
+#include <prism/input.h>
+#include <prism/mugendefreader.h>
+#include <prism/log.h>
+#include <prism/system.h>
+#include <prism/texthandler.h>
+#include <prism/math.h>
+#include <prism/optionhandler.h>
+#include <prism/mugenanimationhandler.h>
+#include <prism/timer.h>
+#include <prism/screeneffect.h>
+#include <prism/animation.h>
+#include <prism/sound.h>
 
 #include "object_titlescreen.h"
 #include "object_backgroundhandler.h"

@@ -1,13 +1,13 @@
 #include "object_selectgirlscreen.h"
 
-#include <tari/mugenanimationhandler.h>
-#include <tari/input.h>
-#include <tari/optionhandler.h>
-#include <tari/texthandler.h>
-#include <tari/math.h>
-#include <tari/screeneffect.h>
-#include <tari/animation.h>
-#include <tari/sound.h>
+#include <prism/mugenanimationhandler.h>
+#include <prism/input.h>
+#include <prism/optionhandler.h>
+#include <prism/texthandler.h>
+#include <prism/math.h>
+#include <prism/screeneffect.h>
+#include <prism/animation.h>
+#include <prism/sound.h>
 
 #include "object_girlfriendhandler.h"
 #include "object_girlbarhandler.h"

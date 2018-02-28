@@ -1,8 +1,8 @@
-#include <tari/wrapper.h>
-#include <tari/framerateselectscreen.h>
-#include <tari/log.h>
-#include <tari/file.h>
-#include <tari/system.h>
+#include <prism/wrapper.h>
+#include <prism/framerateselectscreen.h>
+#include <prism/log.h>
+#include <prism/file.h>
+#include <prism/system.h>
 
 #include "sfmk_titlescreen.h"
 

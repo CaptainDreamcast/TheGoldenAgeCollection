@@ -1,8 +1,8 @@
 #include "octo_titlescreen.h"
 
-#include <tari/animation.h>
-#include <tari/screeneffect.h>
-#include <tari/input.h>
+#include <prism/animation.h>
+#include <prism/screeneffect.h>
+#include <prism/input.h>
 
 #include "../../miscgamemenu.h"
 #include "octo_gamescreen.h"

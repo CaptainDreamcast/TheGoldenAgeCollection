@@ -1,6 +1,6 @@
 #include "best_bg.h"
 
-#include <tari/animation.h>
+#include <prism/animation.h>
 
 static struct {
 	TextureData mBackgroundTexture;

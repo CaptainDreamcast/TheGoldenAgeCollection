@@ -1,9 +1,9 @@
 #include "best_endscreen.h"
 
-#include <tari/animation.h>
-#include <tari/input.h>
-#include <tari/screeneffect.h>
-#include <tari/tweening.h>
+#include <prism/animation.h>
+#include <prism/input.h>
+#include <prism/screeneffect.h>
+#include <prism/tweening.h>
 
 #include "../../miscgamemenu.h"
 

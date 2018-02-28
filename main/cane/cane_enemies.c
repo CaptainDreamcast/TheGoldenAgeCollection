@@ -2,14 +2,14 @@
 
 #include <math.h>
 
-#include <tari/texture.h>
-#include <tari/file.h>
-#include <tari/datastructures.h>
-#include <tari/math.h>
-#include <tari/memoryhandler.h>
-#include <tari/physicshandler.h>
-#include <tari/collisionhandler.h>
-#include <tari/mugenanimationhandler.h>
+#include <prism/texture.h>
+#include <prism/file.h>
+#include <prism/datastructures.h>
+#include <prism/math.h>
+#include <prism/memoryhandler.h>
+#include <prism/physicshandler.h>
+#include <prism/collisionhandler.h>
+#include <prism/mugenanimationhandler.h>
 
 #include "cane_collision.h"
 #include "cane_manualenemy.h"

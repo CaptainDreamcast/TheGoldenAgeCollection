@@ -1,7 +1,7 @@
 #include "object_backgroundhandler.h"
 
-#include <tari/mugenanimationhandler.h>
-#include <tari/math.h>
+#include <prism/mugenanimationhandler.h>
+#include <prism/math.h>
 
 static struct {
 	MugenSpriteFile mSprites;

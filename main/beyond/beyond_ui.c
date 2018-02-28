@@ -1,9 +1,9 @@
 #include "beyond_ui.h"
 
-#include <tari/animation.h>
-#include <tari/texthandler.h>
-#include <tari/math.h>
-#include <tari/mugenanimationhandler.h>
+#include <prism/animation.h>
+#include <prism/texthandler.h>
+#include <prism/math.h>
+#include <prism/mugenanimationhandler.h>
 
 #include "beyond_main.h"
 

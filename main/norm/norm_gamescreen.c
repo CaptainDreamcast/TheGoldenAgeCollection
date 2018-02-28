@@ -2,8 +2,8 @@
 
 #include <stdio.h>
 
-#include <tari/input.h>
-#include <tari/sound.h>
+#include <prism/input.h>
+#include <prism/sound.h>
 
 #include "norm_player.h"
 #include "norm_enemygenerator.h"

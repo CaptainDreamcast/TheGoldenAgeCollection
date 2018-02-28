@@ -3,9 +3,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#include <tari/collisionhandler.h>
-#include <tari/math.h>
-#include <tari/memoryhandler.h>
+#include <prism/collisionhandler.h>
+#include <prism/math.h>
+#include <prism/memoryhandler.h>
 
 static struct {
 

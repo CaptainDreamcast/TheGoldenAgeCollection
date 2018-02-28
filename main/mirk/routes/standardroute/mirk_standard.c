@@ -3,14 +3,14 @@
 #include <stdio.h>
 #include <string.h>
 
-#include <tari/animation.h>
-#include <tari/math.h>
-#include <tari/collisionhandler.h>
-#include <tari/texthandler.h>
-#include <tari/timer.h>
-#include <tari/soundeffect.h>
-#include <tari/input.h>
-#include <tari/system.h>
+#include <prism/animation.h>
+#include <prism/math.h>
+#include <prism/collisionhandler.h>
+#include <prism/texthandler.h>
+#include <prism/timer.h>
+#include <prism/soundeffect.h>
+#include <prism/input.h>
+#include <prism/system.h>
 
 #include "../../mirk_preciouspeople.h"
 #include "../../mirk_mirklinghandler.h"

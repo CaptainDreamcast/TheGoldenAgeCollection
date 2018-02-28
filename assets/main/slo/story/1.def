@@ -1,0 +1,46 @@
+[Header]
+Sprites = assets/main/slo/SLOMODO.sff
+
+
+[STORYSTART]
+
+[Image 1]
+Group = 1
+Item = 0
+
+[Text 1]
+Speaker = "Help, I'm forced to do this:"
+Text = "Are you enjoying Gary Johnson's great gift?"
+
+[Text 1]
+Speaker = "Help, I'm forced to do this:"
+Text = "What is this? You are uncontent with your newfound Slo-ness?"
+
+[Image 1]
+Group = 1
+Item = 1
+
+[Text 1]
+Speaker = "Awkwardly close Gary Johnson:"
+Text = "We cannot have this. Thankfully, we can reverse the process:"
+
+[Text 1]
+Speaker = "Awkwardly close Gary Johnson:"
+Text = "Haaaaaaaaaaa!"
+
+[TimeDilatation]
+value = 2
+
+[Image 1]
+Group = 1
+Item = 0
+
+[Text 1]
+Speaker = "Did we talk about him being a Gundam:"
+Text = "It is the inverse effect: Like this, you will appreciate Slo-ness even more."
+
+[Text 1]
+Speaker = "Did we talk about him being a Gundam:"
+Text = "Gary Johnson will stay here and peruse pufferfish magazines. Be on your way then."
+
+[Menu]

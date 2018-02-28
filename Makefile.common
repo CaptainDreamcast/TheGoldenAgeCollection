@@ -1,0 +1,119 @@
+OBJS = main.o \
+maingamemenu.o mainmenu.o miscgamemenu.o titlescreen.o \
+controlscreen.o \
+stormstorm/stormstorm.o \
+stormstorm/storm_ball.o stormstorm/storm_collision.o stormstorm/storm_enemyhandler.o \
+stormstorm/storm_gameoverscreen.o stormstorm/storm_gamescreen.o stormstorm/storm_paddle.o \
+stormstorm/storm_particlehandler.o stormstorm/storm_titlescreen.o stormstorm/storm_ui.o \
+stormstorm/vectrex_simulation.o stormstorm/vectrexanimations.o \
+main/hank/hank_main.o \
+main/hank/hank_gamescreen.o main/hank/hank_loadgame.o main/hank/hank_generateLevel.o \
+main/hank/hank_physics.o main/hank/hank_collision.o main/hank/hank_state.o \
+main/hank/hank_animation.o main/hank/hank_movement.o main/hank/hank_stagelogic.o \
+main/hank/hank_drawing.o main/hank/hank_texture.o main/hank/hank_titlescreen.o \
+main/hank/hank_round.o main/hank/hank_roundscreen.o \
+main/beyond/beyond_main.o \
+main/beyond/beyond_assignment.o main/beyond/beyond_bg.o main/beyond/beyond_boss.o \
+main/beyond/beyond_collision.o main/beyond/beyond_enemyhandler.o main/beyond/beyond_gamescreen.o \
+main/beyond/beyond_itemhandler.o main/beyond/beyond_level.o main/beyond/beyond_player.o \
+main/beyond/beyond_shothandler.o main/beyond/beyond_ui.o main/beyond/beyond_effecthandler.o \
+main/beyond/beyond_titlescreen.o main/beyond/beyond_continuehandler.o main/beyond/beyond_gameoptionhandler.o \
+main/beyond/beyond_gameoverscreen.o main/beyond/beyond_storyscreen.o main/beyond/beyond_finalbossscene.o \
+main/justice/justice_main.o \
+main/justice/justice_gamescreen.o main/justice/justice_system.o main/justice/justice_stage.o \
+main/justice/justice_enemies.o main/justice/justice_player.o main/justice/justice_collision.o \
+main/justice/justice_userinterface.o main/justice/justice_gamestate.o main/justice/justice_continuescreen.o \
+main/justice/justice_titlescreen.o main/justice/justice_congratsscreen.o main/justice/justice_gameoverscreen.o \
+main/justice/justice_sound.o main/justice/justice_logoscreen.o \
+bombx/bombx.o bombx/bombx_bombxhandler.o  bombx/bombx_congratsscreen.o \
+bombx/bombx_gamescreen.o bombx/bombx_levelhandler.o bombx/bombx_player.o \
+bombx/bombx_titlescreen.o \
+main/cane/cane_main.o \
+main/cane/cane_gamescreen.o main/cane/cane_player.o main/cane/cane_bullet.o \
+main/cane/cane_collision.o main/cane/cane_enemies.o main/cane/cane_gamelogic.o \
+main/cane/cane_kidnapper.o main/cane/cane_logoscreen.o main/cane/cane_retryscreen.o \
+main/cane/cane_shadow.o main/cane/cane_stage.o main/cane/cane_titlescreen.o \
+main/cane/cane_ui.o main/cane/cane_manualenemy.o main/cane/cane_resources.o \
+main/cane/cane_victoryscreen.o \
+main/mirk/mirk_main.o \
+main/mirk/mirk_collision.o main/mirk/mirk_deathcount.o main/mirk/mirk_gamescreen.o \
+main/mirk/mirk_mirkling.o main/mirk/mirk_mirklinghandler.o main/mirk/mirk_particles.o \
+main/mirk/mirk_player.o main/mirk/mirk_preciouspeople.o main/mirk/mirk_stage.o \
+main/mirk/mirk_titlescreen.o main/mirk/mirk_upgrades.o main/mirk/mirk_gameoverscreen.o \
+main/mirk/mirk_soundeffect.o main/mirk/mirk_explosion.o main/mirk/mirk_noise.o \
+main/mirk/mirk_routehandler.o main/mirk/mirk_pussymode.o main/mirk/mirk_pausemenu.o \
+main/mirk/mirk_titlescreengoof.o main/mirk/mirk_endingscreen.o main/mirk/mirk_baftascreen.o \
+main/mirk/mirk_titlescreengoofscreen.o \
+main/mirk/routes/mirk_pukeroute.o main/mirk/routes/mirk_standardroute.o \
+main/mirk/routes/pukeroute/mirk_discolevel.o main/mirk/routes/pukeroute/mirk_invisiblemirklingslevel.o \
+main/mirk/routes/pukeroute/mirk_limitedsightlevel.o main/mirk/routes/pukeroute/mirk_playforyoulevel.o \
+main/mirk/routes/pukeroute/mirk_rotatelevel.o main/mirk/routes/pukeroute/mirk_shakelevel.o \
+main/mirk/routes/pukeroute/mirk_maybekilledyourparentslevel.o main/mirk/routes/pukeroute/mirk_willkillyourparentslevel.o \
+main/mirk/routes/pukeroute/mirk_nosightlevel.o \
+main/mirk/routes/pukeroute/mirk_textblockingviewlevel.o main/mirk/routes/pukeroute/mirk_discotatelevel.o \
+main/mirk/routes/pukeroute/mirk_simulationbreakdown1.o main/mirk/routes/pukeroute/mirk_simulationbreakdown2.o \
+main/mirk/routes/pukeroute/mirk_simulationbreakdown3.o main/mirk/routes/pukeroute/mirk_simulationbreakdown4.o \
+main/mirk/routes/pukeroute/mirk_simulationbreakdown5.o main/mirk/routes/pukeroute/mirk_simulationbreakdown6.o \
+main/mirk/routes/pukeroute/mirk_simulationbreakdown7.o main/mirk/routes/pukeroute/mirk_simulationbreakdown8.o \
+main/mirk/routes/pukeroute/mirk_simulationbreakdown9.o main/mirk/routes/pukeroute/mirk_simulationbreakdown10.o \
+main/mirk/routes/pukeroute/mirk_simulationbreakdown11.o \
+main/mirk/routes/standardroute/mirk_standard.o main/mirk/routes/standardroute/mirk_standard1.o main/mirk/routes/standardroute/mirk_standard2.o \
+main/mirk/routes/standardroute/mirk_standard3.o main/mirk/routes/standardroute/mirk_standard4.o main/mirk/routes/standardroute/mirk_standard5.o \
+main/mirk/routes/standardroute/mirk_standard6.o main/mirk/routes/standardroute/mirk_standard7.o main/mirk/routes/standardroute/mirk_standard8.o \
+main/mirk/routes/standardroute/mirk_standard9.o main/mirk/routes/standardroute/mirk_standard10.o \
+main/norm/norm_main.o \
+main/norm/norm_bg.o main/norm/norm_button.o main/norm/norm_congratsscreen.o \
+main/norm/norm_debris.o main/norm/norm_enemy.o main/norm/norm_enemygenerator.o \
+main/norm/norm_gamescreen.o main/norm/norm_introscreen.o main/norm/norm_player.o \
+main/norm/norm_title.o main/norm/norm_ui.o main/norm/norm_readytext.o \
+main/norm/norm_timer.o main/norm/norm_gameoverscreen.o \
+main/fight/fight_main.o \
+main/fight/fight_collision.o main/fight/fight_config.o main/fight/fight_fightscreen.o \
+main/fight/fight_fightui.o main/fight/fight_gamelogic.o main/fight/fight_mugenassignment.o \
+main/fight/fight_mugenassignmentevaluator.o main/fight/fight_mugencommandhandler.o main/fight/fight_mugencommandreader.o \
+main/fight/fight_mugenexplod.o main/fight/fight_mugensound.o main/fight/fight_mugenanimationhandler.o \
+main/fight/fight_mugenstagehandler.o main/fight/fight_mugenstatecontrollers.o main/fight/fight_mugenstatehandler.o \
+main/fight/fight_mugenstatereader.o main/fight/fight_pausecontrollers.o main/fight/fight_playerdefinition.o \
+main/fight/fight_playerhitdata.o main/fight/fight_stage.o main/fight/fight_warningscreen.o \
+main/fight/fight_titlescreen.o main/fight/fight_menuscreen.o main/fight/fight_projectile.o \
+main/fight/fight_storyscreen.o main/fight/fight_story.o main/fight/fight_twoplayerselectscreen.o \
+main/fight/fight_gameoverscreen.o main/fight/fight_ai.o \
+main/senpai/senpai_main.o \
+main/senpai/senpai_bg.o main/senpai/senpai_creditscreen.o main/senpai/senpai_enemyhandler.o \
+main/senpai/senpai_finalboss.o main/senpai/senpai_gamescreen.o main/senpai/senpai_levelhandler.o \
+main/senpai/senpai_player.o main/senpai/senpai_titlescreen.o \
+main/slo/slo_main.o \
+main/slo/slo_selectscreen.o main/slo/slo_storyscreen.o \
+misc/luck/luck_main.o \
+misc/luck/luck_bg.o misc/luck/luck_box.o misc/luck/luck_boxgenerator.o \
+misc/luck/luck_collision.o misc/luck/luck_congratsscreen.o misc/luck/luck_door.o \
+misc/luck/luck_enemyhandler.o misc/luck/luck_finalboss.o misc/luck/luck_gamelogic.o \
+misc/luck/luck_gameover.o misc/luck/luck_hank.o misc/luck/luck_horseguy.o \
+misc/luck/luck_narrator.o misc/luck/luck_pirate.o \
+misc/luck/luck_screen1.o misc/luck/luck_screen2.o misc/luck/luck_screen3.o \
+misc/luck/luck_screen4.o misc/luck/luck_screen5.o misc/luck/luck_screen6.o \
+misc/luck/luck_screen7.o misc/luck/luck_screen8.o \
+misc/luck/luck_scrolling.o misc/luck/luck_smashscreen.o misc/luck/luck_titlescreen.o \
+misc/best/bestgameever.o \
+misc/best/best_bg.o misc/best/best_endscreen.o misc/best/best_gamescreen.o \
+misc/best/best_player.o \
+misc/medusa/eyeofthemedusa.o \
+misc/medusa/medusa_badasshandler.o misc/medusa/medusa_collision.o misc/medusa/medusa_gamescreen.o \
+misc/medusa/medusa_shothandler.o misc/medusa/medusa_splashscreen.o misc/medusa/medusa_titlescreen.o \
+misc/medusa/medusa_toucan.o misc/medusa/medusa_resources.o \
+misc/sfmk/sfmk_main.o \
+misc/sfmk/sfmk_animation.o misc/sfmk/sfmk_fighterselectscreen.o misc/sfmk/sfmk_introscreen.o \
+misc/sfmk/sfmk_modemenu.o misc/sfmk/sfmk_storyrollscreen.o misc/sfmk/sfmk_titlescreen.o \
+misc/octo/octo_main.o \
+misc/octo/octo_assethandler.o misc/octo/octo_bg.o misc/octo/octo_collision.o \
+misc/octo/octo_enemyhandler.o misc/octo/octo_gamescreen.o misc/octo/octo_player.o \
+misc/octo/octo_titlescreen.o \
+misc/object/object_main.o \
+misc/object/object_backgroundhandler.o misc/object/object_clockhandler.o misc/object/object_congratsgirlfriendscreen.o \
+misc/object/object_congratsscreen.o misc/object/object_explanationscreen.o misc/object/object_gamelogic.o \
+misc/object/object_gameoverscreen.o misc/object/object_girlbarhandler.o misc/object/object_girlfriendhandler.o \
+misc/object/object_selectgirlscreen.o misc/object/object_storyscreen.o misc/object/object_talktogirlscreen.o \
+misc/object/object_titlescreen.o  \
+misc/hack/hack_main.o \
+misc/hack/hack_hackscreen.o misc/hack/hack_performancehandler.o misc/hack/hack_projectlogic.o \
+misc/hack/hack_selectscreen.o misc/hack/hack_storyscreen.o misc/hack/hack_titlescreen.o 

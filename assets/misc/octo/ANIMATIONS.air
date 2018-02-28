@@ -1,0 +1,13 @@
+
+[Begin Action 1]
+Clsn2: 1
+  Clsn2[0] = -21, -4, 10, 43
+1,0, 0,0, 10
+
+[Begin Action 2]
+1,1, 0,0, 10
+
+[Begin Action 50]
+Clsn2: 1
+  Clsn2[0] = -33, -42, 34, 44
+50,0, 0,0, 10

@@ -1,0 +1,1 @@
+scale down images from emulator by 48%

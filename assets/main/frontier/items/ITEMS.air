@@ -1,0 +1,16 @@
+
+
+[Begin Action 1]
+Clsn2: 1
+  Clsn2[0] = -10, -10, 12, 11
+1,0, 0,0, 10
+
+[Begin Action 2]
+Clsn2: 1
+  Clsn2[0] = -23, -28, 28, 21
+2,0, 0,0, 10
+
+[Begin Action 3]
+Clsn2: 1
+  Clsn2[0] = -39, -22, 39, 27
+3,0, 0,0, 10

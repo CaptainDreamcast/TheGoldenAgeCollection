@@ -1,0 +1,11 @@
+[Header]
+size = 1600
+speed = 0
+bgopacity = 0.5
+
+[BG Element]
+offset = 320,330
+animation = 9000
+rotationspeed = 0.001
+scale = 0.8
+scaledelta = 0.0003

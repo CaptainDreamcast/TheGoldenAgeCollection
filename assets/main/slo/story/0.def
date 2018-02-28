@@ -1,0 +1,42 @@
+[Header]
+Sprites = assets/main/slo/SLOMODO.sff
+
+
+[STORYSTART]
+
+[Image 1]
+Group = 1
+Item = 0
+
+[Text 1]
+Speaker = "Creepy old man:"
+Text = "Not so fast there, dashing young lad!"
+
+[Text 1]
+Speaker = "Creepy old man:"
+Text = "This is SloMoDo, a VR game! You need an Occurus Swift or a Hate-To-See Wife to play this game!"
+
+[Text 1]
+Speaker = "Creepy old man:"
+Text = "But fear not, peasant! Gary Johnson, the reigning SloMoDo champion and president of the United States, will aid you to the best of His abilities."
+
+[Image 1]
+Group = 1
+Item = 1
+
+[Text 1]
+Speaker = "Creepy old Gary Johnson:"
+Text = "Gary Johnson will use His powers so you can experience the thrill of slowification yourself! Ha!"
+
+[TimeDilatation]
+value = 0.5
+
+[Image 1]
+Group = 1
+Item = 0
+
+[Text 1]
+Speaker = "Creepy old Gary Johnson:"
+Text = "Alas, you may leave. Gary Johnson is tired of you now."
+
+[Menu]

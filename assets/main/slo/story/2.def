@@ -1,0 +1,47 @@
+[Header]
+Sprites = assets/main/slo/SLOMODO.sff
+
+
+[STORYSTART]
+
+[Image 1]
+Group = 1
+Item = 0
+
+[Text 1]
+Speaker = "Gary Johnson-sama, kawaii desu ne:"
+Text = "At last, Gary Johnson understands."
+
+
+[Text 1]
+Speaker = "Gary Johnson-sama, kawaii desu ne:"
+Text = "SloMo-Tion is more than just setting your game speed to 0.5."
+
+[Image 1]
+Group = 1
+Item = 1
+
+[Text 1]
+Speaker = "Digimon Emperor Gary Johnson:"
+Text = "From this, Gary Johnson can only draw one conclusion: The United States should into an empire."
+
+[Text 1]
+Speaker = "Digimon Emperor Gary Johnson:"
+Text = "We could call it Justiceland or something."
+
+[Image 1]
+Group = 1
+Item = 0
+
+[Text 1]
+Speaker = "Fairy Godmother Gary Johnson:"
+Text = "Whatever the case, Gary Johnson wants to thank you, peasant."
+
+[Text 1]
+Speaker = "Fairy Godmother Gary Johnson:"
+Text = "If you ever want to change your SloMo-Tion, come here again and Gary Johnson will work his magic."
+
+[TimeDilatation]
+value = 1
+
+[Select]
